@@ -17,6 +17,8 @@ This repository is a public-safe presentation surface.
 - API keys, tokens, local endpoints, private configuration, or user data.
 - Security scan artifacts, release gates, internal run summaries, or operational evidence.
 - Any tool definition that would expose destructive capabilities or private workflows.
+- ComfyUI workflows, Unity builds, GLB assets, models, endpoints, backend routes, Docker/run configs, and private screenshots.
+- BrandForge Desk material; it is explicitly outside this showcase.
 
 ## Review rule
 

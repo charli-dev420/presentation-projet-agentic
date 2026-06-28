@@ -1,18 +1,17 @@
 # Assets
 
-Only public-safe presentation assets belong here.
+This folder contains public-safe presentation assets only.
 
-Allowed:
+## Included
 
-- non-sensitive diagrams;
-- approved screenshots with no tokens, paths, logs, prompts, or user data;
-- lightweight logos or marks approved for public display.
+| Asset | Purpose |
+| --- | --- |
+| `brand/daw-core-logo-main.png` | Main DAWWW Core logo for presentation pages. |
+| `brand/daw-core-icon-512.png` | Compact icon/avatar. |
+| `brand/daw-core-banner.png` | Wide banner for cover sections. |
+| `brand/daw-core-watermark-opacity20.png` | Low-opacity watermark for public visual documents. |
+| `one-pager.svg` | Public-safe visual overview of the agentic ecosystem. |
 
-Not allowed:
+## Rule
 
-- traces;
-- prompts;
-- screenshots of private tools;
-- API outputs with user data;
-- security reports;
-- local configuration or endpoint captures.
+Do not add private screenshots, secrets, prompts, traces, source builds, datasets, local paths, workflows, model files, logs, endpoints, API outputs with user data, or unreleased artifacts.
