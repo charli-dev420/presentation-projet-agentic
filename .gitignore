@@ -1,0 +1,41 @@
+# Local/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Secrets and local configuration
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.token
+
+# Builds, packages, logs, generated evidence
+dist/
+build/
+output/
+release/
+releases/
+artifacts/
+logs/
+traces/
+proofs/
+*.zip
+*.7z
+*.rar
+*.log
+
+# Private agentic material
+prompts/
+runs/
+sessions/
+datasets/
+private/
+secrets/
+*.jsonl
+*.sqlite
+*.db
