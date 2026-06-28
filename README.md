@@ -18,6 +18,20 @@ Le but est de montrer une approche produit: agents outilles, actions controlees,
 - Une lecture architecture produit, sans code critique.
 - Des principes de securite: separation lecture/ecriture, actions explicites, audit, limites.
 - Une fiche partenariat pour outils agentiques, Apps SDK, MCP et workflows locaux.
+- Une cartographie des repos reels couverts, sans publier leurs implementations sensibles.
+
+### Repos reels couverts
+
+Ce depot est la vitrine publique de plusieurs repos et surfaces agentiques:
+
+- `codex-model-orchestrator-plugin` - orchestrateur multi-agents, Apps SDK, MCP et proof kit, source privee/localisee.
+- [`charli-dev420/codextounity`](https://github.com/charli-dev420/codextounity) - pont public Codex / Unity / ComfyUI.
+- `charli-dev420/unit2comf-frontend-backend-private` - backend et frontends d'orchestration ComfyUI, prive.
+- pipeline local LocalAssetFactory / Asset Factory - orchestration locale d'assets, non publiee comme code.
+
+`brandforge-desk` n'est pas retenu dans cette vitrine.
+
+Les details sont dans [`docs/repositories.md`](docs/repositories.md).
 
 ### Ce que ce depot ne contient pas
 
@@ -82,6 +96,20 @@ The goal is to show a product approach: tool-using agents, controlled actions, r
 - A product architecture view, without critical code.
 - Security principles: read/write separation, explicit actions, audit, limits.
 - A partnership brief for agentic tools, Apps SDK, MCP, and local workflows.
+- A map of the real repositories covered, without publishing sensitive implementations.
+
+### Real repositories covered
+
+This repository is the public showcase for several real agentic repositories and surfaces:
+
+- `codex-model-orchestrator-plugin` - multi-agent orchestration, Apps SDK, MCP, and proof kit, private/local source.
+- [`charli-dev420/codextounity`](https://github.com/charli-dev420/codextounity) - public Codex / Unity / ComfyUI bridge.
+- `charli-dev420/unit2comf-frontend-backend-private` - ComfyUI orchestration backend and frontends, private.
+- local LocalAssetFactory / Asset Factory pipeline - local asset orchestration, not published as code.
+
+`brandforge-desk` is not retained in this showcase.
+
+Details are in [`docs/repositories.md`](docs/repositories.md).
 
 ### What this repository does not contain
 
