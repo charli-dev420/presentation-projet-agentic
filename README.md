@@ -71,11 +71,25 @@ Project pages are available for [Codex Model Orchestrator](docs/projects/codex-m
 
 <br clear="left">
 
-### Why Contact
+### What This Repository Contains
 
-Contact makes sense if you have a workflow where AI assistance is useful but trust, review, handoff, or repeatability is still messy.
+This repository is the public dossier for the agentic/tooling projects:
 
-Good starting points: an MCP/App SDK interface that needs to be easier to read, a Unity or ComfyUI pipeline to structure, an internal tool that needs proof cards, a demo that must be judged by non-developers, a paid pilot, a technical mission, or a role around AI tooling and developer experience.
+- Codex Model Orchestrator product notes and proof model;
+- CodexToUnity and Unity handoff documentation;
+- Mob'ia / ccomf-unity product framing;
+- LocalAssetFactory notes for local validation and import preparation;
+- user flows, tutorials, QA matrix, evidence ledger, and project pages.
+
+### Open Needs
+
+The useful help right now is concrete:
+
+- product feedback on run summaries, proof cards, and human review states;
+- MCP/App SDK review on how tool state should be presented to a user;
+- Unity or ComfyUI workflow feedback for CodexToUnity and Mob'ia / ccomf-unity;
+- technical review around local automation, validation, and repeatable handoff;
+- funding, mission, or job discussions around developer tools, AI workflow products, Unity tooling, and human-in-the-loop systems.
 
 Public contact route: [GitHub - Unicorn Who Dev](https://github.com/charli-dev420).
 
@@ -133,10 +147,24 @@ Les pages projet couvrent [Codex Model Orchestrator](docs/projects/codex-model-o
 
 <br clear="left">
 
-### Pourquoi Contacter
+### Ce Que Contient Ce Repo
 
-Le contact a du sens si vous avez un workflow ou l'assistance IA est utile mais ou la confiance, la revue, le handoff ou la repetabilite restent difficiles.
+Ce repo est le dossier public des projets agentic/tooling:
 
-Bons points de depart: une interface MCP/App SDK a rendre plus lisible, un pipeline Unity ou ComfyUI a structurer, un outil interne qui a besoin de cartes de preuve, une demo qui doit etre jugee par des non-developpeurs, un pilote payant, une mission technique ou un poste autour de l'outillage IA et de la developer experience.
+- notes produit et modele de preuve Codex Model Orchestrator;
+- documentation CodexToUnity et handoff Unity;
+- cadrage produit Mob'ia / ccomf-unity;
+- notes LocalAssetFactory pour validation locale et preparation d'import;
+- flux utilisateur, tutoriels, QA matrix, evidence ledger et pages projet.
+
+### Besoins Ouverts
+
+L'aide utile maintenant est concrete:
+
+- feedback produit sur les resumes de run, cartes de preuve et etats de revue humaine;
+- revue MCP/App SDK sur la presentation de l'etat outil a l'utilisateur;
+- feedback Unity ou ComfyUI pour CodexToUnity et Mob'ia / ccomf-unity;
+- revue technique autour de l'automatisation locale, validation et handoff repetable;
+- financement, mission ou poste autour des outils developpeur, produits IA workflow, tooling Unity et systemes human-in-the-loop.
 
 Contact public recommande: [GitHub - Unicorn Who Dev](https://github.com/charli-dev420).

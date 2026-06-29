@@ -1,69 +1,67 @@
-# Partnership Brief / Fiche partenariat
+# Open Needs / Besoins ouverts
 
 [EN](#english) | [FR](#francais)
 
 ## English
 
-### The Kind Of Partnership That Makes Sense
+### What This Page Is For
 
-I am not looking for a vague "let's add AI" discussion. The useful partnership is built around a workflow that already hurts a little.
+This page lists the help that would move the agentic/tooling projects forward. It replaces broad partnership language with concrete needs.
 
-Maybe a team has a Unity pipeline where generated assets arrive without enough context. Maybe an internal AI tool can do tasks, but nobody trusts the result unless the original operator explains everything. Maybe a product team wants an MCP/App SDK surface that looks less like tooling plumbing and more like a decision screen.
+The projects covered here are **Codex Model Orchestrator**, **CodexToUnity**, **Mob'ia / ccomf-unity**, and **LocalAssetFactory**.
 
-Those are good starting points because they are concrete.
+### Product Feedback
 
-### What We Could Build Together
+Codex Model Orchestrator needs feedback on the product surface around a run: task title, scope, tool state, proof card, error state, review decision, and final summary.
 
-One useful pilot could be a small review loop:
+The useful question is not whether an AI tool can act. The useful question is whether the result is understandable after the run is over.
 
-1. define a repeatable task;
-2. decide what the tool may do;
-3. run or simulate the workflow;
-4. produce a result card with evidence, open questions, and next action;
-5. review it with someone who did not run the tool;
-6. improve the interface or process from that feedback.
+### Tooling And Integration Review
 
-For Unity and creative work, that could mean asset batches, manifests, import checks, ComfyUI outputs, or mobile-friendly review states. For developer tooling, it could mean task routing, run summaries, proof cards, or human approval steps.
+CodexToUnity and LocalAssetFactory need review around handoff language: manifests, file names, import checks, local validation, Unity expectations, and what a user needs to see before accepting an artifact.
 
-### What I Bring
+Feedback is useful when it points to a specific state, field, action, or missing check.
 
-I bring the product and implementation angle: turning tool runs into something a person can read, challenge, and use. I care about the small details that make a workflow feel serious: naming, state, proof, handoff, errors, summaries, and what the user is supposed to do next.
+### Mob'ia / ccomf-unity Feedback
 
-### What I Need From A Partner
+Mob'ia / ccomf-unity needs product feedback on profiles, generation jobs, artifact states, client surfaces, and ComfyUI-style workflow visibility.
 
-A good partner brings a real case, not a perfect brief. A few sample tasks, one annoying workflow, one asset path, one internal review problem, or one demo that currently needs too much explanation is enough to start.
+The goal is to make generation jobs easier to inspect, not to hide them behind a finished-looking screen.
 
-The first goal is modest: produce one result that is clear enough to judge. If that works, the next discussion can be about a paid pilot, mission, integration, funding path, or longer collaboration.
+### Funding, Missions, Jobs
+
+Relevant discussions are concrete: developer tools, AI workflow products, MCP/App SDK surfaces, Unity tooling, ComfyUI product layers, local automation, validation workflows, and human review systems.
+
+Public contact route: [GitHub - Unicorn Who Dev](https://github.com/charli-dev420).
 
 ## Francais
 
-### Le Type De Partenariat Qui A Du Sens
+### A Quoi Sert Cette Page
 
-Je ne cherche pas une discussion vague du type "ajoutons de l'IA". Le partenariat utile part d'un workflow qui fait deja un peu mal.
+Cette page liste les aides qui feraient avancer les projets agentic/tooling. Elle remplace le langage large de partenariat par des besoins concrets.
 
-Une equipe peut avoir un pipeline Unity ou les assets generes arrivent sans assez de contexte. Un outil IA interne peut faire des taches, mais personne ne fait confiance au resultat si l'operateur initial ne reexplique pas tout. Une equipe produit peut vouloir une surface MCP/App SDK qui ressemble moins a de la plomberie technique et plus a un ecran de decision.
+Les projets couverts ici sont **Codex Model Orchestrator**, **CodexToUnity**, **Mob'ia / ccomf-unity** et **LocalAssetFactory**.
 
-Ce sont de bons points de depart parce qu'ils sont concrets.
+### Feedback Produit
 
-### Ce Que L'on Pourrait Construire Ensemble
+Codex Model Orchestrator a besoin de retours sur la surface produit autour d'un run: titre de tache, cadrage, etat outil, carte de preuve, erreur, decision de revue et resume final.
 
-Un pilote utile peut etre une petite boucle de revue:
+La question utile n'est pas de savoir si un outil IA peut agir. La question utile est de savoir si le resultat reste comprehensible apres le run.
 
-1. definir une tache repetable;
-2. decider ce que l'outil a le droit de faire;
-3. executer ou simuler le workflow;
-4. produire une carte de resultat avec preuves, questions ouvertes et prochaine action;
-5. la faire relire par quelqu'un qui n'a pas lance l'outil;
-6. ameliorer l'interface ou le processus a partir de ce retour.
+### Revue Tooling Et Integration
 
-Pour Unity et la production creative, cela peut concerner des lots d'assets, manifests, controles d'import, sorties ComfyUI ou etats de revue compatibles mobile. Pour les outils developpeur, cela peut concerner routage de taches, resumes de run, cartes de preuve ou validations humaines.
+CodexToUnity et LocalAssetFactory ont besoin de retours sur le langage de handoff: manifests, noms de fichiers, controles d'import, validation locale, attentes Unity et ce qu'un utilisateur doit voir avant d'accepter un artefact.
 
-### Ce Que J'Apporte
+Le feedback est utile quand il pointe un etat, un champ, une action ou un controle manquant.
 
-J'apporte l'angle produit et implementation: transformer des runs outils en quelque chose qu'une personne peut lire, contester et utiliser. Je fais attention aux details qui rendent un workflow serieux: nommage, etats, preuve, handoff, erreurs, resumes et action attendue de l'utilisateur.
+### Feedback Mob'ia / ccomf-unity
 
-### Ce Dont J'Ai Besoin Cote Partenaire
+Mob'ia / ccomf-unity a besoin de retours produit sur profils, jobs de generation, etats d'artefacts, surfaces clientes et visibilite des workflows type ComfyUI.
 
-Un bon partenaire apporte un cas reel, pas un brief parfait. Quelques taches exemples, un workflow penible, un chemin d'asset, un probleme de revue interne ou une demo qui demande trop d'explications suffisent pour commencer.
+L'objectif est de rendre les jobs de generation plus faciles a inspecter, pas de les cacher derriere un ecran qui a seulement l'air fini.
 
-Le premier objectif est modeste: produire un resultat assez clair pour etre juge. Si cela fonctionne, la suite peut devenir un pilote payant, une mission, une integration, une piste de financement ou une collaboration plus longue.
+### Financement, Missions, Postes
+
+Les discussions pertinentes sont concretes: outils developpeur, produits workflow IA, surfaces MCP/App SDK, tooling Unity, couches produit ComfyUI, automatisation locale, workflows de validation et systemes avec revue humaine.
+
+Contact public recommande: [GitHub - Unicorn Who Dev](https://github.com/charli-dev420).
