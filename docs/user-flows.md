@@ -15,7 +15,7 @@
 ### 2. Createur Unity / asset
 
 1. Decrire l'asset ou la scene.
-2. Choisir le flux conceptuel: CodexToUnity, Unit2Comf, LocalAssetFactory.
+2. Choisir le flux conceptuel: CodexToUnity, Mob'ia / ccomf-unity, LocalAssetFactory.
 3. Suivre generation, controle et import.
 4. Verifier le resultat dans Unity.
 5. Documenter corrections et limites.

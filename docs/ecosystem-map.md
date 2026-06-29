@@ -8,7 +8,7 @@
 | --- | --- | --- | --- |
 | Codex Model Orchestrator | Planifier, deleguer, mesurer, produire preuves et rendus. | Coordonne sous-agents, outils et proof kit. | Source privee/localisee, concepts publics. |
 | CodexToUnity | Relier Codex, Unity et ComfyUI. | Prototype d'orchestration Unity et generation. | Repo public. |
-| Unit2Comf | Gerer jobs, profils, frontends et backend autour de ComfyUI. | Fournit une couche produit pour generation controlee. | Repo prive. |
+| Mob'ia / ccomf-unity | Gerer jobs, profils, frontends et backend autour de ComfyUI. | Fournit une couche produit pour generation controlee. | Surface privee, carte publique. |
 | LocalAssetFactory | Pipeline local d'assets et validation Unity. | Execute des jobs locaux et controle import/scene. | Concepts publics, code non publie. |
 
 ```mermaid
@@ -17,7 +17,7 @@ flowchart LR
     B --> C[Sous-agents]
     B --> D[MCP / Apps SDK]
     D --> E[CodexToUnity]
-    E --> F[Unit2Comf]
+    E --> F[Mob'ia]
     F --> G[LocalAssetFactory]
     G --> H[Validation Unity]
     C --> I[Preuves redigees]

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
   <title id="title">Agentic orchestration ecosystem one-pager</title>
-  <desc id="desc">Public-safe overview of Codex Model Orchestrator, CodexToUnity, Unit2Comf, and LocalAssetFactory.</desc>
+  <desc id="desc">Public-safe overview of Codex Model Orchestrator, CodexToUnity, Mob'ia, and LocalAssetFactory.</desc>
   <rect width="1200" height="675" fill="#101318"/>
   <rect x="48" y="48" width="1104" height="579" rx="18" fill="#171d25" stroke="#38bdf8" stroke-width="3"/>
   <text x="84" y="112" fill="#f8fafc" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700">Agentic Orchestration</text>
@@ -13,7 +13,7 @@
     <text x="398" y="268" fill="#ffffff" font-size="23" font-weight="700">CodexToUnity</text>
     <text x="398" y="304" fill="#cbd5e1" font-size="17">Unity bridge</text>
     <rect x="652" y="225" width="230" height="120" rx="12" fill="#22313c"/>
-    <text x="678" y="268" fill="#ffffff" font-size="23" font-weight="700">Unit2Comf</text>
+    <text x="678" y="268" fill="#ffffff" font-size="23" font-weight="700">Mob'ia</text>
     <text x="678" y="304" fill="#cbd5e1" font-size="17">Jobs + product layer</text>
     <rect x="932" y="225" width="180" height="120" rx="12" fill="#22313c"/>
     <text x="956" y="268" fill="#ffffff" font-size="23" font-weight="700">Factory</text>

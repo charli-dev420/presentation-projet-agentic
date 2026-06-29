@@ -10,7 +10,7 @@
 | --- | --- |
 | Probleme | Passer d'un agent texte a un systeme pilotable, observable et utile. |
 | Solution | Orchestration, MCP, Apps SDK, sous-agents, preuves et validation humaine. |
-| Projets | Codex Model Orchestrator, CodexToUnity, Unit2Comf, LocalAssetFactory. |
+| Projets | Codex Model Orchestrator, CodexToUnity, Mob'ia / ccomf-unity, LocalAssetFactory. |
 | Preuves | Niveaux L0-L5, methodologie, docs publiques, limites explicites. |
 | Besoins | Securite, UX, demos cadrées, industrialisation, partenaires. |
 

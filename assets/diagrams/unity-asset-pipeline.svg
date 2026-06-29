@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="540" viewBox="0 0 1220 540" role="img" aria-labelledby="title desc">
+  <title id="title">Agentic Unity Asset Pipeline</title>
+  <desc id="desc">Public-safe Unity asset pipeline controlled by agents.</desc>
+  <rect width="1220" height="540" fill="#f7f9fb"/>
+  <text x="64" y="76" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#172033">Unity asset loop</text>
+  <g font-family="Arial, sans-serif" font-size="15">
+    <rect x="70" y="170" width="150" height="92" rx="12" fill="#e9f2ff" stroke="#9bc3ff"/><text x="103" y="211" font-size="20" font-weight="700" fill="#173a66">Intent</text><text x="94" y="238" fill="#31516f">target + constraints</text>
+    <path d="M225 216 L285 216" stroke="#6b7788" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="300" y="170" width="150" height="92" rx="12" fill="#f0ebff" stroke="#b6a7ef"/><text x="337" y="211" font-size="20" font-weight="700" fill="#3e2d6f">Job</text><text x="326" y="238" fill="#56477d">profile + manifest</text>
+    <path d="M455 216 L515 216" stroke="#6b7788" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="530" y="170" width="175" height="92" rx="12" fill="#fff4df" stroke="#f1bf62"/><text x="568" y="211" font-size="20" font-weight="700" fill="#684509">Generation</text><text x="572" y="238" fill="#6f5526">local or dry-run</text>
+    <path d="M710 216 L770 216" stroke="#6b7788" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="785" y="170" width="175" height="92" rx="12" fill="#eaf8f0" stroke="#93d3aa"/><text x="829" y="211" font-size="20" font-weight="700" fill="#19562f">Normalize</text><text x="821" y="238" fill="#31513b">GLB + sockets</text>
+    <path d="M965 216 L1025 216" stroke="#6b7788" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="1040" y="170" width="130" height="92" rx="12" fill="#172033"/><text x="1075" y="211" font-size="20" font-weight="700" fill="#fff">Unity</text><text x="1065" y="238" fill="#e7edf5">review</text>
+  </g>
+  <text x="64" y="350" font-family="Arial, sans-serif" font-size="17" fill="#526070">Published outputs: diagrams, manifest concepts, checklist, proof card. Excluded: GLB, scenes, routes, workflows, logs, provider outputs.</text>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6b7788"/>
+    </marker>
+  </defs>
+</svg>

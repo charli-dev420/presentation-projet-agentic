@@ -14,6 +14,9 @@ Orchestrateur multi-agents oriente produit: il structure une tache, choisit des 
 - Proof kit et niveaux de claims publics.
 - Methode de benchmark avec traces redigees ou synthetiques.
 - Distinction entre instrumentation, replay, micro-benchmark, reproduction et telemetry.
+- Quality gates: build/test, verifiability, human score, correction time et publication des echecs.
+- Security/privacy model: BYOK, redaction, consentement, retention et separation des preuves.
+- Release scan et verification Apps SDK/MCP sur les surfaces publiables.
 
 ### Ce qui est utile pour un acheteur
 
@@ -21,6 +24,7 @@ Orchestrateur multi-agents oriente produit: il structure une tache, choisit des 
 - Verifier que les gains ne sont pas annonces sans niveau de preuve.
 - Evaluer la separation entre demo, benchmark et usage production.
 - Discuter securite, redaction, consentement et retention.
+- Examiner les metriques qui comptent: cout par tache acceptee, taux d'echec, score humain et temps de correction.
 
 ### Non publie
 

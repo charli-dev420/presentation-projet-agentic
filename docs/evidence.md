@@ -15,14 +15,15 @@
 | L4 | Reproduction independante | Un tiers reproduit sur un autre repo ou jeu de taches. |
 | L5 | Telemetrie production opt-in | Des donnees anonymisees avec consentement indiquent des tendances. |
 
-### Preuves par projet
+### Preuves par scenario
 
-| Projet | Preuve publique | Limite |
-| --- | --- | --- |
-| Orchestrateur | Methodologie, proof kit, niveaux de claims. | Pas de traces brutes ni prompts prives. |
-| CodexToUnity | Repo public et docs conceptuelles. | Prototype, pas de promesse production generale. |
-| Unit2Comf | Carte produit privee resumee. | Pas de backend, routes ou configs. |
-| LocalAssetFactory | Concepts de validation locale. | Pas de service, GLB, workflows ou endpoints. |
+| Scenario | Surface | Niveau | Preuve publique | Usage decision |
+| --- | --- | --- | --- | --- |
+| Proof loop agentique | Orchestrateur | L1-L2 | Quality gates, claim levels, methode de mesure, security/privacy model. | Evaluer la rigueur avant demo. |
+| Benchmark redige | Orchestrateur | L1-L3 selon source | Couts par tache acceptee, echecs publies, score humain, temps de correction. | Discuter les gains sans promesse generale. |
+| Unity asset loop | CodexToUnity / LocalAssetFactory | L1-L2 | Prototype public, dry-run/smoke, jobs, manifests, sockets, normalisation GLB. | Cadrer integration Unity. |
+| Product layer ComfyUI | Mob'ia / ccomf-unity | L1 | Carte produit: profils, jobs async, artefacts, clients Unity/web/mobile. | Evaluer partenariat produit. |
+| Gouvernance publique | Tous | L1 | Redaction policy, public scope, security/privacy, evidence ledger. | Verifier que la vitrine ne publie pas les bruts. |
 
 ## English
 

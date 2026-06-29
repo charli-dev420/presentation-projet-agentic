@@ -8,6 +8,8 @@
 
 LocalAssetFactory est la couche locale de production d'assets: generation, normalisation, controle, import Unity et validation de scene.
 
+Elle sert de boucle de preuve entre intention, generation locale, manifest, normalisation, sockets Unity et revue humaine. Les sorties publiques sont des schemas, checklists et resumes rediges.
+
 ### Pourquoi c'est important
 
 Les agents sont utiles seulement si leurs sorties deviennent exploitables. La factory locale sert a fermer la boucle entre instruction, generation, asset, scene et preuve.
@@ -26,4 +28,4 @@ Configurations, workflows, modeles, datasets, GLB, services, endpoints, chemins 
 
 ## English
 
-LocalAssetFactory is the local asset production layer: generation, normalization, control, Unity import, and scene validation. Public evaluation focuses on controllability, identifiable outputs, verifiable Unity import, written evidence, and local data boundaries.
+LocalAssetFactory is the local asset production layer: generation, normalization, control, Unity import, and scene validation. It acts as the proof loop between intent, local generation, manifest, normalization, Unity sockets, and human review. Public evaluation focuses on controllability, identifiable outputs, verifiable Unity import, written evidence, and local data boundaries.

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620" role="img" aria-labelledby="title desc">
+  <title id="title">Agentic Proof Level Ladder</title>
+  <desc id="desc">Evidence levels L0 to L5 for agentic claims.</desc>
+  <rect width="1120" height="620" fill="#ffffff"/>
+  <text x="64" y="72" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#172033">Proof levels L0-L5</text>
+  <g font-family="Arial, sans-serif" font-size="17" fill="#172033">
+    <rect x="90" y="470" width="940" height="52" rx="10" fill="#e8eef5"/><text x="122" y="503">L0 - instrumentation exists</text>
+    <rect x="160" y="394" width="870" height="52" rx="10" fill="#dcecf8"/><text x="192" y="427">L1 - synthetic or redacted replay</text>
+    <rect x="230" y="318" width="800" height="52" rx="10" fill="#dff3e7"/><text x="262" y="351">L2 - maintainer micro-benchmark</text>
+    <rect x="300" y="242" width="730" height="52" rx="10" fill="#fff0d8"/><text x="332" y="275">L3 - community BYOK benchmark</text>
+    <rect x="370" y="166" width="660" height="52" rx="10" fill="#ece7ff"/><text x="402" y="199">L4 - independent reproduction</text>
+    <rect x="440" y="90" width="590" height="52" rx="10" fill="#ffe7e7"/><text x="472" y="123">L5 - opt-in production telemetry</text>
+  </g>
+</svg>
