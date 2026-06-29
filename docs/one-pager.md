@@ -1,4 +1,4 @@
-# Agentic Orchestration One-Pager
+# Codex Model Orchestrator One-Pager
 
 [EN](#english) | [FR](#francais)
 
@@ -6,60 +6,72 @@
 
 ## English
 
-### What I Am Building
+### The Short Version
 
-I am building tools for the part of AI work that usually gets messy: the handoff between an instruction, a tool call, a generated result, a verification step, and a human decision.
+I am working on a simple but important question: when an AI tool does work for you, how do you know what really happened?
 
-The center of the project is **Codex Model Orchestrator**. Around it, **CodexToUnity**, **Mob'ia / ccomf-unity**, and **LocalAssetFactory** let me test the same idea on concrete creative workflows: asset generation, Unity import, ComfyUI handoff, review states, proof cards, and client-ready summaries.
+**Codex Model Orchestrator** is the project where I try to answer that with a product surface, not just with logs. A run should start from a clear request, use allowed tools, produce something inspectable, show what was checked, and end with a decision a person can actually make.
 
-The goal is simple to say and hard to do well: make an AI-assisted run readable enough that someone can trust it, correct it, reuse it, or stop it.
+Around it, **CodexToUnity**, **Mob'ia / ccomf-unity**, and **LocalAssetFactory** give the idea concrete pressure. Generated assets have files, manifests, previews, imports, mistakes, weights, formats, and review points. They are a good test for whether the orchestration is useful or just nicely written.
 
-### Why This Is Worth Looking At
+### What A Useful Run Looks Like
 
-Most AI demos show the answer. I am more interested in the work around the answer.
+A useful run might look like this:
 
-Who asked for it? Which tools were allowed? What changed? What evidence supports the result? Where did the run hesitate? What still needs a person? Could a collaborator, buyer, lead developer, or recruiter understand the result without digging through raw traces?
+1. A user asks for a Unity asset batch to be prepared.
+2. The system writes the scope before touching anything.
+3. It calls the right tool, creates or checks the artifact, and records what happened.
+4. It reports what passed, what is doubtful, and what still needs a human eye.
+5. It leaves a small result card that a partner, buyer, or teammate can read without opening the whole raw session.
 
-That is the product layer I want to make stronger. Not a black box, not a pile of prompts, but a workflow that can be inspected after the fact.
+That last step matters. If the only person who understands the work is the person who ran the tool, the workflow is not good enough.
 
-### What To Read First
+### Why It Matters
 
-Start with the [ecosystem map](ecosystem-map.md) to see the pieces together. Then read the [user flows](user-flows.md) and the [orchestrator proof loop](scenarios/orchestrator-proof-loop.md) to understand the shape of a real run.
+AI tools are becoming easy to launch and hard to supervise. The risk is not only that they fail. The risk is that they fail in a way nobody can explain later.
 
-For a more serious evaluation, use the [evidence ledger](evidence-ledger.md), [proof pack](proof-pack.md), [QA matrix](qa-matrix.md), and [buyer evaluation](buyer-evaluation.md). Those pages are meant to help someone form an opinion without needing a long meeting first.
+I want these projects to make the work legible: what the run tried to do, what it changed, what evidence exists, what needs review, and what the next useful move is.
 
-### Good Conversations
+### What To Read
 
-I am open to conversations around product direction, MCP/App SDK surfaces, Unity or ComfyUI pipelines, local automation, QA and proof design, funding, missions, partnerships, and roles where AI tools need to be understandable by a real team.
+Start with the [ecosystem map](ecosystem-map.md), then read the [user flows](user-flows.md) and [orchestrator proof loop](scenarios/orchestrator-proof-loop.md). For a more serious look, use the [evidence ledger](evidence-ledger.md), [proof pack](proof-pack.md), [QA matrix](qa-matrix.md), and [buyer evaluation](buyer-evaluation.md).
 
-The best starting point is one concrete workflow: what should happen, what must stay under control, what proof would make the result believable, and what decision the user should be able to make at the end.
+### Good First Conversations
+
+The best conversations start with one workflow: a tool chain to make readable, an asset pipeline to review, a ComfyUI/Unity handoff to structure, an internal AI demo to make credible, or a role where AI tooling needs to be useful for more than the person who built it.
 
 ## Francais
 
-### Ce Que Je Construis
+### Version Courte
 
-Je construis des outils pour la partie du travail IA qui devient vite floue: le passage entre une instruction, un appel outil, un resultat genere, une verification et une decision humaine.
+Je travaille sur une question simple mais importante: quand un outil IA fait du travail pour vous, comment sait-on ce qui s'est vraiment passe ?
 
-Le centre du projet est **Codex Model Orchestrator**. Autour, **CodexToUnity**, **Mob'ia / ccomf-unity** et **LocalAssetFactory** me permettent de tester la meme idee sur des workflows creatifs concrets: generation d'assets, import Unity, handoff ComfyUI, etats de revue, cartes de preuve et resumes utilisables cote client.
+**Codex Model Orchestrator** est le projet ou j'essaie de repondre avec une vraie surface produit, pas seulement avec des logs. Un run doit partir d'une demande claire, utiliser des outils autorises, produire quelque chose d'inspectable, montrer ce qui a ete verifie et finir sur une decision qu'une personne peut vraiment prendre.
 
-L'objectif est simple a formuler et difficile a bien faire: rendre un run assiste par IA assez lisible pour qu'une personne puisse lui faire confiance, le corriger, le reutiliser ou l'arreter.
+Autour, **CodexToUnity**, **Mob'ia / ccomf-unity** et **LocalAssetFactory** mettent l'idee sous contrainte concrete. Les assets generes ont des fichiers, manifests, previews, imports, erreurs, poids, formats et points de revue. C'est un bon test pour savoir si l'orchestration est utile ou seulement bien formulee.
 
-### Pourquoi Cela Merite D'Etre Regarde
+### A Quoi Ressemble Un Run Utile
 
-La plupart des demos IA montrent la reponse. Ce qui m'interesse davantage, c'est le travail autour de la reponse.
+Un run utile peut ressembler a cela:
 
-Qui a demande quoi ? Quels outils etaient autorises ? Qu'est-ce qui a change ? Quelle preuve soutient le resultat ? Ou le run a-t-il hesite ? Qu'est-ce qui demande encore une personne ? Est-ce qu'un collaborateur, acheteur, lead dev ou recruteur peut comprendre le resultat sans fouiller dans des traces brutes ?
+1. Un utilisateur demande de preparer un lot d'assets Unity.
+2. Le systeme ecrit le cadrage avant de toucher quoi que ce soit.
+3. Il appelle le bon outil, cree ou controle l'artefact, puis garde une trace de ce qui s'est passe.
+4. Il indique ce qui passe, ce qui est douteux et ce qui demande encore un regard humain.
+5. Il laisse une petite carte de resultat qu'un partenaire, acheteur ou coequipier peut lire sans ouvrir toute la session brute.
 
-C'est cette couche produit que je veux renforcer. Pas une boite noire, pas une collection de prompts, mais un workflow que l'on peut relire apres coup.
+Ce dernier point compte. Si la seule personne qui comprend le travail est celle qui a lance l'outil, le workflow n'est pas assez bon.
 
-### Lire D'Abord
+### Pourquoi C'est Important
 
-Commencer par l'[ecosystem map](ecosystem-map.md) pour voir les pieces ensemble. Lire ensuite les [flux utilisateur](user-flows.md) et le [proof loop orchestrateur](scenarios/orchestrator-proof-loop.md) pour comprendre la forme d'un vrai run.
+Les outils IA deviennent faciles a lancer et difficiles a superviser. Le risque n'est pas seulement qu'ils echouent. Le risque est qu'ils echouent d'une maniere que personne ne peut expliquer ensuite.
 
-Pour une evaluation plus serieuse, utiliser l'[evidence ledger](evidence-ledger.md), le [proof pack](proof-pack.md), la [QA matrix](qa-matrix.md) et l'[evaluation acheteur](buyer-evaluation.md). Ces pages sont la pour aider quelqu'un a se faire une opinion sans avoir besoin d'une longue reunion d'abord.
+Je veux que ces projets rendent le travail lisible: ce que le run a essaye de faire, ce qu'il a change, quelles preuves existent, ce qui demande revue et quel est le prochain geste utile.
 
-### Bonnes Discussions
+### Quoi Lire
 
-Je suis ouvert aux discussions autour de la direction produit, des surfaces MCP/App SDK, des pipelines Unity ou ComfyUI, de l'automatisation locale, du design QA/preuve, du financement, des missions, des partenariats et des postes ou les outils IA doivent rester comprehensibles pour une vraie equipe.
+Commencer par l'[ecosystem map](ecosystem-map.md), puis lire les [flux utilisateur](user-flows.md) et le [proof loop orchestrateur](scenarios/orchestrator-proof-loop.md). Pour une lecture plus serieuse, utiliser l'[evidence ledger](evidence-ledger.md), le [proof pack](proof-pack.md), la [QA matrix](qa-matrix.md) et l'[evaluation acheteur](buyer-evaluation.md).
 
-Le meilleur point de depart est un workflow concret: ce qui doit se passer, ce qui doit rester sous controle, quelle preuve rendrait le resultat credible et quelle decision l'utilisateur doit pouvoir prendre a la fin.
+### Bonnes Premieres Discussions
+
+Les meilleures discussions partent d'un workflow: une chaine d'outils a rendre lisible, un pipeline asset a revoir, un handoff ComfyUI/Unity a structurer, une demo IA interne a rendre credible ou un poste ou l'outillage IA doit servir a plus que la personne qui l'a construit.

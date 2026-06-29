@@ -4,102 +4,96 @@
 
 ## English
 
-### How I Would Evaluate This Showcase
+### How I Would Judge This Project
 
-If you are reading this as a buyer, partner, technical lead, or recruiter, I would not ask you to trust the project from a slogan. I would ask you to pick one real workflow and follow it from the first request to the final decision.
+If I were evaluating this project from the outside, I would not start with a big feature list. I would choose one run and ask whether the result is still understandable ten minutes later, by someone who did not run it.
 
-The useful question is simple: can you see what was asked, what was allowed, what happened, how it was checked, and what a person decided at the end?
+That is the test I care about.
 
-Start with the [ecosystem map](ecosystem-map.md) if you want the full picture. Then read the [user flows](user-flows.md) and the [orchestrator proof loop](scenarios/orchestrator-proof-loop.md). Those three pages show the shape of the work better than a feature list.
+Can a buyer, lead developer, partner, or recruiter see the original request, the tool used, the artifact produced, the checks performed, and the decision left for a person? If yes, the project is doing something useful. If not, it is just another AI demo with a good story around it.
 
-### What To Look For
+Start with the [ecosystem map](ecosystem-map.md), then read the [user flows](user-flows.md) and the [orchestrator proof loop](scenarios/orchestrator-proof-loop.md). They show the project better than a promise page.
 
-- The task is written in plain terms before the system acts.
-- The allowed tools, data, and actions are stated up front.
-- The plan is readable enough to challenge before work starts.
-- The result is checked, not just produced.
-- The proof level is attached to each statement, using the [evidence ledger](evidence-ledger.md) and [proof pack](proof-pack.md).
-- Failures, revisions, and blocked states are kept visible because they say a lot about how the system behaves under pressure.
-- The final output gives a human a real choice: accept, revise, reject, archive, escalate, or continue.
-- The [QA matrix](qa-matrix.md) can be used to compare the result with the stated criteria instead of judging it by taste.
+### What I Would Test First
 
-### A Good First Test
+I would test one narrow workflow, for example:
 
-I would begin with the orchestrator proof loop, because it tests the control layer itself before judging a more specialized Unity or ComfyUI path.
+1. prepare a generated asset for Unity review;
+2. write the run scope before tool use;
+3. produce or check the artifact;
+4. attach a short evidence note;
+5. show what needs human review;
+6. decide whether the result should be accepted, revised, or stopped.
 
-1. Choose one bounded task.
-2. Agree on what the run is allowed to use and change.
-3. Run or simulate the workflow.
-4. Produce a short proof card.
-5. Score the result against the [QA matrix](qa-matrix.md).
-6. Decide the next step: stop, revise, technical audit, paid pilot, partnership, or mission discussion.
+That gives everyone something real to inspect. The conversation becomes about the quality of the run, not about whether AI is impressive in general.
 
-This avoids a vague demo. It creates a concrete object to inspect.
+### Strong Signals
 
-### Questions I Would Ask
+- The run explains itself without needing a long voice-over.
+- The result card is short enough to read and precise enough to challenge.
+- The [evidence ledger](evidence-ledger.md) and [proof pack](proof-pack.md) support the important claims.
+- The [QA matrix](qa-matrix.md) makes the evaluation less subjective.
+- A non-developer can understand the decision even if a developer needs to inspect the details.
+- The project admits uncertainty where the run still needs a human eye.
+- The next step is obvious: stop, revise, pilot, integrate, or discuss a mission.
 
-1. What exact task did the system try to complete?
-2. What did the user approve before the run moved forward?
-3. What changed as a result of the run?
-4. Which checks were actually performed?
-5. What proof level is available now, and what would be needed for a stronger statement?
-6. Where did the workflow hesitate, fail, or require a human decision?
-7. What short public summary can be shared after the evaluation?
-8. What would make this ready for a pilot, purchase, partnership, or hiring discussion?
+### Questions Worth Asking
 
-### Reading Path
+1. What concrete run should we evaluate first?
+2. What result would make you trust the workflow more?
+3. Which part must stay readable for a non-technical stakeholder?
+4. Which checks would be enough for a small pilot?
+5. Where should human approval happen?
+6. What artifact can be shared after the evaluation?
 
-Use the [ecosystem map](ecosystem-map.md) to understand the pieces, the [user flows](user-flows.md) to see who does what, and the [orchestrator proof loop](scenarios/orchestrator-proof-loop.md) as the first concrete scenario.
+### Best Next Step
 
-For evidence, read the [evidence ledger](evidence-ledger.md), [proof pack](proof-pack.md), and [QA matrix](qa-matrix.md) together. They are meant to answer the same practical question from three angles: what is stated, what supports it, and how the result should be judged.
+The best next step is not a broad demo. It is a small proof pack around one workflow: scope, run, result card, checks, decision, and next action. That is enough to decide whether the project deserves a technical audit, a paid pilot, a partnership conversation, or a hiring discussion.
 
 ## Francais
 
-### Comment J'evaluerais Cette Vitrine
+### Comment J'evaluerais Ce Projet
 
-Si vous lisez cette vitrine comme acheteur, partenaire, lead technique ou recruteur, je ne vous demanderais pas de croire le projet sur une formule. Je vous demanderais de choisir un workflow concret et de le suivre depuis la demande initiale jusqu'a la decision finale.
+Si je devais evaluer ce projet de l'exterieur, je ne commencerais pas par une grande liste de fonctions. Je choisirais un run et je regarderais si le resultat reste comprehensible dix minutes plus tard, par quelqu'un qui ne l'a pas lance.
 
-La bonne question est simple: est-ce qu'on voit ce qui a ete demande, ce qui etait autorise, ce qui s'est passe, comment cela a ete controle et ce qu'une personne a decide a la fin ?
+C'est ce test qui m'interesse.
 
-Commencez par l'[ecosystem map](ecosystem-map.md) pour voir l'ensemble. Lisez ensuite les [flux utilisateur](user-flows.md) et le [proof loop orchestrateur](scenarios/orchestrator-proof-loop.md). Ces trois pages montrent mieux le travail qu'une liste de fonctions.
+Est-ce qu'un acheteur, lead dev, partenaire ou recruteur peut voir la demande initiale, l'outil utilise, l'artefact produit, les controles faits et la decision laissee a une personne ? Si oui, le projet fait quelque chose d'utile. Sinon, c'est seulement une demo IA avec un bon discours autour.
 
-### Ce Qu'il Faut Regarder
+Commencer par l'[ecosystem map](ecosystem-map.md), puis lire les [flux utilisateur](user-flows.md) et le [proof loop orchestrateur](scenarios/orchestrator-proof-loop.md). Ces pages montrent mieux le projet qu'une page de promesses.
 
-- La tache est ecrite clairement avant que le systeme agisse.
-- Les outils, donnees et actions autorises sont poses au depart.
-- Le plan est assez lisible pour etre conteste avant execution.
-- Le resultat est controle, pas seulement produit.
-- Le niveau de preuve est rattache a chaque affirmation avec l'[evidence ledger](evidence-ledger.md) et le [proof pack](proof-pack.md).
-- Les echecs, revisions et blocages restent visibles, car ils montrent comment le systeme se comporte quand le cas n'est pas parfait.
-- La sortie finale laisse un vrai choix humain: accepter, reviser, refuser, archiver, escalader ou continuer.
-- La [QA matrix](qa-matrix.md) permet de comparer le resultat aux criteres annonces, plutot que de juger seulement au ressenti.
+### Ce Que Je Testerais En Premier
 
-### Un Bon Premier Test
+Je testerais un workflow etroit, par exemple:
 
-Je commencerais par le proof loop orchestrateur, parce qu'il teste la couche de controle elle-meme avant de juger un chemin plus specialise Unity ou ComfyUI.
+1. preparer un asset genere pour une revue Unity;
+2. ecrire le cadrage avant l'appel outil;
+3. produire ou verifier l'artefact;
+4. ajouter une note de preuve courte;
+5. montrer ce qui demande une revue humaine;
+6. decider si le resultat doit etre accepte, revise ou arrete.
 
-1. Choisir une tache bornee.
-2. Se mettre d'accord sur ce que le run peut utiliser et modifier.
-3. Executer ou simuler le workflow.
-4. Produire une proof card courte.
-5. Scorer le resultat avec la [QA matrix](qa-matrix.md).
-6. Decider la suite: arret, revision, audit technique, pilote payant, partenariat ou discussion mission.
+Cela donne a tout le monde quelque chose de reel a inspecter. La discussion porte sur la qualite du run, pas sur le fait que l'IA soit impressionnante en general.
 
-Cela evite la demo vague. On obtient un objet concret a inspecter.
+### Signaux Forts
 
-### Les Questions Que Je Poserais
+- Le run s'explique sans longue demonstration orale.
+- La carte de resultat est courte a lire et assez precise pour etre contestee.
+- L'[evidence ledger](evidence-ledger.md) et le [proof pack](proof-pack.md) soutiennent les affirmations importantes.
+- La [QA matrix](qa-matrix.md) rend l'evaluation moins subjective.
+- Une personne non technique comprend la decision, meme si un developpeur doit inspecter les details.
+- Le projet dit clairement quand le run demande encore un regard humain.
+- La suite est evidente: arreter, reviser, piloter, integrer ou discuter une mission.
 
-1. Quelle tache exacte le systeme a-t-il essaye de traiter ?
-2. Qu'est-ce que l'utilisateur a valide avant que le run avance ?
-3. Qu'est-ce qui a change a la fin du run ?
-4. Quels controles ont vraiment ete faits ?
-5. Quel niveau de preuve existe maintenant, et que faudrait-il pour soutenir une affirmation plus forte ?
-6. Ou le workflow a-t-il hesite, echoue ou demande une decision humaine ?
-7. Quel resume court peut etre partage apres l'evaluation ?
-8. Qu'est-ce qui rendrait cela pret pour un pilote, un achat, un partenariat ou une discussion de recrutement ?
+### Questions A Poser
 
-### Parcours De Lecture
+1. Quel run concret doit-on evaluer en premier ?
+2. Quel resultat ferait davantage confiance au workflow ?
+3. Quelle partie doit rester lisible pour un interlocuteur non technique ?
+4. Quels controles suffisent pour un petit pilote ?
+5. Ou placer la validation humaine ?
+6. Quel artefact peut etre partage apres l'evaluation ?
 
-Utilisez l'[ecosystem map](ecosystem-map.md) pour comprendre les pieces, les [flux utilisateur](user-flows.md) pour voir qui fait quoi, et le [proof loop orchestrateur](scenarios/orchestrator-proof-loop.md) comme premier scenario concret.
+### Meilleure Suite
 
-Pour les preuves, lisez ensemble l'[evidence ledger](evidence-ledger.md), le [proof pack](proof-pack.md) et la [QA matrix](qa-matrix.md). Ces pages repondent a la meme question pratique sous trois angles: ce qui est affirme, ce qui le soutient, et comment le resultat doit etre juge.
+La meilleure suite n'est pas une grande demo. C'est un petit proof pack autour d'un workflow: cadrage, run, carte de resultat, controles, decision et prochaine action. Cela suffit pour decider si le projet merite un audit technique, un pilote payant, un partenariat ou une discussion recrutement.

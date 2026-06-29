@@ -4,40 +4,66 @@
 
 ## English
 
-### What A Good Partnership Looks Like
+### The Kind Of Partnership That Makes Sense
 
-The best partnership starts with a real workflow, not a generic AI brief. A useful conversation might be: "we have a tool chain that is hard to supervise", "we want agents to prepare Unity assets but need review points", "we need an MCP/App SDK interface that people can actually read", or "we want proof that an automated run did what it claims".
+I am not looking for a vague "let's add AI" discussion. The useful partnership is built around a workflow that already hurts a little.
 
-That is where this project fits. I am interested in the practical layer: how a request becomes a run, how the run is inspected, how mistakes are caught, how a human decides, and how the result can be summarized without forcing everyone to read the raw history.
+Maybe a team has a Unity pipeline where generated assets arrive without enough context. Maybe an internal AI tool can do tasks, but nobody trusts the result unless the original operator explains everything. Maybe a product team wants an MCP/App SDK surface that looks less like tooling plumbing and more like a decision screen.
 
-### What Partners Can Bring
+Those are good starting points because they are concrete.
 
-A product partner can bring real users, constraints, examples, and feedback on what would make the workflow useful. A technical partner can help review MCP/App SDK surfaces, tool permissions, data boundaries, or integration details. A Unity or creative partner can bring asset requirements, scene constraints, ComfyUI expectations, and a clear idea of what "usable" means in production.
+### What We Could Build Together
 
-Buyers, funders, recruiters, and mission leads can start smaller: one workflow to review, one pilot to scope, one technical discussion, one private demo, one hiring conversation. I prefer that to a broad presentation with no decision attached.
+One useful pilot could be a small review loop:
 
-### A Simple First Step
+1. define a repeatable task;
+2. decide what the tool may do;
+3. run or simulate the workflow;
+4. produce a result card with evidence, open questions, and next action;
+5. review it with someone who did not run the tool;
+6. improve the interface or process from that feedback.
 
-Pick one scenario. Define what can be used, where review is needed, and what a good result would look like. Run or simulate the workflow. Then write a short result card: what happened, what passed, what failed, what needs a human decision, and what the next step should be.
+For Unity and creative work, that could mean asset batches, manifests, import checks, ComfyUI outputs, or mobile-friendly review states. For developer tooling, it could mean task routing, run summaries, proof cards, or human approval steps.
 
-That format keeps the collaboration grounded. It avoids vague AI enthusiasm and gives both sides something concrete to judge.
+### What I Bring
+
+I bring the product and implementation angle: turning tool runs into something a person can read, challenge, and use. I care about the small details that make a workflow feel serious: naming, state, proof, handoff, errors, summaries, and what the user is supposed to do next.
+
+### What I Need From A Partner
+
+A good partner brings a real case, not a perfect brief. A few sample tasks, one annoying workflow, one asset path, one internal review problem, or one demo that currently needs too much explanation is enough to start.
+
+The first goal is modest: produce one result that is clear enough to judge. If that works, the next discussion can be about a paid pilot, mission, integration, funding path, or longer collaboration.
 
 ## Francais
 
-### A Quoi Ressemble Un Bon Partenariat
+### Le Type De Partenariat Qui A Du Sens
 
-Le meilleur partenariat part d'un vrai workflow, pas d'un brief IA generique. Une discussion utile peut ressembler a: "notre chaine d'outils est difficile a superviser", "on veut que des agents preparent des assets Unity mais avec des points de revue", "on a besoin d'une interface MCP/App SDK lisible", ou "on veut prouver qu'un run automatise a vraiment fait ce qu'il annonce".
+Je ne cherche pas une discussion vague du type "ajoutons de l'IA". Le partenariat utile part d'un workflow qui fait deja un peu mal.
 
-C'est la que ce projet a du sens. Ce qui m'interesse, c'est la couche pratique: comment une demande devient un run, comment le run est inspecte, comment les erreurs sont reperees, comment un humain decide, et comment le resultat peut etre resume sans obliger tout le monde a lire l'historique brut.
+Une equipe peut avoir un pipeline Unity ou les assets generes arrivent sans assez de contexte. Un outil IA interne peut faire des taches, mais personne ne fait confiance au resultat si l'operateur initial ne reexplique pas tout. Une equipe produit peut vouloir une surface MCP/App SDK qui ressemble moins a de la plomberie technique et plus a un ecran de decision.
 
-### Ce Qu'un Partenaire Peut Apporter
+Ce sont de bons points de depart parce qu'ils sont concrets.
 
-Un partenaire produit peut apporter de vrais utilisateurs, des contraintes, des exemples et du feedback sur ce qui rendrait le workflow utile. Un partenaire technique peut aider a revoir les surfaces MCP/App SDK, les permissions outils, les frontieres de donnees ou les details d'integration. Un partenaire Unity ou creatif peut apporter des contraintes asset, scene, ComfyUI et une definition claire de ce que "utilisable" veut dire en production.
+### Ce Que L'on Pourrait Construire Ensemble
 
-Acheteurs, financeurs, recruteurs et responsables mission peuvent demarrer plus simplement: un workflow a revoir, un pilote a cadrer, une discussion technique, une demo privee, une conversation recrutement. Je prefere cela a une presentation large sans decision derriere.
+Un pilote utile peut etre une petite boucle de revue:
 
-### Premiere Etape Simple
+1. definir une tache repetable;
+2. decider ce que l'outil a le droit de faire;
+3. executer ou simuler le workflow;
+4. produire une carte de resultat avec preuves, questions ouvertes et prochaine action;
+5. la faire relire par quelqu'un qui n'a pas lance l'outil;
+6. ameliorer l'interface ou le processus a partir de ce retour.
 
-Choisir un scenario. Definir ce qui peut etre utilise, ou la revue est necessaire et a quoi ressemble un bon resultat. Executer ou simuler le workflow. Puis rediger une carte de resultat courte: ce qui s'est passe, ce qui passe, ce qui echoue, quelle decision humaine est necessaire, et quelle suite proposer.
+Pour Unity et la production creative, cela peut concerner des lots d'assets, manifests, controles d'import, sorties ComfyUI ou etats de revue compatibles mobile. Pour les outils developpeur, cela peut concerner routage de taches, resumes de run, cartes de preuve ou validations humaines.
 
-Ce format garde la collaboration concrete. Il evite l'enthousiasme IA vague et donne aux deux cotes quelque chose de clair a juger.
+### Ce Que J'Apporte
+
+J'apporte l'angle produit et implementation: transformer des runs outils en quelque chose qu'une personne peut lire, contester et utiliser. Je fais attention aux details qui rendent un workflow serieux: nommage, etats, preuve, handoff, erreurs, resumes et action attendue de l'utilisateur.
+
+### Ce Dont J'Ai Besoin Cote Partenaire
+
+Un bon partenaire apporte un cas reel, pas un brief parfait. Quelques taches exemples, un workflow penible, un chemin d'asset, un probleme de revue interne ou une demo qui demande trop d'explications suffisent pour commencer.
+
+Le premier objectif est modeste: produire un resultat assez clair pour etre juge. Si cela fonctionne, la suite peut devenir un pilote payant, une mission, une integration, une piste de financement ou une collaboration plus longue.
