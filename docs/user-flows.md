@@ -4,112 +4,78 @@
 
 ## English
 
-### 1. Agentic Operator
+### Flow 1 - Run A Readable AI Task
 
-This is the flow for someone using the orchestrator to get work done without losing control.
+The user gives a goal. Codex Model Orchestrator writes the scope, names constraints, uses the right tool path, records what changed, checks the output, and leaves a small result a person can act on.
 
-1. Define the goal, expected output, and decision owner.
-2. State allowed data, tools, write actions, cost boundaries, and private material.
-3. Let the orchestrator produce a plan and choose tools or sub-agents.
-4. Review the plan before any sensitive action.
-5. Follow status, evidence level, QA gate, failure reason, and cost signal.
-6. Accept, revise, reject, or escalate the output.
-7. Publish only the redacted proof card or summary.
+Useful observations: is the goal clear, are tool actions understandable, is the result inspectable, and does the final note make the next decision obvious?
 
-Good output: a result that can be read by a user, traced to a bounded task, and judged without exposing prompts or private traces.
+### Flow 2 - Prepare A Unity Asset Handoff
 
-### 2. Buyer Or Technical Reviewer
+The user describes a Unity target: asset role, format, scale expectations, import constraints, and review criteria. CodexToUnity frames the job and manifest. LocalAssetFactory checks candidate output against import, bounds, pivot, naming, materials, sockets, and scene usefulness.
 
-This is the flow for someone deciding whether the system is credible enough for a pilot, purchase, audit, mission, or hiring conversation.
+Useful output: one candidate status, one import/readiness note, one review decision.
 
-1. Read the [one-pager](one-pager.md) and [ecosystem map](ecosystem-map.md).
-2. Pick one scenario to evaluate first.
-3. Check the [evidence ledger](evidence-ledger.md), [proof pack](proof-pack.md), and [QA matrix](qa-matrix.md).
-4. Ask which proof level is available today and which level is needed for the decision.
-5. Define allowed private-demo data and redaction rules.
-6. Score the outcome on user readability, security boundary, cost/quality signal, and human decision.
-7. Decide: no fit, revision, technical audit, paid pilot, partnership, or hiring/mission discussion.
+### Flow 3 - Track A ComfyUI Product Job
 
-Good output: a decision backed by evidence level, risk boundary, and a concrete next step.
+Mob'ia / ccomf-unity attaches a request to a profile, creates a job, tracks artifact state, exposes status to a client, and records the decision. The point is to make generation behave like a product workflow, not a folder of disconnected outputs.
 
-### 3. Unity / Asset Creator
+Useful output: profile, job state, artifact state, client surface, and next action.
 
-This is the flow for Unity, ComfyUI, or local asset work.
+### Flow 4 - Review A Local Asset Candidate
 
-1. Describe the target asset, scene, constraints, format, and acceptance criteria.
-2. Choose the path: CodexToUnity framing, Mob'ia / ccomf-unity product job, or LocalAssetFactory local loop.
-3. Create or simulate the job and expected manifest.
-4. Validate naming, scale, pivot, materials, socket intent, and import checklist.
-5. Review in Unity or a client surface.
-6. Accept, request revision, archive, or create a follow-up job.
-7. Record a public-safe result summary without generated private assets or workflows.
+LocalAssetFactory treats generated output as a candidate until it has a manifest, normalized expectations, import checks, scene review, and a written decision. Generation success and Unity usefulness are checked separately.
 
-Good output: the asset loop is reviewable even when the actual workflow, GLB, local config, and private outputs remain unpublished.
+Useful output: accept, revise, reject, archive, or continue review.
 
-### 4. Partner / Funder / Recruiter
+### Flow 5 - Evaluate For Collaboration Or Work
 
-This is the flow for collaboration.
+The reader chooses one angle: MCP/App SDK, run summaries, Unity handoff, ComfyUI product jobs, local automation, QA, documentation, funding, mission, or role. They read [overview](overview.md), [project evaluation](project-evaluation.md), and the relevant project page, then choose one concrete next task.
 
-1. Choose the business question: product pilot, funding, technical partnership, mission, or role.
-2. Select the relevant surface: orchestrator, Apps SDK/MCP, Unity bridge, ComfyUI product layer, asset factory, or QA.
-3. Define what can be shown publicly and what requires a private session.
-4. Agree on the proof level, timeline, acceptance criteria, and artifacts.
-5. Review the result as a proof pack rather than a loose demo.
+### Feedback Format
 
-Good output: a scoped collaboration proposal with evidence, responsibilities, and a next decision.
+- Surface: Orchestrator, MCP/App SDK, CodexToUnity, Mob'ia / ccomf-unity, LocalAssetFactory, documentation.
+- Scenario: what the user tried.
+- Expected result: what should have happened.
+- Observed result: what happened.
+- Evidence: what was checked.
+- Decision: accept, revise, reject, archive, escalate, or keep reviewing.
 
 ## Francais
 
-### 1. Operateur Agentique
+### Flux 1 - Lancer Une Tache IA Lisible
 
-Ce flux concerne une personne qui utilise l'orchestrateur pour obtenir un resultat sans perdre le controle.
+L'utilisateur donne un objectif. Codex Model Orchestrator ecrit le perimetre, nomme les contraintes, utilise le bon chemin outil, note ce qui a change, controle la sortie et laisse un petit resultat actionnable par une personne.
 
-1. Definir objectif, sortie attendue et responsable de decision.
-2. Indiquer donnees, outils, actions write, limites de cout et materiel prive autorises.
-3. Laisser l'orchestrateur produire un plan et choisir outils ou sous-agents.
-4. Revoir le plan avant toute action sensible.
-5. Suivre statut, niveau de preuve, gate QA, raison d'echec et signal de cout.
-6. Accepter, reviser, refuser ou escalader la sortie.
-7. Publier seulement la proof card ou le resume redige.
+Observations utiles: l'objectif est-il clair, les actions outil sont-elles comprehensibles, le resultat est-il inspectable, et la note finale rend-elle la prochaine decision evidente ?
 
-Bonne sortie: un resultat lisible par un utilisateur, rattache a une tache bornee et jugeable sans exposer prompts ou traces privees.
+### Flux 2 - Preparer Un Handoff Asset Unity
 
-### 2. Acheteur Ou Reviewer Technique
+L'utilisateur decrit une cible Unity: role asset, format, attentes d'echelle, contraintes d'import et criteres de revue. CodexToUnity cadre le job et le manifest. LocalAssetFactory controle le candidat contre import, bounds, pivot, nommage, materiaux, sockets et utilite scene.
 
-Ce flux concerne une personne qui decide si le systeme est assez credible pour un pilote, achat, audit, mission ou recrutement.
+Sortie utile: un statut candidat, une note import/readiness, une decision de revue.
 
-1. Lire le [one-pager](one-pager.md) et l'[ecosystem map](ecosystem-map.md).
-2. Choisir un scenario a evaluer en premier.
-3. Lire l'[evidence ledger](evidence-ledger.md), le [proof pack](proof-pack.md) et la [QA matrix](qa-matrix.md).
-4. Demander quel niveau de preuve existe aujourd'hui et lequel est requis pour decider.
-5. Definir donnees de demo privee et regles de redaction.
-6. Scorer lisibilite utilisateur, frontiere securite, signal cout/qualite et decision humaine.
-7. Decider: pas d'adequation, revision, audit technique, pilote payant, partenariat ou discussion mission/recrutement.
+### Flux 3 - Suivre Un Job Produit ComfyUI
 
-Bonne sortie: une decision soutenue par un niveau de preuve, une frontiere de risque et une prochaine etape concrete.
+Mob'ia / ccomf-unity attache une demande a un profil, cree un job, suit l'etat artefact, expose le statut a un client et enregistre la decision. Le but est de faire fonctionner la generation comme workflow produit, pas comme dossier de sorties deconnectees.
 
-### 3. Createur Unity / Asset
+Sortie utile: profil, etat job, etat artefact, surface client et prochaine action.
 
-Ce flux concerne Unity, ComfyUI ou la production locale d'assets.
+### Flux 4 - Reviewer Un Candidat Asset Local
 
-1. Decrire asset cible, scene, contraintes, format et criteres d'acceptation.
-2. Choisir le chemin: cadrage CodexToUnity, job produit Mob'ia / ccomf-unity ou boucle locale LocalAssetFactory.
-3. Creer ou simuler le job et le manifest attendu.
-4. Valider nommage, echelle, pivot, materiaux, intention socket et checklist import.
-5. Revoir dans Unity ou une surface client.
-6. Accepter, demander revision, archiver ou creer un job de suite.
-7. Enregistrer un resume public-safe sans asset prive genere ni workflow.
+LocalAssetFactory traite une sortie generee comme candidate tant qu'elle n'a pas manifest, attentes de normalisation, controles import, revue scene et decision ecrite. Le succes generation et l'utilite Unity sont controles separement.
 
-Bonne sortie: la boucle asset est reviewable meme si workflow, GLB, config locale et sorties privees ne sont pas publies.
+Sortie utile: accepter, reviser, refuser, archiver ou continuer la revue.
 
-### 4. Partenaire / Financeur / Recruteur
+### Flux 5 - Evaluer Pour Collaboration Ou Travail
 
-Ce flux concerne la collaboration.
+Le lecteur choisit un angle: MCP/App SDK, resumes de run, handoff Unity, jobs produit ComfyUI, automatisation locale, QA, documentation, financement, mission ou poste. Il lit [overview](overview.md), [project evaluation](project-evaluation.md) et la page projet pertinente, puis choisit une prochaine tache concrete.
 
-1. Choisir la question business: pilote produit, financement, partenariat technique, mission ou poste.
-2. Selectionner la surface: orchestrateur, Apps SDK/MCP, pont Unity, couche produit ComfyUI, asset factory ou QA.
-3. Definir ce qui peut etre public et ce qui demande une session privee.
-4. Accorder niveau de preuve, calendrier, criteres d'acceptation et artefacts.
-5. Evaluer le resultat comme proof pack, pas comme demo isolee.
+### Format De Retour
 
-Bonne sortie: une proposition de collaboration cadree avec preuves, responsabilites et prochaine decision.
+- Surface: Orchestrator, MCP/App SDK, CodexToUnity, Mob'ia / ccomf-unity, LocalAssetFactory, documentation.
+- Scenario: ce que l'utilisateur a essaye.
+- Resultat attendu: ce qui devait arriver.
+- Resultat observe: ce qui s'est produit.
+- Preuve: ce qui a ete controle.
+- Decision: accepter, reviser, refuser, archiver, escalader ou continuer la revue.

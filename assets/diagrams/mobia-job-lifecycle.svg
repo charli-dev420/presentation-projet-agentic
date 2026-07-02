@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1180" height="560" viewBox="0 0 1180 560" role="img" aria-labelledby="title desc">
   <title id="title">Mob'ia Job Lifecycle</title>
-  <desc id="desc">Public-safe Mob'ia / ccomf-unity job lifecycle.</desc>
+  <desc id="desc">Mob'ia / ccomf-unity job lifecycle.</desc>
   <rect width="1180" height="560" fill="#ffffff"/>
   <text x="64" y="72" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#172033">Mob'ia / ccomf-unity job lifecycle</text>
   <text x="64" y="104" font-family="Arial, sans-serif" font-size="16" fill="#526070">Product layer for ComfyUI jobs, artifacts, and multi-client review.</text>

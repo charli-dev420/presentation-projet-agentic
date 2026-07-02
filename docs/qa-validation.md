@@ -2,50 +2,48 @@
 
 [EN](#english) | [FR](#francais)
 
-![Agentic QA matrix](../assets/qa-matrix.svg)
+![AI workflow QA matrix](../assets/qa-matrix.svg)
 
 ## English
 
-### What QA Means Here
+### QA Model
 
-Agentic QA is a decision system. It checks whether a workflow is scoped, visible, bounded, verifiable, and reviewed by a human.
+QA is written here as product validation. It checks whether a workflow is scoped, visible, testable, and ended with a decision a person can understand.
 
-| QA layer | Validation question | Good evidence |
-| --- | --- | --- |
-| Scope | Was the goal, allowed data, and expected output written first? | Task card or scenario statement. |
-| Tool boundary | Were read-only and mutating actions separated? | MCP/App SDK description and confirmation point. |
-| Execution | Can the tool/sub-agent path be summarized? | Redacted run summary or proof card. |
-| Verification | Was the output checked with surface-appropriate criteria? | Test result, dry-run, import checklist, human score, or review note. |
-| Evidence | Is the claim tied to L0-L5? | Evidence ledger row and proof card. |
-| Decision | Did a human accept, revise, reject, archive, or escalate? | Decision field in the proof card. |
+### Core Checks
 
-### Unity / Asset-Specific Validation
+- Scope: goal, constraints, allowed actions, and expected output are written.
+- Tool path: read-only and write actions are distinguishable.
+- Artifact: the output exists as a file, state, manifest, card, diagram, or written result.
+- Surface-specific review: Unity import, ComfyUI job state, MCP/App SDK view, or local asset checks are applied where relevant.
+- Decision: the result has a clear accept/revise/reject/archive/continue state.
 
-Unity and asset workflows must separate generation from usefulness. A generated file is only a candidate until it passes review for scale, pivot, bounds, materials, naming, socket intent, import behavior, and scene role.
+### Unity And Asset Checks
+
+Unity and asset workflows must separate generation from usefulness. A generated candidate should be checked for manifest, scale, pivot, bounds, naming, materials, sockets, import behavior, and scene role.
 
 ### Public QA Output
 
-The public output should be a short QA summary, not a raw log: task class, scope, checks performed, result, evidence level, human decision, and redaction note.
+The useful output is short: scenario, artifact, checks, result, uncertainty, decision, and next action.
 
 ## Francais
 
-### Ce Que Signifie QA Ici
+### Modele QA
 
-La QA agentique est un systeme de decision. Elle verifie qu'un workflow est cadre, visible, borne, verifiable et revu par un humain.
+La QA est ecrite ici comme validation produit. Elle verifie qu'un workflow est cadre, visible, testable et termine par une decision comprehensible par une personne.
 
-| Couche QA | Question de validation | Bonne preuve |
-| --- | --- | --- |
-| Perimetre | Objectif, donnees autorisees et sortie attendue etaient-ils ecrits d'abord? | Carte tache ou statement scenario. |
-| Frontiere outil | Les actions read-only et mutating etaient-elles separees? | Description MCP/App SDK et point de confirmation. |
-| Execution | Le chemin outil/sous-agent peut-il etre resume? | Run summary redige ou proof card. |
-| Verification | La sortie a-t-elle ete controlee avec des criteres adaptes a la surface? | Test, dry-run, checklist import, score humain ou note revue. |
-| Evidence | Le claim est-il lie a L0-L5? | Ligne evidence ledger et proof card. |
-| Decision | Un humain a-t-il accepte, revise, refuse, archive ou escalade? | Champ decision dans la proof card. |
+### Controles Coeur
 
-### Validation Specifique Unity / Asset
+- Perimetre: objectif, contraintes, actions autorisees et sortie attendue sont ecrits.
+- Chemin outil: actions read-only et write sont distinguables.
+- Artefact: la sortie existe comme fichier, etat, manifest, carte, diagramme ou resultat ecrit.
+- Revue adaptee a la surface: import Unity, etat job ComfyUI, vue MCP/App SDK ou controles asset locaux sont appliques selon le cas.
+- Decision: le resultat a un etat clair accepter/reviser/refuser/archiver/continuer.
 
-Les workflows Unity et assets doivent separer generation et utilite. Un fichier genere est seulement un candidat tant qu'il n'est pas revu pour echelle, pivot, bounds, materiaux, nommage, intention socket, comportement import et role scene.
+### Controles Unity Et Asset
+
+Les workflows Unity et assets doivent separer generation et utilite. Un candidat genere doit etre controle pour manifest, echelle, pivot, bounds, nommage, materiaux, sockets, comportement import et role scene.
 
 ### Sortie QA Publique
 
-La sortie publique doit etre un resume QA court, pas un log brut: classe de tache, perimetre, controles effectues, resultat, niveau de preuve, decision humaine et note de redaction.
+La sortie utile est courte: scenario, artefact, controles, resultat, incertitude, decision et prochaine action.

@@ -6,31 +6,27 @@
 
 ### What This Page Is For
 
-This page lists the help that would move the agentic/tooling projects forward. It replaces broad partnership language with concrete needs.
+This page lists the help that would move the AI workflow projects forward. It keeps the door open to testing, technical review, collaboration, funding, missions, hiring, documentation, and product work.
 
-The projects covered here are **Codex Model Orchestrator**, **CodexToUnity**, **Mob'ia / ccomf-unity**, and **LocalAssetFactory**.
+### Codex Model Orchestrator
 
-### Product Feedback
+- MCP/App SDK review.
+- Run-summary UX and proof-card design.
+- QA gate design and result-card wording.
+- Human decision surfaces.
+- Security and privacy review for tool-assisted work.
 
-Codex Model Orchestrator needs feedback on the product surface around a run: task title, scope, tool state, proof card, error state, review decision, and final summary.
+### Unity / ComfyUI / Asset Workflows
 
-The useful question is not whether an AI tool can act. The useful question is whether the result is understandable after the run is over.
+- CodexToUnity handoff feedback.
+- Mob'ia / ccomf-unity job lifecycle review.
+- LocalAssetFactory import and scene review criteria.
+- ComfyUI profile/job/artifact feedback.
+- Technical art and Unity pipeline review.
 
-### Tooling And Integration Review
+### Funding, Missions, Roles
 
-CodexToUnity and LocalAssetFactory need review around handoff language: manifests, file names, import checks, local validation, Unity expectations, and what a user needs to see before accepting an artifact.
-
-Feedback is useful when it points to a specific state, field, action, or missing check.
-
-### Mob'ia / ccomf-unity Feedback
-
-Mob'ia / ccomf-unity needs product feedback on profiles, generation jobs, artifact states, client surfaces, and ComfyUI-style workflow visibility.
-
-The goal is to make generation jobs easier to inspect, not to hide them behind a finished-looking screen.
-
-### Funding, Missions, Jobs
-
-Relevant discussions are concrete: developer tools, AI workflow products, MCP/App SDK surfaces, Unity tooling, ComfyUI product layers, local automation, validation workflows, and human review systems.
+Relevant directions include developer tools, AI workflow products, MCP/App SDK surfaces, Unity tooling, ComfyUI product layers, QA, documentation, local automation, and human-in-the-loop creative pipelines.
 
 Public contact route: [GitHub - Unicorn Who Dev](https://github.com/charli-dev420).
 
@@ -38,30 +34,26 @@ Public contact route: [GitHub - Unicorn Who Dev](https://github.com/charli-dev42
 
 ### A Quoi Sert Cette Page
 
-Cette page liste les aides qui feraient avancer les projets agentic/tooling. Elle remplace le langage large de partenariat par des besoins concrets.
+Cette page liste les aides qui feraient avancer les projets workflow IA. Elle garde les portes ouvertes: test, revue technique, collaboration, financement, missions, recrutement, documentation et travail produit.
 
-Les projets couverts ici sont **Codex Model Orchestrator**, **CodexToUnity**, **Mob'ia / ccomf-unity** et **LocalAssetFactory**.
+### Codex Model Orchestrator
 
-### Feedback Produit
+- Revue MCP/App SDK.
+- UX de resume de run et design proof-card.
+- Design gate QA et wording carte resultat.
+- Surfaces de decision humaine.
+- Revue securite et privacy pour travail assiste par outils.
 
-Codex Model Orchestrator a besoin de retours sur la surface produit autour d'un run: titre de tache, cadrage, etat outil, carte de preuve, erreur, decision de revue et resume final.
+### Workflows Unity / ComfyUI / Assets
 
-La question utile n'est pas de savoir si un outil IA peut agir. La question utile est de savoir si le resultat reste comprehensible apres le run.
-
-### Revue Tooling Et Integration
-
-CodexToUnity et LocalAssetFactory ont besoin de retours sur le langage de handoff: manifests, noms de fichiers, controles d'import, validation locale, attentes Unity et ce qu'un utilisateur doit voir avant d'accepter un artefact.
-
-Le feedback est utile quand il pointe un etat, un champ, une action ou un controle manquant.
-
-### Feedback Mob'ia / ccomf-unity
-
-Mob'ia / ccomf-unity a besoin de retours produit sur profils, jobs de generation, etats d'artefacts, surfaces clientes et visibilite des workflows type ComfyUI.
-
-L'objectif est de rendre les jobs de generation plus faciles a inspecter, pas de les cacher derriere un ecran qui a seulement l'air fini.
+- Feedback handoff CodexToUnity.
+- Revue cycle de vie job Mob'ia / ccomf-unity.
+- Criteres import et revue scene LocalAssetFactory.
+- Feedback profils/jobs/artefacts ComfyUI.
+- Revue technical art et pipeline Unity.
 
 ### Financement, Missions, Postes
 
-Les discussions pertinentes sont concretes: outils developpeur, produits workflow IA, surfaces MCP/App SDK, tooling Unity, couches produit ComfyUI, automatisation locale, workflows de validation et systemes avec revue humaine.
+Les directions pertinentes incluent outils developpeur, produits workflow IA, surfaces MCP/App SDK, tooling Unity, couches produit ComfyUI, QA, documentation, automatisation locale et pipelines creatifs human-in-the-loop.
 
-Contact public recommande: [GitHub - Unicorn Who Dev](https://github.com/charli-dev420).
+Contact public: [GitHub - Unicorn Who Dev](https://github.com/charli-dev420).

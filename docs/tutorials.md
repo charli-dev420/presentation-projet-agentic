@@ -4,150 +4,48 @@
 
 ## English
 
-### Tutorial 1 - Read MCP As A Tool Contract
+### Tutorial 1 - Understand The Repo In 15 Minutes
 
-MCP is useful because it makes the agent/tool boundary explicit. A good tool contract answers:
+Read [overview](overview.md), then [Codex Model Orchestrator](projects/codex-model-orchestrator.md). The result should be simple: the main project makes AI-assisted runs readable and decidable.
 
-- what the tool can read;
-- what the tool can change;
-- which actions are read-only and which are mutating;
-- which inputs must be validated;
-- which actions require human confirmation;
-- which evidence will be produced after the tool runs.
+Then read [CodexToUnity](projects/codextounity.md), [Mob'ia / ccomf-unity](projects/mobia-ccomf-unity.md), and [LocalAssetFactory](projects/local-asset-factory.md) to see how that idea meets real Unity, ComfyUI, and asset workflows.
 
-How to evaluate it: if a tool can change files, call services, trigger generation, or alter a project, the public documentation should show how that action is bounded and confirmed.
+### Tutorial 2 - Read A Run Result
 
-### Tutorial 2 - Read An Apps SDK Surface
+Look for six things: request, constraints, tool path, artifact, checks, and decision. If one is missing, the run is harder to reuse or trust. Use [proof pack](proof-pack.md) and [QA validation](qa-validation.md) to understand how a result should be written.
 
-An Apps SDK surface should make agentic state visible to a human. The reader should not need raw logs to know what happened.
+### Tutorial 3 - Review A Unity Asset Workflow
 
-Look for:
+Start with [CodexToUnity](projects/codextounity.md), then read [Unity asset loop](scenarios/unity-asset-loop.md). Separate generation from Unity usefulness: a generated file is only a candidate until import, scale, bounds, naming, materials, sockets, and scene role are reviewed.
 
-- task status;
-- selected scenario;
-- allowed actions;
-- tool or sub-agent results;
-- evidence level;
-- QA gate result;
-- cost or runtime signal when relevant;
-- accept/revise/reject decision.
+### Tutorial 4 - Review A ComfyUI Product Job
 
-Good interface language turns "the agent did something" into "this task reached this state, with this evidence, and now a person must decide".
+Read [Mob'ia / ccomf-unity](projects/mobia-ccomf-unity.md), then [ComfyUI product layer](scenarios/comfyui-product-layer.md). Focus on product state: profile, job, artifact, client, review state, and next action.
 
-### Tutorial 3 - Read Agentic Evidence
+### Tutorial 5 - Prepare A Collaboration Note
 
-A useful proof card includes:
-
-| Field | Why it matters |
-| --- | --- |
-| Goal | Prevents vague claims. |
-| Scope | Shows what was allowed and excluded. |
-| Tool/sub-agent path | Explains how work moved through the system. |
-| Result | States what changed or what was produced. |
-| QA gate | Shows whether the output met the expected checks. |
-| Human decision | Makes acceptance, revision, or rejection explicit. |
-| Evidence level | Prevents overclaiming. |
-| Redaction note | Explains what stayed private and why. |
-
-Raw prompts, traces, local paths, endpoints, and private screenshots are not public evidence. They may support a private audit, but public material should be rewritten and bounded.
-
-### Tutorial 4 - Evaluate A Unity Asset Job
-
-Use this checklist before treating an asset workflow as useful:
-
-1. The target asset and scene role are clear.
-2. The expected format and import path are named.
-3. The job has a manifest or equivalent structured summary.
-4. Scale, pivot, materials, bounds, sockets, and naming are checked.
-5. Unity review is recorded separately from generation success.
-6. The human decision is explicit.
-7. The public proof does not leak GLB/FBX/OBJ files, private workflows, local paths, or generated private assets.
-
-### Tutorial 5 - Prepare A Collaboration
-
-Before a collaboration, define:
-
-- the scenario to prove;
-- allowed data and tools;
-- proof level target;
-- confirmation rules;
-- public/private split;
-- expected proof artifact;
-- decision criteria for continuing.
-
-This prevents a private demo from becoming an uncontrolled support session and gives every stakeholder the same evaluation frame.
+Choose one angle: MCP/App SDK, run-summary UX, Unity handoff, ComfyUI jobs, local automation, QA, documentation, funding, mission, or role. Link the relevant page, describe the next task, and name the expected output.
 
 ## Francais
 
-### Tutoriel 1 - Lire MCP Comme Contrat Outil
+### Tutoriel 1 - Comprendre Le Repo En 15 Minutes
 
-MCP est utile parce qu'il rend explicite la frontiere agent/outil. Un bon contrat outil repond:
+Lire [overview](overview.md), puis [Codex Model Orchestrator](projects/codex-model-orchestrator.md). Le resultat doit etre simple: le projet principal rend les runs assistes par IA lisibles et decidables.
 
-- ce que l'outil peut lire;
-- ce que l'outil peut modifier;
-- quelles actions sont read-only et lesquelles sont mutating;
-- quelles entrees doivent etre validees;
-- quelles actions demandent confirmation humaine;
-- quelle preuve est produite apres execution.
+Lire ensuite [CodexToUnity](projects/codextounity.md), [Mob'ia / ccomf-unity](projects/mobia-ccomf-unity.md) et [LocalAssetFactory](projects/local-asset-factory.md) pour voir comment cette idee rencontre de vrais workflows Unity, ComfyUI et assets.
 
-Comment evaluer: si un outil peut modifier des fichiers, appeler des services, declencher une generation ou alterer un projet, la documentation publique doit montrer comment cette action est bornee et confirmee.
+### Tutoriel 2 - Lire Un Resultat De Run
 
-### Tutoriel 2 - Lire Une Surface Apps SDK
+Chercher six elements: demande, contraintes, chemin outil, artefact, controles et decision. Si un element manque, le run devient plus difficile a reutiliser ou a faire confiance. Utiliser [proof pack](proof-pack.md) et [QA validation](qa-validation.md) pour comprendre comment un resultat doit etre ecrit.
 
-Une surface Apps SDK doit rendre l'etat agentique visible pour un humain. Le lecteur ne devrait pas avoir besoin de logs bruts pour comprendre.
+### Tutoriel 3 - Reviewer Un Workflow Asset Unity
 
-Chercher:
+Commencer par [CodexToUnity](projects/codextounity.md), puis lire [Unity asset loop](scenarios/unity-asset-loop.md). Separer generation et utilite Unity: un fichier genere reste candidat tant que import, echelle, bounds, nommage, materiaux, sockets et role scene ne sont pas revus.
 
-- statut de tache;
-- scenario choisi;
-- actions autorisees;
-- resultats outil ou sous-agent;
-- niveau de preuve;
-- resultat gate QA;
-- signal de cout ou runtime si pertinent;
-- decision accepter/reviser/refuser.
+### Tutoriel 4 - Reviewer Un Job Produit ComfyUI
 
-Un bon langage d'interface transforme "l'agent a fait quelque chose" en "cette tache est dans cet etat, avec cette preuve, et une personne doit decider".
+Lire [Mob'ia / ccomf-unity](projects/mobia-ccomf-unity.md), puis [ComfyUI product layer](scenarios/comfyui-product-layer.md). Se concentrer sur l'etat produit: profil, job, artefact, client, etat de revue et prochaine action.
 
-### Tutoriel 3 - Lire Une Preuve Agentique
+### Tutoriel 5 - Preparer Une Note De Collaboration
 
-Une proof card utile inclut:
-
-| Champ | Pourquoi c'est important |
-| --- | --- |
-| Objectif | Evite les claims vagues. |
-| Perimetre | Montre ce qui etait autorise et exclu. |
-| Chemin outil/sous-agent | Explique comment le travail a circule. |
-| Resultat | Dit ce qui a change ou ete produit. |
-| Gate QA | Montre si la sortie a passe les controles attendus. |
-| Decision humaine | Rend acceptation, revision ou rejet explicite. |
-| Niveau de preuve | Evite le surclaim. |
-| Note de redaction | Explique ce qui reste prive et pourquoi. |
-
-Prompts bruts, traces, chemins locaux, endpoints et captures privees ne sont pas des preuves publiques. Ils peuvent soutenir un audit prive, mais le public doit recevoir une version redigee et bornee.
-
-### Tutoriel 4 - Evaluer Un Job Asset Unity
-
-Utiliser cette checklist avant de juger un workflow asset utile:
-
-1. L'asset cible et son role scene sont clairs.
-2. Le format attendu et le chemin d'import sont nommes.
-3. Le job a un manifest ou resume structure equivalent.
-4. Echelle, pivot, materiaux, bounds, sockets et nommage sont verifies.
-5. La revue Unity est distincte du succes de generation.
-6. La decision humaine est explicite.
-7. La preuve publique ne fuit pas de GLB/FBX/OBJ, workflows prives, chemins locaux ou assets prives generes.
-
-### Tutoriel 5 - Preparer Une Collaboration
-
-Avant une collaboration, definir:
-
-- le scenario a prouver;
-- donnees et outils autorises;
-- niveau de preuve cible;
-- regles de confirmation;
-- partage public/prive;
-- artefact de preuve attendu;
-- criteres de decision pour continuer.
-
-Cela evite qu'une demo privee devienne une session support non cadree et donne a chaque partie le meme cadre d'evaluation.
+Choisir un angle: MCP/App SDK, UX de resume de run, handoff Unity, jobs ComfyUI, automatisation locale, QA, documentation, financement, mission ou poste. Lier la page pertinente, decrire la prochaine tache et nommer la sortie attendue.

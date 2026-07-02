@@ -1,4 +1,4 @@
-# Scenario: ComfyUI Product Layer
+# ComfyUI Product Layer / Couche produit ComfyUI
 
 [EN](#english) | [FR](#francais)
 
@@ -6,46 +6,36 @@
 
 ### Scenario
 
-A team wants ComfyUI generation to behave like a product workflow: profiles, jobs, review states, client surfaces, and evidence, rather than a private node graph operated by one technical user.
+A user needs a ComfyUI generation workflow to behave like a product flow: profile, job, artifact, client state, review state, and next action.
 
-### Flow
+### Expected Flow
 
-1. Mob'ia / ccomf-unity receives a product-level request.
-2. A user profile selects or constrains the intended generation path.
-3. A job is created with status, expected artifact type, and review criteria.
-4. The job is monitored and converted into a reviewable artifact.
-5. Unity, Android, or web clients display the result status.
-6. A user accepts, revises, archives, or escalates the artifact.
-7. A public-safe proof card records the profile, job state, artifact type, and decision.
+1. Attach the request to a profile.
+2. Create a job with named expectations.
+3. Track the artifact state.
+4. Expose status to the relevant client surface.
+5. Record whether the artifact is ready for review, needs revision, or should be archived.
+6. Write the next action.
 
-### Public Output
+### Useful Result
 
-A product journey card with profile, job status, artifact type, client surface, review decision, and evidence level. It does not publish backend routes, tokens, storage details, Docker/run configs, private workflows, generated private images, provider outputs, logs, or account metadata.
-
-### Buyer Signal
-
-This scenario is useful when the conversation is productization: how to make generation trackable, reviewable, multi-client, and safe enough for a non-technical user to operate.
+The useful result is a job lifecycle note: profile, job, artifact state, client surface, review decision, and next action.
 
 ## Francais
 
 ### Scenario
 
-Une equipe veut que la generation ComfyUI fonctionne comme un workflow produit: profils, jobs, etats de revue, surfaces client et preuve, au lieu d'un graph node prive opere par un seul utilisateur technique.
+Un utilisateur a besoin qu'un workflow de generation ComfyUI se comporte comme un flux produit: profil, job, artefact, etat client, etat de revue et prochaine action.
 
-### Flux
+### Flux Attendu
 
-1. Mob'ia / ccomf-unity recoit une demande niveau produit.
-2. Un profil utilisateur selectionne ou contraint le chemin de generation vise.
-3. Un job est cree avec statut, type d'artefact attendu et criteres de revue.
-4. Le job est suivi et transforme en artefact reviewable.
-5. Les clients Unity, Android ou web affichent le statut.
-6. Un utilisateur accepte, revise, archive ou escalade l'artefact.
-7. Une proof card public-safe note profil, etat job, type artefact et decision.
+1. Attacher la demande a un profil.
+2. Creer un job avec attentes nommees.
+3. Suivre l'etat artefact.
+4. Exposer le statut a la surface client pertinente.
+5. Noter si l'artefact est pret pour revue, demande revision ou doit etre archive.
+6. Ecrire la prochaine action.
 
-### Sortie Publique
+### Resultat Utile
 
-Une carte de parcours produit avec profil, statut job, type artefact, surface client, decision de revue et niveau de preuve. Elle ne publie pas routes backend, tokens, details stockage, Docker/run configs, workflows prives, images privees generees, sorties provider, logs ou metadata compte.
-
-### Signal Acheteur
-
-Ce scenario est utile quand la discussion porte sur la productisation: comment rendre la generation suivable, reviewable, multi-client et assez sure pour un utilisateur non technique.
+Le resultat utile est une note de cycle job: profil, job, etat artefact, surface client, decision revue et prochaine action.

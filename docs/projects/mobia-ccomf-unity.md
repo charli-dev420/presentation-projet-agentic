@@ -2,76 +2,60 @@
 
 [EN](#english) | [FR](#francais)
 
+![Mob'ia mobile banner](../../assets/project-banners/mobia-mobile.jpg)
+
 ## English
 
-### Role
+### Product Definition
 
-Mob'ia / ccomf-unity is the product layer around ComfyUI work: backend, profiles, async jobs, artifacts, user tracking, and Unity/web/mobile clients. It is the part of the ecosystem that makes generation feel like a product workflow rather than a private technical workflow.
+Mob'ia / ccomf-unity is the product layer around ComfyUI work. It frames generation through profiles, jobs, artifacts, clients, and review states so that a user does not have to understand raw workflow internals to follow the result.
 
-### Product Value
+This is the public product name used here. It should stay separate from old internal names.
 
-| Product need | How this surface helps |
-| --- | --- |
-| Non-technical review | Users see job status, artifact state, and next decision instead of raw workflow internals. |
-| Multi-client access | Unity, web, and mobile surfaces can share the same job language. |
-| Repeatable generation | Profiles and job metadata make requests easier to compare and revise. |
-| Partner evaluation | Buyers can discuss users, artifacts, permissions, and review states without seeing backend internals. |
-| Evidence | A job can become a public-safe proof summary after redaction. |
+### Who It Helps
 
-### Public Journey
+It helps people who need generation workflows to feel like a product: Unity users, web/mobile users, reviewers, collaborators, technical artists, and teams that need job state to be readable.
 
-1. A product-level request is attached to a profile.
+### Workflow
+
+1. A request is attached to a profile.
 2. A job is created and tracked.
-3. The artifact reaches a review state.
-4. Unity, web, or mobile clients expose the result status.
-5. A user accepts, revises, archives, or escalates.
-6. A redacted proof card records the decision.
+3. An artifact reaches a review state.
+4. A Unity, web, or mobile client exposes status and result.
+5. A person accepts, revises, archives, or continues the workflow.
 
-### Good Partner Questions
+### What This Repository Shows
 
-- Which user profile should be proven first?
-- What artifact type matters most?
-- Which client surface should lead the review?
-- What makes a generated output acceptable?
-- Which data must remain private during evaluation?
+This repo shows the product role, job lifecycle idea, client-facing state, relationship to CodexToUnity, and how a ComfyUI workflow can become something reviewable.
 
-### Private Boundary
+### Useful Support
 
-Exact routes, tokens, infrastructure configuration, pods, Docker/run configs, backend source, storage details, secrets, models, workflows, generated outputs, and unredacted screenshots are not published.
+Useful support includes product UX, job lifecycle design, artifact state naming, Unity/web/mobile review, ComfyUI profile feedback, QA criteria, and documentation.
 
 ## Francais
 
-### Role
+### Definition Produit
 
-Mob'ia / ccomf-unity est la couche produit autour du travail ComfyUI: backend, profils, jobs async, artefacts, suivi utilisateur et clients Unity/web/mobile. C'est la partie de l'ecosysteme qui transforme une generation technique privee en workflow produit.
+Mob'ia / ccomf-unity est la couche produit autour du travail ComfyUI. Elle cadre la generation par profils, jobs, artefacts, clients et etats de revue pour qu'un utilisateur n'ait pas besoin de comprendre les internes workflow bruts pour suivre le resultat.
 
-### Valeur Produit
+C'est le nom produit public utilise ici. Il doit rester separe des anciens noms internes.
 
-| Besoin produit | Apport de cette surface |
-| --- | --- |
-| Revue non technique | Les utilisateurs voient statut job, etat artefact et prochaine decision au lieu d'internals workflow. |
-| Acces multi-client | Unity, web et mobile partagent le meme langage de job. |
-| Generation repetable | Profils et metadata job rendent les demandes comparables et revisables. |
-| Evaluation partenaire | Les acheteurs discutent utilisateurs, artefacts, permissions et etats de revue sans voir le backend. |
-| Preuve | Un job peut devenir resume public-safe apres redaction. |
+### A Qui Ca Sert
 
-### Parcours Public
+Elle sert aux personnes qui veulent que des workflows de generation ressemblent a un produit: utilisateurs Unity, web/mobile, reviewers, collaborateurs, technical artists et equipes qui ont besoin d'un etat job lisible.
 
-1. Une demande produit est attachee a un profil.
+### Workflow
+
+1. Une demande est attachee a un profil.
 2. Un job est cree et suivi.
-3. L'artefact atteint un etat de revue.
-4. Les clients Unity, web ou mobile exposent le statut.
-5. Un utilisateur accepte, revise, archive ou escalade.
-6. Une proof card redigee note la decision.
+3. Un artefact atteint un etat de revue.
+4. Un client Unity, web ou mobile expose statut et resultat.
+5. Une personne accepte, revise, archive ou continue le workflow.
 
-### Bonnes Questions Partenaire
+### Ce Que Montre Ce Repo
 
-- Quel profil utilisateur prouver en premier?
-- Quel type d'artefact compte le plus?
-- Quelle surface client doit mener la revue?
-- Qu'est-ce qui rend une sortie generee acceptable?
-- Quelles donnees doivent rester privees pendant l'evaluation?
+Ce repo montre le role produit, l'idee de cycle de vie job, l'etat cote client, la relation a CodexToUnity et la facon dont un workflow ComfyUI devient reviewable.
 
-### Frontiere Privee
+### Support Utile
 
-Routes exactes, tokens, configuration infra, pods, Docker/run configs, source backend, details stockage, secrets, modeles, workflows, sorties generees et captures non redigees ne sont pas publies.
+Le support utile inclut UX produit, design cycle de vie job, nommage des etats artefact, revue Unity/web/mobile, feedback profils ComfyUI, criteres QA et documentation.

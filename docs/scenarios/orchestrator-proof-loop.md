@@ -1,4 +1,4 @@
-# Scenario: Orchestrator Proof Loop
+# Orchestrator Readable Run / Run lisible orchestrateur
 
 [EN](#english) | [FR](#francais)
 
@@ -6,68 +6,38 @@
 
 ### Scenario
 
-A user wants a bounded task completed by an agentic system, but also needs evidence that the result is safe to trust, revise, or reject.
+A user asks an AI-assisted toolchain to complete a bounded task. Codex Model Orchestrator must leave enough context for another person to understand the work after the run.
 
-### Flow
+### Expected Flow
 
-1. The user submits a task with goal, constraints, allowed data, and expected output.
-2. The orchestrator creates a plan and selects tools or sub-agents.
-3. Read-only status is shown before any mutating action.
-4. Sensitive actions require explicit human confirmation.
-5. Outputs are checked against build/test, verifiability, human score, correction time, and failure/revision reason.
-6. The result is summarized with an evidence level.
-7. A human decides: accept, revise, reject, archive, or escalate.
+1. The goal is written in practical language.
+2. Constraints and allowed actions are named.
+3. The tool or worker path is summarized.
+4. The produced artifact or result is identified.
+5. Surface-appropriate checks are recorded.
+6. Uncertainty is stated plainly.
+7. A person decides: accept, revise, reject, archive, or continue.
 
-### Public Output
+### Useful Result
 
-A proof card with:
-
-- task class;
-- allowed scope;
-- summarized tool/sub-agent path;
-- evidence level;
-- result status;
-- human decision;
-- redacted measurement;
-- redaction note.
-
-No prompt, raw trace, token, endpoint, local path, provider output, private tool definition, or internal log is included.
-
-### Buyer Signal
-
-This is the strongest first demo because it proves the control system itself: orchestration, evidence, QA, redaction, and human decision.
+The useful result is a readable run card. It should be short enough to scan and concrete enough to challenge.
 
 ## Francais
 
 ### Scenario
 
-Un utilisateur veut qu'un systeme agentique realise une tache bornee, mais il a aussi besoin d'une preuve pour savoir si le resultat est fiable, revisable ou a refuser.
+Un utilisateur demande a une chaine d'outils assistee par IA de realiser une tache bornee. Codex Model Orchestrator doit laisser assez de contexte pour qu'une autre personne comprenne le travail apres le run.
 
-### Flux
+### Flux Attendu
 
-1. L'utilisateur soumet une tache avec objectif, contraintes, donnees autorisees et sortie attendue.
-2. L'orchestrateur cree un plan et choisit outils ou sous-agents.
-3. Le statut read-only est affiche avant toute action mutating.
-4. Les actions sensibles demandent confirmation humaine explicite.
-5. Les sorties sont controlees contre build/test, verifiability, score humain, temps de correction et raison d'echec/revision.
-6. Le resultat est resume avec un niveau de preuve.
-7. Un humain decide: accepter, reviser, refuser, archiver ou escalader.
+1. L'objectif est ecrit en langage pratique.
+2. Contraintes et actions autorisees sont nommees.
+3. Le chemin outil ou worker est resume.
+4. L'artefact ou resultat produit est identifie.
+5. Les controles adaptes a la surface sont notes.
+6. L'incertitude est dite simplement.
+7. Une personne decide: accepter, reviser, refuser, archiver ou continuer.
 
-### Sortie Publique
+### Resultat Utile
 
-Une proof card avec:
-
-- classe de tache;
-- perimetre autorise;
-- chemin outil/sous-agent resume;
-- niveau de preuve;
-- statut resultat;
-- decision humaine;
-- mesure redigee;
-- note de redaction.
-
-Aucun prompt, trace brute, token, endpoint, chemin local, sortie provider, definition d'outil prive ou log interne n'est inclus.
-
-### Signal Acheteur
-
-C'est la meilleure premiere demo parce qu'elle prouve le systeme de controle lui-meme: orchestration, preuve, QA, redaction et decision humaine.
+Le resultat utile est une carte de run lisible. Elle doit etre assez courte pour etre scannee et assez concrete pour etre challengee.

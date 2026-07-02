@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
-  <title id="title">Agentic QA matrix</title>
-  <desc id="desc">Public-safe QA matrix for the agentic showcase.</desc>
+  <title id="title">AI workflow QA matrix</title>
+  <desc id="desc">QA matrix for the AI workflow showcase.</desc>
   <rect width="1200" height="675" fill="#111827"/>
-  <text x="72" y="86" fill="#f9fafb" font-family="Segoe UI, Arial, sans-serif" font-size="38" font-weight="700">QA Matrix · Agentic</text>
+  <text x="72" y="86" fill="#f9fafb" font-family="Segoe UI, Arial, sans-serif" font-size="38" font-weight="700">QA Matrix · AI Workflow</text>
   <g font-family="Segoe UI, Arial, sans-serif" font-size="20">
     <rect x="72" y="145" width="1056" height="70" fill="#1f2937" rx="10"/>
     <text x="100" y="188" fill="#e5e7eb" font-weight="700">Gate</text>

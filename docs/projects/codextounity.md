@@ -2,70 +2,60 @@
 
 [EN](#english) | [FR](#francais)
 
+![AI workflow banner](../../assets/project-banners/agentic-workflows.jpg)
+
 ## English
 
-### Role
+### Product Definition
 
-CodexToUnity is the public bridge between Codex, Unity, and ComfyUI. In this showcase, it proves that an agentic workflow can be framed toward a Unity handoff instead of ending as a text answer.
+CodexToUnity is the public bridge between Codex, Unity, and ComfyUI. It gives the orchestration project a concrete target: prepare work that can move from an AI-assisted request toward Unity review.
 
-The public angle is experimental but useful: request framing, job shape, dry-run/smoke paths, manifest thinking, Asset Factory concepts, GLB normalization language, sockets, Unity import checks, and human review.
+The value is not "generate an asset". The value is a controlled handoff: request, job shape, manifest, candidate output, import checks, and a written review decision.
 
-### User Journey
+### Who It Helps
 
-1. A user describes a Unity target: asset, scene role, format, constraints, and acceptance criteria.
-2. CodexToUnity frames the expected job and manifest.
-3. The workflow runs as a dry-run, smoke path, or private live path.
-4. The expected output is checked against import, scale, pivot, bounds, materials, naming, sockets, and scene usability.
-5. A human accepts, revises, rejects, or archives the result.
-6. A public-safe proof card records the outcome.
+It helps Unity users, technical artists, pipeline builders, AI asset reviewers, and collaborators who need generated work to become inspectable inside a real project context.
 
-### Why It Matters
+### Workflow
 
-Unity and AI generation workflows are easy to demo and hard to trust. CodexToUnity is useful because it moves the discussion from "generate an asset" to "generate, normalize, import, review, and document the decision".
+1. A user describes the Unity target: asset role, format, constraints, and acceptance criteria.
+2. CodexToUnity frames the job and expected manifest.
+3. The workflow runs as a dry path, smoke path, or controlled production path.
+4. The output is checked for import, scale, pivot, bounds, naming, materials, sockets, and scene role.
+5. A person decides what happens next.
 
-### Public Evidence
+### What This Repository Shows
 
-| Evidence | Reader value |
-| --- | --- |
-| Public repository | Shows a real bridge surface exists. |
-| Scenario documentation | Explains how the Unity asset loop should be evaluated. |
-| Dry-run/smoke language | Separates intent, job setup, manifest, and review. |
-| QA criteria | Gives reviewers a way to judge Unity usability without seeing private assets. |
+This repo explains the handoff model, scenario criteria, QA vocabulary, diagrams, and relationship to Mob'ia / ccomf-unity and LocalAssetFactory.
 
-### Private Boundary
+### Useful Support
 
-Private ComfyUI workflows, sensitive scripts, local configs, endpoints, unpublished generated outputs, raw logs, GLB/FBX/OBJ files, Unity scenes, and builds are not published here.
+Useful support includes Unity import review, ComfyUI workflow feedback, manifest design, asset naming, QA criteria, technical art review, and product feedback around client-facing summaries.
 
 ## Francais
 
-### Role
+### Definition Produit
 
-CodexToUnity est le pont public entre Codex, Unity et ComfyUI. Dans cette vitrine, il montre qu'un workflow agentique peut etre cadre vers un handoff Unity au lieu de finir en simple reponse texte.
+CodexToUnity est le pont public entre Codex, Unity et ComfyUI. Il donne au projet d'orchestration une cible concrete: preparer du travail qui peut passer d'une demande assistee par IA vers une revue Unity.
 
-L'angle public est experimental mais utile: cadrage de demande, forme de job, dry-run/smoke paths, logique de manifest, concepts Asset Factory, langage normalisation GLB, sockets, controles import Unity et revue humaine.
+La valeur n'est pas "generer un asset". La valeur est un handoff controle: demande, forme de job, manifest, candidat produit, controles import et decision de revue ecrite.
 
-### Parcours Utilisateur
+### A Qui Ca Sert
 
-1. Un utilisateur decrit une cible Unity: asset, role scene, format, contraintes et criteres d'acceptation.
-2. CodexToUnity cadre le job attendu et le manifest.
-3. Le workflow tourne en dry-run, smoke path ou chemin live prive.
-4. La sortie attendue est controlee: import, echelle, pivot, bounds, materiaux, nommage, sockets et utilisabilite scene.
-5. Un humain accepte, revise, refuse ou archive le resultat.
-6. Une proof card public-safe note la decision.
+Il sert aux utilisateurs Unity, technical artists, builders de pipeline, reviewers d'assets IA et collaborateurs qui ont besoin que du travail genere devienne inspectable dans un vrai contexte projet.
 
-### Pourquoi C'est Important
+### Workflow
 
-Les workflows Unity et generation IA sont faciles a montrer et difficiles a faire confiance. CodexToUnity est utile parce qu'il deplace la discussion de "generer un asset" vers "generer, normaliser, importer, revoir et documenter la decision".
+1. Un utilisateur decrit la cible Unity: role asset, format, contraintes et criteres d'acceptation.
+2. CodexToUnity cadre le job et le manifest attendu.
+3. Le workflow tourne en chemin dry, smoke ou production controlee.
+4. La sortie est controlee pour import, echelle, pivot, bounds, nommage, materiaux, sockets et role scene.
+5. Une personne decide la suite.
 
-### Preuves Publiques
+### Ce Que Montre Ce Repo
 
-| Preuve | Valeur lecteur |
-| --- | --- |
-| Repo public | Montre qu'une surface de pont reelle existe. |
-| Documentation scenario | Explique comment evaluer la boucle asset Unity. |
-| Langage dry-run/smoke | Separe intention, creation job, manifest et revue. |
-| Criteres QA | Donne un cadre de jugement Unity sans exposer les assets prives. |
+Ce repo explique le modele de handoff, les criteres scenario, le vocabulaire QA, les diagrammes et la relation a Mob'ia / ccomf-unity et LocalAssetFactory.
 
-### Frontiere Privee
+### Support Utile
 
-Workflows ComfyUI prives, scripts sensibles, configs locales, endpoints, sorties generees non publiees, logs bruts, GLB/FBX/OBJ, scenes Unity et builds ne sont pas publies ici.
+Le support utile inclut revue import Unity, feedback workflow ComfyUI, design manifest, nommage asset, criteres QA, revue technical art et feedback produit autour des resumes cote client.

@@ -2,76 +2,56 @@
 
 [EN](#english) | [FR](#francais)
 
-![Agentic one-pager](../assets/one-pager.svg)
+![AI workflow one-pager](../assets/one-pager.svg)
 
 ## English
 
-### The Short Version
+### One Sentence
 
-I am working on a simple but important question: when an AI tool does work for you, how do you know what really happened?
+**Codex Model Orchestrator** is the main project: a control layer for AI-assisted runs that must stay readable, checkable, reusable, and decidable by a human. **CodexToUnity**, **Mob'ia / ccomf-unity**, and **LocalAssetFactory** make that idea concrete through Unity, ComfyUI, and local asset workflows.
 
-**Codex Model Orchestrator** is the project where I try to answer that with a product surface, not just with logs. A run should start from a clear request, use allowed tools, produce something inspectable, show what was checked, and end with a decision a person can actually make.
+### The Product Center
 
-Around it, **CodexToUnity**, **Mob'ia / ccomf-unity**, and **LocalAssetFactory** give the idea concrete pressure. Generated assets have files, manifests, previews, imports, mistakes, weights, formats, and review points. They are a good test for whether the orchestration is useful or just nicely written.
+The project starts from a practical problem: AI tools can produce output quickly, but teams still need to know what happened. A useful run should leave a compact record: goal, constraints, tools, produced artifact, checks, uncertainty, and next decision.
 
-### What A Useful Run Looks Like
+Codex Model Orchestrator is the page to read first because it carries the product direction: make AI-assisted work legible enough for another person to act on.
 
-A useful run might look like this:
+### The Workflow Surfaces
 
-1. A user asks for a Unity asset batch to be prepared.
-2. The system writes the scope before touching anything.
-3. It calls the right tool, creates or checks the artifact, and records what happened.
-4. It reports what passed, what is doubtful, and what still needs a human eye.
-5. It leaves a small result card that a partner, buyer, or teammate can read without opening the whole raw session.
+CodexToUnity is the Unity bridge. Mob'ia / ccomf-unity is the product layer around ComfyUI jobs, profiles, artifacts, and clients. LocalAssetFactory is the local loop for generation, manifest, normalization, import, scene review, and written evidence.
 
-That last step matters. If the only person who understands the work is the person who ran the tool, the workflow is not good enough.
+These surfaces matter because they turn the orchestrator idea into real work: files, manifests, previews, imports, review states, and decisions.
 
-### Why It Matters
+### Best Reading Order
 
-AI tools are becoming easy to launch and hard to supervise. The risk is not only that they fail. The risk is that they fail in a way nobody can explain later.
+Read [overview](overview.md), then [Codex Model Orchestrator](projects/codex-model-orchestrator.md). Continue with [user flows](user-flows.md) and [tutorials](tutorials.md). For Unity and assets, read [CodexToUnity](projects/codextounity.md), [Mob'ia / ccomf-unity](projects/mobia-ccomf-unity.md), [LocalAssetFactory](projects/local-asset-factory.md), and the scenario pages.
 
-I want these projects to make the work legible: what the run tried to do, what it changed, what evidence exists, what needs review, and what the next useful move is.
+### Useful Next Help
 
-### What To Read
-
-Start with the [ecosystem map](ecosystem-map.md), then read the [user flows](user-flows.md) and [orchestrator proof loop](scenarios/orchestrator-proof-loop.md). For a more serious look, use the [evidence ledger](evidence-ledger.md), [proof pack](proof-pack.md), [QA matrix](qa-matrix.md), and [buyer evaluation](buyer-evaluation.md).
-
-### Good First Conversations
-
-The best conversations start with one workflow: a tool chain to make readable, an asset pipeline to review, a ComfyUI/Unity handoff to structure, an internal AI demo to make credible, or a role where AI tooling needs to be useful for more than the person who built it.
+Useful support includes MCP/App SDK review, run-summary UX, proof-card design, Unity/ComfyUI workflow feedback, QA criteria, local automation review, documentation, funding, mission work, and roles around AI workflow products.
 
 ## Francais
 
-### Version Courte
+### En Une Phrase
 
-Je travaille sur une question simple mais importante: quand un outil IA fait du travail pour vous, comment sait-on ce qui s'est vraiment passe ?
+**Codex Model Orchestrator** est le projet principal: une couche de pilotage pour runs assistes par IA qui doivent rester lisibles, verifiables, reutilisables et decidables par un humain. **CodexToUnity**, **Mob'ia / ccomf-unity** et **LocalAssetFactory** rendent cette idee concrete via workflows Unity, ComfyUI et assets locaux.
 
-**Codex Model Orchestrator** est le projet ou j'essaie de repondre avec une vraie surface produit, pas seulement avec des logs. Un run doit partir d'une demande claire, utiliser des outils autorises, produire quelque chose d'inspectable, montrer ce qui a ete verifie et finir sur une decision qu'une personne peut vraiment prendre.
+### Le Centre Produit
 
-Autour, **CodexToUnity**, **Mob'ia / ccomf-unity** et **LocalAssetFactory** mettent l'idee sous contrainte concrete. Les assets generes ont des fichiers, manifests, previews, imports, erreurs, poids, formats et points de revue. C'est un bon test pour savoir si l'orchestration est utile ou seulement bien formulee.
+Le projet part d'un probleme pratique: les outils IA peuvent produire vite, mais une equipe doit encore savoir ce qui s'est passe. Un run utile doit laisser une trace compacte: objectif, contraintes, outils, artefact produit, controles, incertitude et prochaine decision.
 
-### A Quoi Ressemble Un Run Utile
+Codex Model Orchestrator est la page a lire en premier parce qu'elle porte la direction produit: rendre le travail assiste par IA assez lisible pour qu'une autre personne puisse agir dessus.
 
-Un run utile peut ressembler a cela:
+### Les Surfaces De Workflow
 
-1. Un utilisateur demande de preparer un lot d'assets Unity.
-2. Le systeme ecrit le cadrage avant de toucher quoi que ce soit.
-3. Il appelle le bon outil, cree ou controle l'artefact, puis garde une trace de ce qui s'est passe.
-4. Il indique ce qui passe, ce qui est douteux et ce qui demande encore un regard humain.
-5. Il laisse une petite carte de resultat qu'un partenaire, acheteur ou coequipier peut lire sans ouvrir toute la session brute.
+CodexToUnity est le pont Unity. Mob'ia / ccomf-unity est la couche produit autour des jobs ComfyUI, profils, artefacts et clients. LocalAssetFactory est la boucle locale pour generation, manifest, normalisation, import, revue scene et preuve ecrite.
 
-Ce dernier point compte. Si la seule personne qui comprend le travail est celle qui a lance l'outil, le workflow n'est pas assez bon.
+Ces surfaces comptent parce qu'elles transforment l'idee d'orchestration en travail reel: fichiers, manifests, previews, imports, etats de revue et decisions.
 
-### Pourquoi C'est Important
+### Meilleur Ordre De Lecture
 
-Les outils IA deviennent faciles a lancer et difficiles a superviser. Le risque n'est pas seulement qu'ils echouent. Le risque est qu'ils echouent d'une maniere que personne ne peut expliquer ensuite.
+Lire [overview](overview.md), puis [Codex Model Orchestrator](projects/codex-model-orchestrator.md). Continuer avec [user flows](user-flows.md) et [tutorials](tutorials.md). Pour Unity et assets, lire [CodexToUnity](projects/codextounity.md), [Mob'ia / ccomf-unity](projects/mobia-ccomf-unity.md), [LocalAssetFactory](projects/local-asset-factory.md) et les pages scenario.
 
-Je veux que ces projets rendent le travail lisible: ce que le run a essaye de faire, ce qu'il a change, quelles preuves existent, ce qui demande revue et quel est le prochain geste utile.
+### Aide Utile Maintenant
 
-### Quoi Lire
-
-Commencer par l'[ecosystem map](ecosystem-map.md), puis lire les [flux utilisateur](user-flows.md) et le [proof loop orchestrateur](scenarios/orchestrator-proof-loop.md). Pour une lecture plus serieuse, utiliser l'[evidence ledger](evidence-ledger.md), le [proof pack](proof-pack.md), la [QA matrix](qa-matrix.md) et l'[evaluation acheteur](buyer-evaluation.md).
-
-### Bonnes Premieres Discussions
-
-Les meilleures discussions partent d'un workflow: une chaine d'outils a rendre lisible, un pipeline asset a revoir, un handoff ComfyUI/Unity a structurer, une demo IA interne a rendre credible ou un poste ou l'outillage IA doit servir a plus que la personne qui l'a construit.
+Le support utile inclut revue MCP/App SDK, UX de resume de run, design proof-card, feedback workflow Unity/ComfyUI, criteres QA, revue automatisation locale, documentation, financement, missions et postes autour des produits workflow IA.

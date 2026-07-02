@@ -4,76 +4,48 @@
 
 ## English
 
-### For A Funder
+### How To Use This Page
 
-- Fund a clean L2/L3 proof path: bounded task class, repeatable method, redacted outputs, and reviewer score.
-- Fund Apps SDK / MCP UX so the agentic state becomes readable for non-specialists.
-- Fund security review, redaction policy hardening, and private-demo packaging.
-- Fund a Unity/ComfyUI proof slice that ends with import/review evidence, not just generation.
+Use this page to turn interest into one concrete next step. Pick a project surface, a workflow, and the written output expected from the review.
 
-### For A Technical Partner
+### Useful Decision Angles
 
-- Choose one scenario: orchestrator proof loop, Apps SDK / MCP surface, Unity bridge, ComfyUI product layer, or local asset factory.
-- Define allowed data, tools, write actions, and redaction rules.
-- Pick the proof level required before a private demo.
-- Agree on the artifact to publish after review: proof card, QA summary, diagram, or partner pilot brief.
+**Product review:** Does Codex Model Orchestrator make a run understandable enough for another person to act on?
 
-### For A Buyer
+**Technical review:** Are MCP/App SDK surfaces, tool confirmations, and result summaries clear enough for real use?
 
-- Evaluate whether the workflow can be scoped, executed, verified, and decided by a human.
-- Ask for cost/quality signals: accepted-task cost, failure rate, human score, correction time.
-- Review public-safe proof cards before requesting rawer private evidence.
-- Treat failures and revisions as QA data, not as reasons to hide the run.
+**Unity / ComfyUI review:** Do CodexToUnity, Mob'ia / ccomf-unity, and LocalAssetFactory make generated work easier to track, import, and judge?
 
-### For A Recruiter Or Client
-
-- Use this repo as a work sample for agentic architecture, Apps SDK / MCP framing, technical writing, security boundaries, QA thinking, and human workflow design.
-- Ask for a walkthrough of one scenario and one proof card.
-- Evaluate how private implementation is protected while still making the work understandable.
+**Work or funding:** Which scoped task would most improve the project: UX, QA, documentation, workflow hardening, technical art review, or product packaging?
 
 ### Decision Questions
 
-1. Which scenario matters first?
-2. Which claim level is required: L0, L1, L2, L3, L4, or L5?
-3. Which prompts, traces, endpoints, assets, or configs must stay private?
-4. Which action requires human confirmation?
-5. Which public artifact can be shared after redaction?
-6. What is the next decision: stop, revise, audit, pilot, partner, fund, or hire?
+1. Which surface matters first?
+2. Which workflow should be reviewed?
+3. What artifact or written result should exist at the end?
+4. Which checks are enough for the decision?
+5. What is the next action: revise, test, integrate, fund, hire, or continue review?
 
 ## Francais
 
-### Pour Un Financeur
+### Comment Utiliser Cette Page
 
-- Financer un chemin de preuve L2/L3 propre: classe de tache bornee, methode repetable, sorties redigees et score reviewer.
-- Financer l'UX Apps SDK / MCP pour rendre l'etat agentique lisible par non-specialistes.
-- Financer revue securite, durcissement redaction policy et packaging de demo privee.
-- Financer une preuve Unity/ComfyUI qui finit par evidence import/revue, pas seulement generation.
+Utiliser cette page pour transformer l'interet en prochaine etape concrete. Choisir une surface projet, un workflow et la sortie ecrite attendue de la revue.
 
-### Pour Un Partenaire Technique
+### Angles De Decision Utiles
 
-- Choisir un scenario: proof loop orchestrateur, surface Apps SDK / MCP, pont Unity, couche produit ComfyUI ou asset factory locale.
-- Definir donnees, outils, actions write et regles de redaction autorises.
-- Choisir le niveau de preuve requis avant demo privee.
-- Accorder l'artefact a publier apres revue: proof card, resume QA, diagramme ou brief pilote partenaire.
+**Revue produit:** Codex Model Orchestrator rend-il un run assez comprehensible pour qu'une autre personne puisse agir dessus ?
 
-### Pour Un Acheteur
+**Revue technique:** Les surfaces MCP/App SDK, confirmations outil et resumes de resultat sont-ils assez clairs pour un usage reel ?
 
-- Evaluer si le workflow peut etre cadre, execute, verifie et decide par un humain.
-- Demander les signaux cout/qualite: cout par tache acceptee, taux d'echec, score humain, temps de correction.
-- Lire les proof cards public-safe avant de demander des preuves privees plus brutes.
-- Traiter echecs et revisions comme donnees QA, pas comme raisons de cacher le run.
+**Revue Unity / ComfyUI:** CodexToUnity, Mob'ia / ccomf-unity et LocalAssetFactory rendent-ils le travail genere plus facile a suivre, importer et juger ?
 
-### Pour Un Recruteur Ou Client
-
-- Utiliser ce repo comme echantillon de travail sur architecture agentique, cadrage Apps SDK / MCP, redaction technique, frontieres securite, pensee QA et design workflow humain.
-- Demander le walkthrough d'un scenario et d'une proof card.
-- Evaluer comment l'implementation privee est protegee tout en rendant le travail comprehensible.
+**Travail ou financement:** Quelle tache cadree ameliorerait le plus le projet: UX, QA, documentation, durcissement workflow, revue technical art ou packaging produit ?
 
 ### Questions De Decision
 
-1. Quel scenario compte en premier?
-2. Quel niveau de claim est requis: L0, L1, L2, L3, L4 ou L5?
-3. Quels prompts, traces, endpoints, assets ou configs doivent rester prives?
-4. Quelle action exige confirmation humaine?
-5. Quel artefact public peut etre partage apres redaction?
-6. Quelle prochaine decision: arreter, reviser, auditer, piloter, s'associer, financer ou recruter?
+1. Quelle surface compte en premier ?
+2. Quel workflow doit etre revu ?
+3. Quel artefact ou resultat ecrit doit exister a la fin ?
+4. Quels controles suffisent pour la decision ?
+5. Quelle prochaine action: reviser, tester, integrer, financer, recruter ou continuer la revue ?

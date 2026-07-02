@@ -2,38 +2,32 @@
 
 [EN](#english) | [FR](#francais)
 
-![Agentic proof dashboard](../assets/proof-dashboard.svg)
+![AI workflow proof dashboard](../assets/proof-dashboard.svg)
 
 ## English
 
-### Public Reading
+### Public State
 
-The strongest public signal is method: tool-using agents, written evidence, claim levels, security boundaries, readable UI concepts, and human decision.
+The repo now has a clear product structure. **Codex Model Orchestrator** is the main project. **CodexToUnity**, **Mob'ia / ccomf-unity**, and **LocalAssetFactory** are concrete workflow surfaces around Unity, ComfyUI, and asset review.
 
-| Surface | Public status | Usable proof | Current reading |
-| --- | --- | --- | --- |
-| Codex Model Orchestrator | Public product narrative and proof method | Claim levels, QA gates, benchmark method, privacy framing, Apps SDK / MCP concepts. | Strong evaluation surface for agentic governance and partner demos. |
-| CodexToUnity | Public experimental prototype framing | Public bridge docs, dry-run/smoke language, Unity handoff criteria. | Good scoped Unity/ComfyUI demonstration surface. |
-| Mob'ia / ccomf-unity | Private product source summarized publicly | Profiles, jobs, artifacts, backend/client role, review flow. | Useful for partnership evaluation without exposing infrastructure. |
-| LocalAssetFactory | Private/local asset workflow summarized publicly | Generation-to-import model, manifest thinking, normalization checks, scene review. | Useful for designing private proof packs around Unity assets. |
+### What Is Strongest
 
-### Next Best Proof
+The strongest current signal is the method: scope the run, make tool actions readable, record evidence, apply checks, and leave a human decision. The Unity and ComfyUI pages make that method easier to judge because they involve real artifacts and review criteria.
 
-The most useful next proof is a bounded private demo that produces a public-safe proof card: one task class, one evidence level, one QA result, one human decision, and one redacted summary.
+### What To Review Next
+
+Pick one workflow and one output. For the orchestrator, review a run result card. For CodexToUnity, review a Unity handoff scenario. For Mob'ia / ccomf-unity, review a job/artifact/client state. For LocalAssetFactory, review one generated candidate through manifest, normalization, import, and scene usefulness.
 
 ## Francais
 
-### Lecture Publique
+### Etat Public
 
-Le signal public le plus fort est la methode: agents outilles, preuves redigees, niveaux de claim, frontieres securite, concepts UI lisibles et decision humaine.
+Le repo a maintenant une structure produit claire. **Codex Model Orchestrator** est le projet principal. **CodexToUnity**, **Mob'ia / ccomf-unity** et **LocalAssetFactory** sont des surfaces de workflow concretes autour de Unity, ComfyUI et revue asset.
 
-| Surface | Statut public | Preuve exploitable | Lecture actuelle |
-| --- | --- | --- | --- |
-| Codex Model Orchestrator | Narration produit et methode de preuve publiques | Niveaux de claim, gates QA, methode benchmark, securite/donnees, concepts Apps SDK / MCP. | Surface forte pour evaluer gouvernance agentique et demos partenaires. |
-| CodexToUnity | Cadrage prototype experimental public | Docs pont public, langage dry-run/smoke, criteres handoff Unity. | Bonne surface de demo cadree Unity/ComfyUI. |
-| Mob'ia / ccomf-unity | Source produit privee resumee publiquement | Profils, jobs, artefacts, role backend/clients, flux revue. | Utile pour evaluer partenariat sans exposer infra. |
-| LocalAssetFactory | Workflow asset prive/local resume publiquement | Modele generation-vers-import, logique manifest, controles normalisation, revue scene. | Utile pour designer des proof packs prives autour assets Unity. |
+### Signal Le Plus Fort
 
-### Prochaine Meilleure Preuve
+Le signal courant le plus fort est la methode: cadrer le run, rendre les actions outil lisibles, enregistrer la preuve, appliquer les controles et laisser une decision humaine. Les pages Unity et ComfyUI rendent cette methode plus facile a juger parce qu'elles impliquent de vrais artefacts et criteres de revue.
 
-La preuve suivante la plus utile est une demo privee bornee produisant une proof card public-safe: une classe de tache, un niveau de preuve, un resultat QA, une decision humaine et un resume redige.
+### Quoi Reviewer Ensuite
+
+Choisir un workflow et une sortie. Pour l'orchestrateur, reviewer une carte de resultat de run. Pour CodexToUnity, reviewer un scenario de handoff Unity. Pour Mob'ia / ccomf-unity, reviewer un etat job/artefact/client. Pour LocalAssetFactory, reviewer un candidat genere via manifest, normalisation, import et utilite scene.

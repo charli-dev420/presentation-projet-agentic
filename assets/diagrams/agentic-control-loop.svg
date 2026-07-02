@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1180" height="560" viewBox="0 0 1180 560" role="img" aria-labelledby="title desc">
-  <title id="title">Agentic Control Loop</title>
-  <desc id="desc">Public-safe loop from user goal to human decision.</desc>
+  <title id="title">AI Workflow Control Loop</title>
+  <desc id="desc">Loop from user goal to human decision.</desc>
   <rect width="1180" height="560" fill="#f7f9fb"/>
-  <text x="64" y="72" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#172033">Agentic control loop</text>
+  <text x="64" y="72" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#172033">AI workflow control loop</text>
   <text x="64" y="104" font-family="Arial, sans-serif" font-size="16" fill="#526070">User goal, orchestration, tool work, proof, and human decision.</text>
   <g font-family="Arial, sans-serif">
     <rect x="80" y="200" width="170" height="100" rx="14" fill="#e9f2ff" stroke="#9bc3ff"/>

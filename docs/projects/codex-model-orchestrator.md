@@ -2,84 +2,62 @@
 
 [EN](#english) | [FR](#francais)
 
+![Codex Model Orchestrator banner](../../assets/project-banners/codex-model-orchestrator.jpg)
+
 ## English
 
-### Role
+### Product Definition
 
-Codex Model Orchestrator is the control layer for multi-agent work. It turns a user request into a bounded task, selects specialists or tools, records what happened, applies QA gates, and produces a summary a human can act on.
+Codex Model Orchestrator is the main project in this showcase. It is a control layer for AI-assisted work where the result must be readable after the run: what was requested, what was allowed, what tools were used, what artifact came out, what was checked, and what a human decided.
 
-Its value is not simply parallel model calls. Its value is governance: scope, delegation, evidence, cost awareness, failure handling, and a final human decision.
+The point is not to make the system look independent. The point is to make tool-assisted work easier to supervise, reuse, review, and hand back to a person.
 
-### Public Product Surface
+### Who It Helps
 
-| Surface | What it shows publicly | Why it matters |
-| --- | --- | --- |
-| Task framing | Goal, constraints, allowed data, budget, and expected artifact. | Prevents vague automation and gives reviewers a stable contract. |
-| Sub-agent orchestration | Which role handled which part of the task and how outputs were reviewed. | Makes delegation inspectable instead of magical. |
-| MCP contracts | Tool boundaries, read/write separation, confirmation requirements. | Keeps powerful actions understandable and controllable. |
-| Apps SDK views | Status, run summary, proof dashboard, and decision surfaces. | Turns hidden agent state into UI that a non-specialist can read. |
-| Proof kit | L0-L5 claim levels, QA gates, evidence cards, redaction rules. | Lets buyers compare claims without seeing private traces. |
-| Benchmark framing | Accepted-task cost, failure rate, human score, correction time. | Discusses value in concrete metrics, not generic productivity promises. |
+It helps people who run complex AI-assisted tasks and need more than a chat answer: developers, technical leads, product teams, tool builders, QA reviewers, creative pipeline owners, and teams exploring MCP/App SDK surfaces.
 
-### What A Strong Demo Looks Like
+### Core Workflow
 
-1. The user gives a bounded task.
-2. The orchestrator creates a plan and identifies tool/sub-agent roles.
-3. Read-only views show status before any sensitive action.
-4. Mutating actions require explicit human confirmation.
-5. Outputs are checked against task criteria and QA gates.
-6. The final result includes evidence level, result status, revision notes, and human decision.
-7. The public artifact is a redacted proof card.
+1. The user gives a goal.
+2. The orchestrator writes the task scope and constraints.
+3. The work is routed to tools or workers.
+4. The output is checked against the expected result.
+5. The run leaves a compact record.
+6. A person accepts, revises, rejects, archives, or continues.
 
-### Useful For
+### What This Repository Shows
 
-- teams evaluating agentic workflows before internal adoption;
-- buyers who need proof levels instead of broad AI claims;
-- partners building MCP tools or Apps SDK surfaces;
-- engineering teams that need multi-agent QA and run summaries;
-- recruiters or clients evaluating orchestration, developer tooling, and AI governance skills.
+This repo shows the product model, evidence vocabulary, QA approach, decision language, diagrams, and scenario pages. It does not need to expose implementation internals to show the value of readable runs.
 
-### Public Boundary
+### Useful Support
 
-Public material can discuss the method, product shape, proof model, QA gates, and scenario outputs. Private source, prompts, raw traces, local configs, endpoints, credentials, logs, provider outputs, and sensitive operational schemas remain unpublished.
+Useful support includes MCP/App SDK UX review, run-summary design, proof-card structure, QA gate design, benchmark language, security/privacy review, and product feedback on human decision surfaces.
 
 ## Francais
 
-### Role
+### Definition Produit
 
-Codex Model Orchestrator est la couche de controle du travail multi-agent. Il transforme une demande utilisateur en tache bornee, choisit specialistes ou outils, enregistre ce qui s'est passe, applique des gates QA et produit un resume actionnable par un humain.
+Codex Model Orchestrator est le projet principal de cette vitrine. C'est une couche de controle pour travail assiste par IA ou le resultat doit rester lisible apres le run: ce qui a ete demande, ce qui etait autorise, quels outils ont ete utilises, quel artefact est sorti, ce qui a ete controle et quelle decision humaine a suivi.
 
-Sa valeur n'est pas seulement d'appeler plusieurs modeles en parallele. Sa valeur est la gouvernance: perimetre, delegation, preuve, conscience cout, gestion des echecs et decision humaine finale.
+Le but n'est pas de donner l'impression que le systeme est independant. Le but est de rendre le travail avec outils plus facile a superviser, reutiliser, reviewer et remettre a une personne.
 
-### Surface Produit Publique
+### A Qui Ca Sert
 
-| Surface | Ce que cela montre publiquement | Pourquoi c'est important |
-| --- | --- | --- |
-| Cadrage tache | Objectif, contraintes, donnees autorisees, budget et artefact attendu. | Evite l'automatisation vague et donne un contrat stable au reviewer. |
-| Orchestration sous-agents | Quel role a traite quelle partie et comment les sorties ont ete revues. | Rend la delegation inspectable. |
-| Contrats MCP | Frontieres outil, separation read/write, confirmations requises. | Rend les actions puissantes comprehensibles et controlables. |
-| Vues Apps SDK | Statut, run summary, dashboard preuve et surfaces de decision. | Transforme l'etat agentique cache en UI lisible par non-specialiste. |
-| Proof kit | Niveaux L0-L5, gates QA, proof cards, regles de redaction. | Permet aux acheteurs de comparer les claims sans voir les traces privees. |
-| Cadrage benchmark | Cout par tache acceptee, taux echec, score humain, temps correction. | Discute la valeur en metriques concretes, pas en promesses generales. |
+Il sert aux personnes qui lancent des taches IA complexes et ont besoin de plus qu'une reponse chat: developpeurs, leads techniques, equipes produit, builders d'outils, QA reviewers, responsables pipelines creatifs et equipes qui explorent MCP/App SDK.
 
-### A Quoi Ressemble Une Bonne Demo
+### Workflow Coeur
 
-1. L'utilisateur donne une tache bornee.
-2. L'orchestrateur cree un plan et identifie roles outil/sous-agent.
-3. Les vues read-only affichent le statut avant action sensible.
-4. Les actions mutating demandent confirmation humaine explicite.
-5. Les sorties sont controlees contre criteres de tache et gates QA.
-6. Le resultat final inclut niveau de preuve, statut, notes de revision et decision humaine.
-7. L'artefact public est une proof card redigee.
+1. L'utilisateur donne un objectif.
+2. L'orchestrateur ecrit le perimetre et les contraintes.
+3. Le travail est route vers outils ou workers.
+4. La sortie est controlee contre le resultat attendu.
+5. Le run laisse une trace compacte.
+6. Une personne accepte, revise, refuse, archive ou continue.
 
-### Utile Pour
+### Ce Que Montre Ce Repo
 
-- equipes evaluant des workflows agentiques avant adoption interne;
-- acheteurs qui veulent des niveaux de preuve plutot que claims IA larges;
-- partenaires construisant outils MCP ou surfaces Apps SDK;
-- equipes engineering ayant besoin de QA multi-agent et resumes de run;
-- recruteurs ou clients evaluant orchestration, tooling developpeur et gouvernance IA.
+Ce repo montre le modele produit, le vocabulaire evidence, l'approche QA, le langage de decision, les diagrammes et les pages scenario. Il n'a pas besoin d'exposer les internes d'implementation pour montrer la valeur de runs lisibles.
 
-### Frontiere Publique
+### Support Utile
 
-Le public peut discuter methode, forme produit, modele de preuve, gates QA et sorties scenario. Source privee, prompts, traces brutes, configs locales, endpoints, credentials, logs, sorties provider et schemas operationnels sensibles restent non publies.
+Le support utile inclut revue UX MCP/App SDK, design de resume de run, structure proof-card, design gate QA, langage benchmark, revue securite/privacy et feedback produit sur les surfaces de decision humaine.

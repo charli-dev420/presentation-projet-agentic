@@ -1,12 +1,25 @@
-# Non-Roadmap Documents / Documents hors roadmap
+# Supporting Documents / Documents de support
 
-These documents support evaluation and collaboration without becoming product promises.
+[EN](#english) | [FR](#francais)
 
-| Document | Purpose |
+## English
+
+These documents support the project dossier without becoming roadmap commitments.
+
+| Document type | Purpose |
 | --- | --- |
-| Demo script | Prepare a 15-minute scoped walkthrough for a buyer or collaborator. |
-| Evidence pack | Collect redacted proof cards for a specific audience. |
-| Partner access brief | Define what can be shown under NDA or private screen share. |
-| Claim register | Keep public claims mapped to L0-L5 evidence. |
-| Media checklist | Validate screenshots, diagrams, logos, and captions before publication. |
-| Due diligence memo | Summarize security, privacy, licensing, and validation posture. |
+| Scenario note | Describe one workflow, expected artifact, checks, and decision. |
+| Access note | Define what can be shown in a controlled review. |
+| Security note | Summarize security, privacy, and validation posture. |
+| Visual note | Prepare diagrams or cleared screenshots for a specific reader. |
+
+## Francais
+
+Ces documents soutiennent le dossier projet sans devenir des engagements roadmap.
+
+| Type de document | Objectif |
+| --- | --- |
+| Note scenario | Decrire un workflow, artefact attendu, controles et decision. |
+| Note acces | Definir ce qui peut etre montre dans une revue controlee. |
+| Note securite | Resumer posture securite, privacy et validation. |
+| Note visuelle | Preparer diagrammes ou captures validees pour un lecteur specifique. |

@@ -4,68 +4,52 @@
 
 ## English
 
-### Public Security Principles
+### Principles
 
-- Least privilege for tools and data access.
-- BYOK where partner or community evaluation requires participant-owned credentials.
-- No raw public prompts or raw private traces.
-- No API keys, tokens, local endpoints, or private configs in public artifacts.
-- No hidden telemetry.
-- Explicit consent before collecting or retaining evaluation data.
-- Human confirmation for irreversible or mutating actions.
-- Server-side validation for tool inputs.
-- Prompt-injection and tool-boundary review before a private demo.
-- Redacted proof cards instead of raw operational dumps.
+- Use least privilege for tools and data access.
+- Keep API keys, tokens, endpoints, local configs, raw prompts, raw traces, and user identifiers out of public material.
+- Require human confirmation for irreversible or write actions.
+- Validate tool inputs server-side when a workflow becomes product-facing.
+- Use written summaries and diagrams instead of raw operational dumps.
+- Collect or retain evaluation data only with explicit consent.
 
-### Data Categories
+### Data Handling
 
-| Data | Public? | Rule |
-| --- | --- | --- |
-| Evidence level | Yes | Required for every meaningful claim. |
-| Token or cost counts | Yes after redaction | Useful when tied to task class and context. |
-| Model/provider names | Yes when safe | Helps reproducibility and buyer evaluation. |
-| Raw prompts | No | Use hash, summary, or proof-card language. |
-| Raw traces/logs | No | Summarize status, tool path, and decision. |
-| Code snippets | No by default | Use architecture summaries or fingerprints unless cleared. |
-| API keys/tokens | Never | Local/env only. |
-| User identifiers | No | Use synthetic or randomized identifiers when needed. |
-| Generated private assets | No by default | Use diagrams, screenshots only if cleared and redacted. |
-| Cost ledger | Yes after redaction | Include context, task class, and limits. |
+| Data | Publication rule |
+| --- | --- |
+| Product diagrams | Allowed when they do not expose endpoints, paths, credentials, or live user data. |
+| Model or provider names | Allowed when they help reproducibility and do not reveal private operations. |
+| Cost or timing signals | Allowed when summarized by task class. |
+| Raw prompts, traces, logs | Do not publish; summarize the task and decision instead. |
+| Generated assets | Publish only if specifically cleared for presentation. |
+| User or account identifiers | Do not publish; use synthetic labels when examples are needed. |
 
-### Security Review Question
+### Review Question
 
-For every artifact, ask: could this reveal a credential, endpoint, private workflow, user identity, generated private asset, local path, or operational capability? If yes, redraw or summarize it.
+Before publishing an artifact, ask whether it exposes a credential, endpoint, local path, private workflow, user identity, generated asset, or operational capability. If yes, summarize or redraw it.
 
 ## Francais
 
-### Principes Publics De Securite
+### Principes
 
-- Moindre privilege pour outils et acces donnees.
-- BYOK quand evaluation partenaire ou communautaire demande des credentials propres au participant.
-- Pas de prompts bruts publics ni traces privees brutes.
-- Pas de cles API, tokens, endpoints locaux ou configs privees dans les artefacts publics.
-- Pas de telemetrie cachee.
-- Consentement explicite avant collecte ou retention de donnees d'evaluation.
-- Confirmation humaine pour actions irreversibles ou mutating.
-- Validation serveur des entrees outils.
-- Revue prompt-injection et frontieres outil avant demo privee.
-- Proof cards redigees au lieu de dumps operationnels bruts.
+- Utiliser le moindre privilege pour outils et acces donnees.
+- Garder cles API, tokens, endpoints, configs locales, prompts bruts, traces brutes et identifiants utilisateur hors du materiel public.
+- Demander confirmation humaine pour actions irreversibles ou d'ecriture.
+- Valider les entrees outils cote serveur quand un workflow devient surface produit.
+- Utiliser syntheses ecrites et diagrammes plutot que dumps operationnels bruts.
+- Collecter ou conserver des donnees d'evaluation seulement avec consentement explicite.
 
-### Categories De Donnees
+### Gestion Des Donnees
 
-| Donnee | Public? | Regle |
-| --- | --- | --- |
-| Niveau de preuve | Oui | Requis pour chaque claim significatif. |
-| Token ou cout | Oui apres redaction | Utile si lie a classe de tache et contexte. |
-| Noms modele/provider | Oui si sans risque | Aide reproductibilite et evaluation acheteur. |
-| Prompts bruts | Non | Utiliser hash, resume ou langage proof-card. |
-| Traces/logs bruts | Non | Resumer statut, chemin outil et decision. |
-| Extraits code | Non par defaut | Utiliser resumes architecture ou fingerprints sauf validation. |
-| Cles API/tokens | Jamais | Local/env uniquement. |
-| Identifiants utilisateur | Non | Utiliser identifiants synthetiques ou randomises si besoin. |
-| Assets prives generes | Non par defaut | Utiliser diagrammes ou captures seulement si validees et redigees. |
-| Cost ledger | Oui apres redaction | Inclure contexte, classe de tache et limites. |
+| Donnee | Regle de publication |
+| --- | --- |
+| Diagrammes produit | Autorises s'ils n'exposent pas endpoints, chemins, credentials ou donnees utilisateur reelles. |
+| Noms modele ou provider | Autorises s'ils aident la reproductibilite sans reveler operations privees. |
+| Signaux cout ou timing | Autorises quand resumes par classe de tache. |
+| Prompts, traces, logs bruts | Ne pas publier; resumer la tache et la decision. |
+| Assets generes | Publier seulement s'ils sont valides pour presentation. |
+| Identifiants utilisateur ou compte | Ne pas publier; utiliser des labels synthetiques si besoin d'exemple. |
 
-### Question De Revue Securite
+### Question De Revue
 
-Pour chaque artefact, demander: cela peut-il reveler credential, endpoint, workflow prive, identite utilisateur, asset prive genere, chemin local ou capacite operationnelle? Si oui, redessiner ou resumer.
+Avant publication d'un artefact, demander s'il expose credential, endpoint, chemin local, workflow prive, identite utilisateur, asset genere ou capacite operationnelle. Si oui, resumer ou redessiner.

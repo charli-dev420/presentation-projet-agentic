@@ -1,4 +1,4 @@
-# Scenario: Unity Asset Loop
+# Unity Asset Loop / Boucle asset Unity
 
 [EN](#english) | [FR](#francais)
 
@@ -6,44 +6,36 @@
 
 ### Scenario
 
-A creator wants an AI-assisted asset or scene element that is usable inside Unity, not just a generated file.
+A user wants a generated asset prepared for Unity review. The workflow should not stop at generation. It should prepare the candidate for inspection.
 
-### Flow
+### Expected Flow
 
-1. The user describes the Unity target, scene role, asset constraints, format, and acceptance criteria.
-2. CodexToUnity frames a job and expected manifest.
-3. LocalAssetFactory runs generation or dry-run, normalization, and socket/import preparation.
-4. Unity or the review client receives a manifest and import checklist.
-5. The result is checked for scale, pivot, bounds, naming, materials, sockets, and scene usability.
-6. A human accepts, revises, rejects, archives, or requests another job.
+1. Define the Unity target: scene role, format, scale, and acceptance criteria.
+2. Create or describe the job and expected manifest.
+3. Identify the candidate artifact.
+4. Check import expectations: scale, pivot, bounds, naming, materials, sockets, and scene role.
+5. Record the review result.
+6. Decide whether the candidate is accepted, revised, rejected, archived, or kept for later review.
 
-### Public Output
+### Useful Result
 
-A written summary, diagram, and proof card. The public artifact can describe the workflow and review criteria without publishing GLB/FBX/OBJ files, private ComfyUI workflows, endpoints, local paths, model configs, generated private assets, Unity scenes, raw logs, or builds.
-
-### Buyer Signal
-
-This scenario is useful for Unity/creative partners because it separates generation success from production usefulness. The asset is only valuable after import and human review.
+The useful result is a handoff note: target, manifest, candidate, Unity checks, decision, and next action.
 
 ## Francais
 
 ### Scenario
 
-Un createur veut un asset ou element de scene assiste IA utilisable dans Unity, pas seulement un fichier genere.
+Un utilisateur veut preparer un asset genere pour revue Unity. Le workflow ne doit pas s'arreter a la generation. Il doit preparer le candidat pour inspection.
 
-### Flux
+### Flux Attendu
 
-1. L'utilisateur decrit la cible Unity, le role scene, les contraintes asset, le format et les criteres d'acceptation.
-2. CodexToUnity cadre un job et le manifest attendu.
-3. LocalAssetFactory execute generation ou dry-run, normalisation et preparation socket/import.
-4. Unity ou le client de revue recoit un manifest et une checklist import.
-5. Le resultat est controle: echelle, pivot, bounds, nommage, materiaux, sockets et utilisabilite scene.
-6. Un humain accepte, revise, refuse, archive ou demande un autre job.
+1. Definir la cible Unity: role scene, format, echelle et criteres d'acceptation.
+2. Creer ou decrire le job et le manifest attendu.
+3. Identifier l'artefact candidat.
+4. Controler les attentes import: echelle, pivot, bounds, nommage, materiaux, sockets et role scene.
+5. Noter le resultat de revue.
+6. Decider si le candidat est accepte, revise, refuse, archive ou garde pour revue.
 
-### Sortie Publique
+### Resultat Utile
 
-Un resume redige, un diagramme et une proof card. L'artefact public peut decrire workflow et criteres de revue sans publier GLB/FBX/OBJ, workflows ComfyUI prives, endpoints, chemins locaux, configs modele, assets prives generes, scenes Unity, logs bruts ou builds.
-
-### Signal Acheteur
-
-Ce scenario est utile pour partenaires Unity/creatifs parce qu'il separe succes de generation et utilite production. L'asset n'a de valeur qu'apres import et revue humaine.
+Le resultat utile est une note de handoff: cible, manifest, candidat, controles Unity, decision et prochaine action.

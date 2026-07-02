@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
-  <title id="title">Agentic proof dashboard</title>
-  <desc id="desc">Public-safe proof status dashboard for the agentic showcase.</desc>
+  <title id="title">AI workflow proof dashboard</title>
+  <desc id="desc">Proof status dashboard for the AI workflow showcase.</desc>
   <rect width="1200" height="675" fill="#101318"/>
   <rect x="52" y="48" width="1096" height="579" rx="18" fill="#171d25" stroke="#38bdf8" stroke-width="3"/>
-  <text x="84" y="112" fill="#f8fafc" font-family="Segoe UI, Arial, sans-serif" font-size="38" font-weight="700">Agentic Proof Dashboard</text>
+  <text x="84" y="112" fill="#f8fafc" font-family="Segoe UI, Arial, sans-serif" font-size="38" font-weight="700">AI Workflow Proof Dashboard</text>
   <text x="84" y="150" fill="#a8b7c8" font-family="Segoe UI, Arial, sans-serif" font-size="21">Evidence before promise · claim levels · redaction · human decision</text>
   <g font-family="Segoe UI, Arial, sans-serif">
     <rect x="84" y="210" width="250" height="132" rx="12" fill="#20313a"/>
@@ -17,7 +17,7 @@
     <rect x="636" y="210" width="250" height="132" rx="12" fill="#2b2933"/>
     <text x="662" y="252" fill="#ffffff" font-size="23" font-weight="700">Prototype</text>
     <text x="662" y="288" fill="#cbd5e1" font-size="18">CodexToUnity</text>
-    <text x="662" y="318" fill="#facc15" font-size="17">demo scoped</text>
+    <text x="662" y="318" fill="#facc15" font-size="17">scenario scoped</text>
     <rect x="912" y="210" width="205" height="132" rx="12" fill="#2a2634"/>
     <text x="938" y="252" fill="#ffffff" font-size="23" font-weight="700">Private</text>
     <text x="938" y="288" fill="#cbd5e1" font-size="18">Mob'ia</text>

@@ -4,28 +4,28 @@
 
 ## English
 
-| File | Use |
-| --- | --- |
-| [`assets/one-pager.svg`](../assets/one-pager.svg) | General agentic ecosystem overview. |
-| [`assets/proof-dashboard.svg`](../assets/proof-dashboard.svg) | Proof status by surface. |
-| [`assets/qa-matrix.svg`](../assets/qa-matrix.svg) | Quality gates and validation framing. |
-| [`assets/diagrams/agentic-control-loop.svg`](../assets/diagrams/agentic-control-loop.svg) | User goal -> orchestration -> evidence -> decision loop. |
-| [`assets/diagrams/proof-level-ladder.svg`](../assets/diagrams/proof-level-ladder.svg) | L0-L5 proof levels. |
-| [`assets/diagrams/unity-asset-pipeline.svg`](../assets/diagrams/unity-asset-pipeline.svg) | Agent-driven Unity asset pipeline. |
-| [`assets/diagrams/mobia-job-lifecycle.svg`](../assets/diagrams/mobia-job-lifecycle.svg) | Mob'ia / ccomf-unity job lifecycle. |
+The visuals in this repository help readers understand structure quickly.
 
-These visuals explain maturity, security, evidence, and workflow structure quickly for a partner, buyer, collaborator, or reviewer.
+- [`assets/project-banners/codex-model-orchestrator.jpg`](../assets/project-banners/codex-model-orchestrator.jpg) - main project banner.
+- [`assets/project-banners/agentic-workflows.jpg`](../assets/project-banners/agentic-workflows.jpg) - AI workflow and CodexToUnity banner.
+- [`assets/project-banners/mobia-mobile.jpg`](../assets/project-banners/mobia-mobile.jpg) - Mob'ia / ccomf-unity banner.
+- [`assets/one-pager.svg`](../assets/one-pager.svg) - one-page overview.
+- [`assets/proof-dashboard.svg`](../assets/proof-dashboard.svg) - validation overview.
+- [`assets/qa-matrix.svg`](../assets/qa-matrix.svg) - QA overview.
+- [`assets/diagrams/agentic-control-loop.svg`](../assets/diagrams/agentic-control-loop.svg) - control loop from goal to decision.
+- [`assets/diagrams/unity-asset-pipeline.svg`](../assets/diagrams/unity-asset-pipeline.svg) - Unity asset workflow.
+- [`assets/diagrams/mobia-job-lifecycle.svg`](../assets/diagrams/mobia-job-lifecycle.svg) - Mob'ia job lifecycle.
 
 ## Francais
 
-| Fichier | Usage |
-| --- | --- |
-| [`assets/one-pager.svg`](../assets/one-pager.svg) | Vue generale ecosysteme agentique. |
-| [`assets/proof-dashboard.svg`](../assets/proof-dashboard.svg) | Statut des preuves par surface. |
-| [`assets/qa-matrix.svg`](../assets/qa-matrix.svg) | Gates qualite et cadrage validation. |
-| [`assets/diagrams/agentic-control-loop.svg`](../assets/diagrams/agentic-control-loop.svg) | Boucle objectif utilisateur -> orchestration -> preuve -> decision. |
-| [`assets/diagrams/proof-level-ladder.svg`](../assets/diagrams/proof-level-ladder.svg) | Niveaux de preuve L0-L5. |
-| [`assets/diagrams/unity-asset-pipeline.svg`](../assets/diagrams/unity-asset-pipeline.svg) | Pipeline asset Unity pilote par agents. |
-| [`assets/diagrams/mobia-job-lifecycle.svg`](../assets/diagrams/mobia-job-lifecycle.svg) | Cycle de job Mob'ia / ccomf-unity. |
+Les visuels de ce repo aident le lecteur a comprendre rapidement la structure.
 
-Ces visuels expliquent vite maturite, securite, preuve et structure workflow pour partenaire, acheteur, collaborateur ou reviewer.
+- [`assets/project-banners/codex-model-orchestrator.jpg`](../assets/project-banners/codex-model-orchestrator.jpg) - banniere projet principal.
+- [`assets/project-banners/agentic-workflows.jpg`](../assets/project-banners/agentic-workflows.jpg) - banniere workflow IA et CodexToUnity.
+- [`assets/project-banners/mobia-mobile.jpg`](../assets/project-banners/mobia-mobile.jpg) - banniere Mob'ia / ccomf-unity.
+- [`assets/one-pager.svg`](../assets/one-pager.svg) - vue une page.
+- [`assets/proof-dashboard.svg`](../assets/proof-dashboard.svg) - vue validation.
+- [`assets/qa-matrix.svg`](../assets/qa-matrix.svg) - vue QA.
+- [`assets/diagrams/agentic-control-loop.svg`](../assets/diagrams/agentic-control-loop.svg) - boucle de controle de l'objectif a la decision.
+- [`assets/diagrams/unity-asset-pipeline.svg`](../assets/diagrams/unity-asset-pipeline.svg) - workflow asset Unity.
+- [`assets/diagrams/mobia-job-lifecycle.svg`](../assets/diagrams/mobia-job-lifecycle.svg) - cycle de vie job Mob'ia.

@@ -1,25 +1,27 @@
-# Public Scope / Perimetre public
+# Publication Scope / Perimetre de publication
 
-This repository is a public-safe presentation and evaluation surface. It should help a serious reader understand the product direction, proof model, QA discipline, and partnership fit without exposing private implementation.
+[EN](#english) | [FR](#francais)
 
-## Included
+## English
 
-- Product positioning for agentic orchestration, MCP, Apps SDK, Unity/ComfyUI bridges, and local asset loops.
-- Public-safe architecture principles and workflow maps.
-- Non-sensitive diagrams and visual summaries.
-- Redacted QA summaries, scenario cards, proof cards, and written evidence ledgers.
-- Buyer, partner, funder, recruiter, and collaborator evaluation material.
-- Security, privacy, redaction, and governance principles.
+### What Belongs Here
 
-## Excluded
+This repository is a public presentation surface for the AI workflow portfolio. It can include product framing, diagrams, banners, user flows, tutorials, evidence summaries, QA vocabulary, project evaluation, open needs, and visual material.
 
-- Protected source code.
-- Private MCP servers, plugins, prompts, traces, datasets, logs, or provider outputs.
-- API keys, tokens, local endpoints, private configuration, or user data.
-- Raw security scan artifacts, raw release gates, internal run summaries, or operational evidence dumps.
-- Tool definitions that would expose destructive capabilities or private workflows.
-- ComfyUI workflows, Unity builds, GLB/FBX/OBJ assets, models, backend routes, Docker/run configs, private screenshots, and generated private assets.
+### What Stays Out
 
-## Review Rule
+The repo should not include protected source code, product binaries, secrets, local endpoints, private configs, raw prompts, raw traces, user sessions, provider outputs, generated private assets, ComfyUI workflows, Unity builds, or operational logs.
 
-Only add material that can be shared publicly without exposing credentials, private tools, privileged workflows, or customer/user data. Images should be diagrams, synthetic examples, or fully redacted captures with no endpoint, local path, run id, user name, prompt, workflow, model, generated private asset, trace, or log.
+This scope note should stay short and practical. The rest of the repository should focus on explaining the products.
+
+## Francais
+
+### Ce Qui A Sa Place Ici
+
+Ce repo est une surface publique de presentation pour le portfolio workflow IA. Il peut inclure cadrage produit, diagrammes, bannieres, flux utilisateur, tutoriels, syntheses evidence, vocabulaire QA, evaluation projet, besoins ouverts et materiel visuel.
+
+### Ce Qui Reste Hors Repo
+
+Le repo ne doit pas inclure code source protege, binaires produit, secrets, endpoints locaux, configs privees, prompts bruts, traces brutes, sessions utilisateur, sorties provider, assets prives generes, workflows ComfyUI, builds Unity ou logs operationnels.
+
+Cette limite doit rester courte et pratique. Le reste du repository doit se concentrer sur l'explication des produits.

@@ -5,166 +5,133 @@
 </p>
 
 <p align="center">
-  <strong>I am building tools for AI-assisted work that needs to be checked, reused, explained, and handed back to a real person.</strong>
+  <img alt="Codex Model Orchestrator" src="https://img.shields.io/badge/Codex_Model_Orchestrator-readable_runs-111827">
+  <img alt="Human decision" src="https://img.shields.io/badge/human_decision-required-0b5fff">
+  <img alt="Unity ComfyUI" src="https://img.shields.io/badge/Unity_%2F_ComfyUI-asset_workflows-19a974">
+  <img alt="Unicorn Who Dev" src="https://img.shields.io/badge/by-Unicorn_Who_Dev-7c3aed">
+</p>
+
+<p align="center">
+  <strong>AI workflow tools for runs that can be read, checked, reused, and decided by a person.</strong>
 </p>
 
 <p align="center">
   <a href="#english">English</a> ·
   <a href="#francais">Francais</a> ·
-  <a href="docs/one-pager.md">One-pager</a> ·
-  <a href="docs/ecosystem-map.md">Ecosystem map</a> ·
-  <a href="docs/evidence-ledger.md">Evidence ledger</a> ·
-  <a href="docs/buyer-evaluation.md">Buyer evaluation</a>
+  <a href="docs/overview.md">Overview</a> ·
+  <a href="docs/projects/codex-model-orchestrator.md">Orchestrator</a> ·
+  <a href="docs/projects/mobia-ccomf-unity.md">Mob'ia</a> ·
+  <a href="docs/resources.md">Resources</a>
 </p>
 
 ## English
 
-### What I Am Trying To Solve
+### What This Repository Presents
 
-When I use AI tools on real work, the hard part is rarely the first answer. The hard part comes after: keeping track of what was asked, what the tool touched, why it chose that path, what still needs checking, and what a human should decide before the result is accepted.
+I work on AI tooling from the part that usually gets ignored after the first answer: what was asked, what was allowed, what the tool touched, what came out, what was checked, and what a person still needs to decide.
 
-**Codex Model Orchestrator** is my answer to that problem. I want a run to leave behind something readable: a short brief, the tools involved, the decisions made, the evidence available, the weak points, and the next action. Not a wall of hidden traces, not a vague "done", and not a demo that only works while someone is explaining it live.
+**Codex Model Orchestrator** is the main project. It is a control layer for AI-assisted work: scope the task, route the work, call tools, keep a readable run record, apply checks, and leave a decision surface instead of a vague "done".
 
-The Unity and asset projects keep the idea honest. **CodexToUnity**, **Mob'ia / ccomf-unity**, and **LocalAssetFactory** force the system to deal with concrete work: generated assets, manifests, import checks, review states, ComfyUI handoff, and files that need to survive outside the chat window.
+The other projects make that idea concrete. **CodexToUnity** connects Codex, Unity, and ComfyUI around asset handoff. **Mob'ia / ccomf-unity** is the product layer for profiles, jobs, artifacts, and clients. **LocalAssetFactory** is the local loop that turns generated candidates into manifest-backed, importable, reviewable Unity assets.
 
-### A Concrete Example
+### Start Here
 
-Imagine a small asset workflow.
+Read [overview](docs/overview.md) for the full map. Read [Codex Model Orchestrator](docs/projects/codex-model-orchestrator.md) for the main project. Then read [CodexToUnity](docs/projects/codextounity.md), [Mob'ia / ccomf-unity](docs/projects/mobia-ccomf-unity.md), and [LocalAssetFactory](docs/projects/local-asset-factory.md) for the concrete workflow surfaces.
 
-A user asks for a generated object to be prepared for Unity. The system should not just say "asset created". It should know which source was used, which generation step ran, what file came out, whether the manifest is complete, whether the import looks plausible, what still needs a human review, and what summary can be sent to a collaborator.
+For practical use, start with [user flows](docs/user-flows.md) and [tutorials](docs/tutorials.md). For validation, use [evidence](docs/evidence.md), [evidence ledger](docs/evidence-ledger.md), [proof pack](docs/proof-pack.md), [QA matrix](docs/qa-matrix.md), and [QA validation](docs/qa-validation.md). For collaboration, funding, missions, or roles, read [project evaluation](docs/project-evaluation.md), [open needs](docs/partnership.md), and [decision pack](docs/decision-pack.md).
 
-That is the kind of loop I care about. If the run cannot be reread, questioned, and improved, it is not ready for a team.
-
-### How To Read This Repo
-
-Start with the [one-pager](docs/one-pager.md) for the short version. Then use the [ecosystem map](docs/ecosystem-map.md) to see how the pieces fit together.
-
-For real usage, read the [user flows](docs/user-flows.md), [tutorials](docs/tutorials.md), and [orchestrator proof loop](docs/scenarios/orchestrator-proof-loop.md). For evaluation, read [evidence](docs/evidence.md), [evidence ledger](docs/evidence-ledger.md), [proof pack](docs/proof-pack.md), [QA matrix](docs/qa-matrix.md), and [QA validation](docs/qa-validation.md).
-
-If you are thinking about a mission, pilot, partnership, funding discussion, or role, the useful pages are [buyer evaluation](docs/buyer-evaluation.md), [partnership brief](docs/partnership.md), [decision pack](docs/decision-pack.md), and [security/privacy](docs/security-privacy.md).
-
-Project pages are available for [Codex Model Orchestrator](docs/projects/codex-model-orchestrator.md), [CodexToUnity](docs/projects/codextounity.md), [Mob'ia / ccomf-unity](docs/projects/mobia-ccomf-unity.md), and [LocalAssetFactory](docs/projects/local-asset-factory.md).
-
-### Project Tracks
+### Project Lines
 
 <p>
-  <img align="left" src="assets/project-banners/agentic-workflows.jpg" width="260" alt="AI workflow banner">
-  <strong>Codex Model Orchestrator is about readable runs.</strong><br>
-  I use it to explore task routing, sub-agent work, run summaries, proof cards, and MCP/App SDK surfaces. The point is not to make the tool sound autonomous. The point is to let someone understand the run after it happened.
+  <img align="left" src="assets/project-banners/codex-model-orchestrator.jpg" width="280" alt="Codex Model Orchestrator banner">
+  <strong>Codex Model Orchestrator is the priority.</strong><br>
+  It is about runs that explain themselves: goal, constraints, tool path, checks, evidence, weak points, and human decision. The product value is not "AI did something"; it is that another person can understand the work after the run.
 </p>
 
 <br clear="left">
 
 <p>
-  <img align="left" src="assets/project-banners/mobia-mobile.jpg" width="260" alt="Mob'ia mobile banner">
-  <strong>Unity and asset workflows give the system something real to carry.</strong><br>
-  CodexToUnity, Mob'ia / ccomf-unity, and LocalAssetFactory connect orchestration to generated files, manifests, review screens, import checks, and client-facing summaries.
+  <img align="left" src="assets/project-banners/agentic-workflows.jpg" width="280" alt="AI workflow banner">
+  <strong>CodexToUnity gives the orchestration a real handoff.</strong><br>
+  The bridge connects Codex, Unity, and ComfyUI around jobs, manifests, dry runs, generated candidates, import checks, and review notes.
 </p>
 
 <br clear="left">
 
 <p>
-  <img align="left" src="assets/project-banners/codex-model-orchestrator.jpg" width="260" alt="Codex Model Orchestrator banner">
-  <strong>The output must help a person decide.</strong><br>
-  A good run should end with a useful choice: accept it, revise it, ask for proof, send it to a collaborator, or stop there. That decision is part of the product.
+  <img align="left" src="assets/project-banners/mobia-mobile.jpg" width="280" alt="Mob'ia mobile banner">
+  <strong>Mob'ia / ccomf-unity turns generation into a product surface.</strong><br>
+  Profiles, jobs, artifact states, clients, and review decisions make ComfyUI-style work easier to follow for users, collaborators, and product reviewers.
 </p>
 
 <br clear="left">
 
-### What This Repository Contains
+### What A Reader Can Find
 
-This repository is the public dossier for the agentic/tooling projects:
-
-- Codex Model Orchestrator product notes and proof model;
-- CodexToUnity and Unity handoff documentation;
-- Mob'ia / ccomf-unity product framing;
-- LocalAssetFactory notes for local validation and import preparation;
-- user flows, tutorials, QA matrix, evidence ledger, and project pages.
+- A clear main project: Codex Model Orchestrator.
+- Project pages for CodexToUnity, Mob'ia / ccomf-unity, and LocalAssetFactory.
+- User flows for readable AI runs, Unity handoff, ComfyUI product jobs, and local asset review.
+- Evidence and QA pages that explain how a run becomes trustworthy enough to act on.
+- Diagrams, banners, one-pager, proof dashboard, QA matrix, and brand assets.
 
 ### Open Needs
 
-The useful help right now is concrete:
-
-- product feedback on run summaries, proof cards, and human review states;
-- MCP/App SDK review on how tool state should be presented to a user;
-- Unity or ComfyUI workflow feedback for CodexToUnity and Mob'ia / ccomf-unity;
-- technical review around local automation, validation, and repeatable handoff;
-- funding, mission, or job discussions around developer tools, AI workflow products, Unity tooling, and human-in-the-loop systems.
+Useful help is concrete: MCP/App SDK review, run-summary UX, proof-card design, Unity/ComfyUI workflow feedback, local automation review, QA criteria, documentation, funding, mission work, and roles around developer tools, AI workflow products, creative pipelines, and human-in-the-loop systems.
 
 Public contact route: [GitHub - Unicorn Who Dev](https://github.com/charli-dev420).
 
 ## Francais
 
-### Ce Que Je Cherche A Resoudre
+### Ce Que Presente Ce Repo
 
-Quand j'utilise des outils IA sur du vrai travail, le plus dur n'est pas souvent la premiere reponse. Le dur arrive apres: garder la trace de ce qui a ete demande, ce que l'outil a touche, pourquoi il a choisi ce chemin, ce qui reste a verifier, et ce qu'une personne doit decider avant d'accepter le resultat.
+Je travaille sur l'outillage IA a partir de la partie qu'on ignore souvent apres la premiere reponse: ce qui a ete demande, ce qui etait autorise, ce que l'outil a touche, ce qui est sorti, ce qui a ete verifie, et ce qu'une personne doit encore decider.
 
-**Codex Model Orchestrator** est ma reponse a ce probleme. Je veux qu'un run laisse quelque chose de lisible: un brief court, les outils impliques, les decisions prises, les preuves disponibles, les points faibles et l'action suivante. Pas un mur de traces, pas un simple "done", pas une demo qui ne tient que pendant qu'on l'explique a l'oral.
+**Codex Model Orchestrator** est le projet principal. C'est une couche de pilotage pour le travail assiste par IA: cadrer la tache, router le travail, appeler les outils, garder un run lisible, appliquer des controles et laisser une surface de decision au lieu d'un vague "done".
 
-Les projets Unity et assets gardent l'idee concrete. **CodexToUnity**, **Mob'ia / ccomf-unity** et **LocalAssetFactory** obligent le systeme a traiter du travail reel: assets generes, manifests, controles d'import, etats de revue, handoff ComfyUI et fichiers qui doivent survivre hors de la fenetre de chat.
+Les autres projets rendent cette idee concrete. **CodexToUnity** relie Codex, Unity et ComfyUI autour du handoff asset. **Mob'ia / ccomf-unity** est la couche produit pour profils, jobs, artefacts et clients. **LocalAssetFactory** est la boucle locale qui transforme des candidats generes en assets Unity avec manifest, import et revue.
 
-### Exemple Concret
+### Commencer Ici
 
-Imaginez un petit workflow asset.
+Lire [overview](docs/overview.md) pour la carte generale. Lire [Codex Model Orchestrator](docs/projects/codex-model-orchestrator.md) pour le projet principal. Lire ensuite [CodexToUnity](docs/projects/codextounity.md), [Mob'ia / ccomf-unity](docs/projects/mobia-ccomf-unity.md) et [LocalAssetFactory](docs/projects/local-asset-factory.md) pour les surfaces de workflow concretes.
 
-Un utilisateur demande de preparer un objet genere pour Unity. Le systeme ne doit pas seulement dire "asset created". Il doit savoir quelle source a ete utilisee, quelle generation a tourne, quel fichier est sorti, si le manifest est complet, si l'import parait plausible, ce qui demande encore une revue humaine et quel resume peut etre envoye a un collaborateur.
+Pour l'usage pratique, commencer par [user flows](docs/user-flows.md) et [tutorials](docs/tutorials.md). Pour la validation, utiliser [evidence](docs/evidence.md), [evidence ledger](docs/evidence-ledger.md), [proof pack](docs/proof-pack.md), [QA matrix](docs/qa-matrix.md) et [QA validation](docs/qa-validation.md). Pour collaboration, financement, missions ou postes, lire [project evaluation](docs/project-evaluation.md), [open needs](docs/partnership.md) et [decision pack](docs/decision-pack.md).
 
-C'est ce type de boucle qui m'interesse. Si le run ne peut pas etre relu, questionne et ameliore, il n'est pas pret pour une equipe.
-
-### Lire Ce Repo
-
-Le [one-pager](docs/one-pager.md) donne la version courte. L'[ecosystem map](docs/ecosystem-map.md) montre comment les pieces se relient.
-
-Pour l'usage, lire les [flux utilisateur](docs/user-flows.md), les [tutoriels](docs/tutorials.md) et le [proof loop orchestrateur](docs/scenarios/orchestrator-proof-loop.md). Pour evaluer, lire [evidence](docs/evidence.md), [evidence ledger](docs/evidence-ledger.md), [proof pack](docs/proof-pack.md), [QA matrix](docs/qa-matrix.md) et [QA validation](docs/qa-validation.md).
-
-Pour une mission, un pilote, un partenariat, un financement ou un poste, les pages utiles sont [buyer evaluation](docs/buyer-evaluation.md), [partnership brief](docs/partnership.md), [decision pack](docs/decision-pack.md) et [security/privacy](docs/security-privacy.md).
-
-Les pages projet couvrent [Codex Model Orchestrator](docs/projects/codex-model-orchestrator.md), [CodexToUnity](docs/projects/codextounity.md), [Mob'ia / ccomf-unity](docs/projects/mobia-ccomf-unity.md) et [LocalAssetFactory](docs/projects/local-asset-factory.md).
-
-### Axes Projet
+### Lignes Projet
 
 <p>
-  <img align="left" src="assets/project-banners/agentic-workflows.jpg" width="260" alt="Banniere workflow IA">
-  <strong>Codex Model Orchestrator sert a rendre les runs lisibles.</strong><br>
-  Je l'utilise pour explorer routage de taches, travail de sous-agents, resumes de run, cartes de preuve et surfaces MCP/App SDK. Le but n'est pas de donner l'impression que l'outil est autonome. Le but est que quelqu'un puisse comprendre le run apres coup.
+  <img align="left" src="assets/project-banners/codex-model-orchestrator.jpg" width="280" alt="Banniere Codex Model Orchestrator">
+  <strong>Codex Model Orchestrator est la priorite.</strong><br>
+  Il sert a produire des runs qui s'expliquent: objectif, contraintes, chemin outil, controles, preuves, points faibles et decision humaine. La valeur produit n'est pas "l'IA a fait quelque chose"; c'est qu'une autre personne peut comprendre le travail apres le run.
 </p>
 
 <br clear="left">
 
 <p>
-  <img align="left" src="assets/project-banners/mobia-mobile.jpg" width="260" alt="Banniere Mob'ia mobile">
-  <strong>Unity et les workflows assets donnent au systeme quelque chose de reel a porter.</strong><br>
-  CodexToUnity, Mob'ia / ccomf-unity et LocalAssetFactory relient l'orchestration a des fichiers generes, manifests, ecrans de revue, controles d'import et resumes lisibles cote client.
+  <img align="left" src="assets/project-banners/agentic-workflows.jpg" width="280" alt="Banniere workflow IA">
+  <strong>CodexToUnity donne a l'orchestration un vrai handoff.</strong><br>
+  Le pont relie Codex, Unity et ComfyUI autour de jobs, manifests, dry runs, candidats generes, controles d'import et notes de revue.
 </p>
 
 <br clear="left">
 
 <p>
-  <img align="left" src="assets/project-banners/codex-model-orchestrator.jpg" width="260" alt="Banniere Codex Model Orchestrator">
-  <strong>La sortie doit aider une personne a decider.</strong><br>
-  Un bon run doit finir sur un vrai choix: accepter, reviser, demander une preuve, envoyer a un collaborateur ou s'arreter la. Cette decision fait partie du produit.
+  <img align="left" src="assets/project-banners/mobia-mobile.jpg" width="280" alt="Banniere Mob'ia mobile">
+  <strong>Mob'ia / ccomf-unity transforme la generation en surface produit.</strong><br>
+  Profils, jobs, etats artefact, clients et decisions de revue rendent le travail type ComfyUI plus lisible pour utilisateurs, collaborateurs et reviewers produit.
 </p>
 
 <br clear="left">
 
-### Ce Que Contient Ce Repo
+### Ce Qu'Un Lecteur Trouve
 
-Ce repo est le dossier public des projets agentic/tooling:
-
-- notes produit et modele de preuve Codex Model Orchestrator;
-- documentation CodexToUnity et handoff Unity;
-- cadrage produit Mob'ia / ccomf-unity;
-- notes LocalAssetFactory pour validation locale et preparation d'import;
-- flux utilisateur, tutoriels, QA matrix, evidence ledger et pages projet.
+- Un projet principal clair: Codex Model Orchestrator.
+- Des pages projet pour CodexToUnity, Mob'ia / ccomf-unity et LocalAssetFactory.
+- Des flux utilisateur pour runs IA lisibles, handoff Unity, jobs produit ComfyUI et revue asset locale.
+- Des pages evidence et QA qui expliquent comment un run devient assez fiable pour agir.
+- Diagrammes, bannieres, one-pager, dashboard preuve, matrice QA et assets de marque.
 
 ### Besoins Ouverts
 
-L'aide utile maintenant est concrete:
+L'aide utile est concrete: revue MCP/App SDK, UX de resume de run, design proof-card, feedback workflow Unity/ComfyUI, revue automatisation locale, criteres QA, documentation, financement, missions et postes autour des outils developpeur, produits workflow IA, pipelines creatifs et systemes human-in-the-loop.
 
-- feedback produit sur les resumes de run, cartes de preuve et etats de revue humaine;
-- revue MCP/App SDK sur la presentation de l'etat outil a l'utilisateur;
-- feedback Unity ou ComfyUI pour CodexToUnity et Mob'ia / ccomf-unity;
-- revue technique autour de l'automatisation locale, validation et handoff repetable;
-- financement, mission ou poste autour des outils developpeur, produits IA workflow, tooling Unity et systemes human-in-the-loop.
-
-Contact public recommande: [GitHub - Unicorn Who Dev](https://github.com/charli-dev420).
+Contact public: [GitHub - Unicorn Who Dev](https://github.com/charli-dev420).

@@ -1,23 +1,17 @@
 # Assets
 
-This folder contains public-safe presentation assets only.
+This folder contains presentation assets for the AI workflow showcase.
 
-## Included
+## Folders
 
-| Asset | Purpose |
-| --- | --- |
-| `brand/daw-core-logo-main.png` | Main DAWWW Core logo for presentation pages. |
-| `brand/daw-core-icon-512.png` | Compact icon/avatar. |
-| `brand/daw-core-banner.png` | Wide banner for cover sections. |
-| `brand/daw-core-watermark-opacity20.png` | Low-opacity watermark for public visual documents. |
-| `one-pager.svg` | Public-safe visual overview of the agentic ecosystem. |
-| `proof-dashboard.svg` | Public proof dashboard for the agentic ecosystem. |
-| `qa-matrix.svg` | Public-safe QA matrix. |
-| `diagrams/agentic-control-loop.svg` | Orchestrator control loop. |
-| `diagrams/proof-level-ladder.svg` | Evidence levels L0-L5. |
-| `diagrams/unity-asset-pipeline.svg` | Agentic Unity asset pipeline. |
-| `diagrams/mobia-job-lifecycle.svg` | Mob'ia / ccomf-unity job lifecycle. |
+- `project-banners/` - Codex Model Orchestrator, AI workflow, and Mob'ia banners.
+- `brand/` - shared Unicorn Who Dev identity assets.
+- `diagrams/` - workflow and validation diagrams.
 
-## Rule
+## Files
 
-Allowed images are diagrams, synthetic examples, or fully redacted captures only. Do not add private screenshots, secrets, prompts, traces, source builds, datasets, local paths, workflows, model files, logs, endpoints, run ids, routes, API outputs with user data, generated private assets, or unreleased artifacts.
+- `one-pager.svg` - visual overview of the project structure.
+- `proof-dashboard.svg` - evidence and validation overview.
+- `qa-matrix.svg` - QA overview.
+
+Keep this folder focused on presentation material: no secrets, product binaries, raw traces, local paths, unreleased packages, generated private assets, or user sessions.
