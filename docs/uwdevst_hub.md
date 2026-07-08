@@ -37,6 +37,23 @@ preset direction → generation → audition → comparison → evaluation → s
 
 The goal is to make sound exploration easier to review instead of treating presets as isolated outputs.
 
+---
+
+## Review signals
+
+| Signal | Meaning |
+| --- | --- |
+| Preset intent is clear | The sound has a role, mood, instrument family or target use. |
+| Audition notes exist | Listening feedback is captured instead of only listing preset names. |
+| Candidates are comparable | Multiple sounds can be judged against the same criteria. |
+| Selection is explained | Keep, revise or reject has a reason. |
+
+---
+
+## Public boundary
+
+This page presents the LLM-assisted evaluation angle. It does not expose private preset packs, unreleased audio, datasets, model prompts or commercial release material.
+
 <p align="right"><a href="../README.md">← Back to README</a> · <a href="#francais">Français</a></p>
 
 ---
@@ -69,5 +86,22 @@ direction preset → génération → écoute → comparaison → évaluation �
 ```
 
 Le but est de rendre l’exploration sonore plus facile à revoir au lieu de traiter les presets comme des sorties isolées.
+
+---
+
+## Signaux de revue
+
+| Signal | Sens |
+| --- | --- |
+| L’intention preset est claire | Le son a un rôle, une ambiance, une famille instrumentale ou un usage cible. |
+| Les notes d’écoute existent | Le feedback d’écoute est capturé au lieu de seulement lister des noms de presets. |
+| Les candidats sont comparables | Plusieurs sons peuvent être jugés selon les mêmes critères. |
+| La sélection est expliquée | Garder, corriger ou rejeter a une raison. |
+
+---
+
+## Limite publique
+
+Cette page présente l’angle d’évaluation assistée par LLM. Elle n’expose pas les packs presets privés, audio non publié, datasets, prompts de modèles ou matière de release commerciale.
 
 <p align="right"><a href="../README.md">← Retour au README</a> · <a href="#english">English</a></p>
