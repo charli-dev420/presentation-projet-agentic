@@ -36,6 +36,23 @@ request → profile → job → artifact → client state → review decision
 
 This makes generation workflows more understandable to people who did not build the pipeline.
 
+---
+
+## Review signals
+
+| Signal | Meaning |
+| --- | --- |
+| Profile is readable | The workflow has a clear user or use-case context. |
+| Job state is explicit | A reviewer can see what is happening and why. |
+| Artifact is not anonymous | The result has a role, status and review state. |
+| Client note is useful | The user can understand the output without raw ComfyUI internals. |
+
+---
+
+## Public boundary
+
+This page does not expose private ComfyUI workflows, private models, credentials, internal queues or customer/project data.
+
 <p align="right"><a href="../README.md">← Back to README</a> · <a href="#francais">Français</a></p>
 
 ---
@@ -67,5 +84,22 @@ demande → profil → job → artefact → état client → décision de revue
 ```
 
 Cela rend les workflows de génération plus compréhensibles pour les personnes qui n’ont pas construit le pipeline.
+
+---
+
+## Signaux de revue
+
+| Signal | Sens |
+| --- | --- |
+| Le profil est lisible | Le workflow a un contexte utilisateur ou usage clair. |
+| L’état du job est explicite | Un reviewer peut voir ce qui se passe et pourquoi. |
+| L’artefact n’est pas anonyme | Le résultat a un rôle, un statut et un état de revue. |
+| La note client est utile | L’utilisateur comprend la sortie sans les internes ComfyUI bruts. |
+
+---
+
+## Limite publique
+
+Cette page n’expose pas les workflows ComfyUI privés, modèles privés, credentials, queues internes ou données client/projet.
 
 <p align="right"><a href="../README.md">← Retour au README</a> · <a href="#english">English</a></p>
