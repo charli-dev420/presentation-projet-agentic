@@ -1,137 +1,217 @@
-# Codex Model Orchestrator / AI Workflow Tools
+# Présentation projets agentic
 
 <p align="center">
-  <img src="assets/project-banners/codex-model-orchestrator.jpg" width="900" alt="Codex Model Orchestrator banner">
-</p>
-
-<p align="center">
-  <img alt="Codex Model Orchestrator" src="https://img.shields.io/badge/Codex_Model_Orchestrator-readable_runs-111827">
-  <img alt="Human decision" src="https://img.shields.io/badge/human_decision-required-0b5fff">
-  <img alt="Unity ComfyUI" src="https://img.shields.io/badge/Unity_%2F_ComfyUI-asset_workflows-19a974">
-  <img alt="Unicorn Who Dev" src="https://img.shields.io/badge/by-Unicorn_Who_Dev-7c3aed">
+  <img src="assets/project-banners/agentic-workflows.jpg" width="900" alt="Agentic projects banner">
 </p>
 
 <p align="center">
-  <strong>AI workflow tools for runs that can be read, checked, reused, and decided by a person.</strong>
+  <strong>LLM-driven workflows · Agents · Tool orchestration · Human review · Creative automation</strong>
 </p>
 
 <p align="center">
-  <a href="#english">English</a> ·
-  <a href="#francais">Francais</a> ·
-  <a href="docs/overview.md">Overview</a> ·
-  <a href="docs/projects/codex-model-orchestrator.md">Orchestrator</a> ·
-  <a href="docs/projects/mobia-ccomf-unity.md">Mob'ia</a> ·
-  <a href="docs/resources.md">Resources</a>
+  <strong>Language / Langue</strong><br>
+  <a href="#english">🇬🇧 English</a> ·
+  <a href="#francais">🇫🇷 Français</a>
 </p>
 
-## English
+---
 
-### What This Repository Presents
+<h2 id="english">🇬🇧 English</h2>
 
-I work on AI tooling from the part that usually gets ignored after the first answer: what was asked, what was allowed, what the tool touched, what came out, what was checked, and what a person still needs to decide.
+This repository presents the projects where a language model has a central role.
 
-**Codex Model Orchestrator** is the main project. It is a control layer for AI-assisted work: scope the task, route the work, call tools, keep a readable run record, apply checks, and leave a decision surface instead of a vague "done".
+Some projects also belong to other showcases, such as Unity, 3D, music or image tools.  
+Here, they are presented from one angle only: how the LLM helps read, plan, route, generate, inspect, edit, evaluate or prepare a decision.
 
-The other projects make that idea concrete. **CodexToUnity** connects Codex, Unity, and ComfyUI around asset handoff. **Mob'ia / ccomf-unity** is the product layer for profiles, jobs, artifacts, and clients. **LocalAssetFactory** is the local loop that turns generated candidates into manifest-backed, importable, reviewable Unity assets.
+The point is not to show every technical detail of each project.  
+The point is to make the LLM-driven layer clear.
 
-### Start Here
+---
 
-Read [overview](docs/overview.md) for the full map. Read [Codex Model Orchestrator](docs/projects/codex-model-orchestrator.md) for the main project. Then read [CodexToUnity](docs/projects/codextounity.md), [Mob'ia / ccomf-unity](docs/projects/mobia-ccomf-unity.md), and [LocalAssetFactory](docs/projects/local-asset-factory.md) for the concrete workflow surfaces.
+## What belongs here
 
-For practical use, start with [user flows](docs/user-flows.md) and [tutorials](docs/tutorials.md). For validation, use [evidence](docs/evidence.md), [evidence ledger](docs/evidence-ledger.md), [proof pack](docs/proof-pack.md), [QA matrix](docs/qa-matrix.md), and [QA validation](docs/qa-validation.md). For collaboration, funding, missions, or roles, read [project evaluation](docs/project-evaluation.md), [open needs](docs/partnership.md), and [decision pack](docs/decision-pack.md).
+A project belongs in this showcase when the LLM is part of the real workflow, not just a chat box next to the product.
 
-### Project Lines
+The LLM can be used to:
 
-<p>
-  <img align="left" src="assets/project-banners/codex-model-orchestrator.jpg" width="280" alt="Codex Model Orchestrator banner">
-  <strong>Codex Model Orchestrator is the priority.</strong><br>
-  It is about runs that explain themselves: goal, constraints, tool path, checks, evidence, weak points, and human decision. The product value is not "AI did something"; it is that another person can understand the work after the run.
-</p>
+```text
+understand → plan → call tools → generate → inspect → edit → evaluate → summarize → help decide
+```
 
-<br clear="left">
+The human stays in control.  
+The workflow is useful only if the result can still be read, checked and reviewed.
 
-<p>
-  <img align="left" src="assets/project-banners/agentic-workflows.jpg" width="280" alt="AI workflow banner">
-  <strong>CodexToUnity gives the orchestration a real handoff.</strong><br>
-  The bridge connects Codex, Unity, and ComfyUI around jobs, manifests, dry runs, generated candidates, import checks, and review notes.
-</p>
+---
 
-<br clear="left">
+## Project map
 
-<p>
-  <img align="left" src="assets/project-banners/mobia-mobile.jpg" width="280" alt="Mob'ia mobile banner">
-  <strong>Mob'ia / ccomf-unity turns generation into a product surface.</strong><br>
-  Profiles, jobs, artifact states, clients, and review decisions make ComfyUI-style work easier to follow for users, collaborators, and product reviewers.
-</p>
+| Project | LLM role |
+| --- | --- |
+| **Codex Model Orchestrator** | Routes tasks, calls tools, structures runs, keeps readable traces and prepares human decisions. |
+| **Agent Unity** | Reads Unity scenes, explains issues, supports visual review and prepares editor actions. |
+| **CodexToUnity** | Turns an AI-assisted request into a Unity-oriented task path: target, manifest, checks and review notes. |
+| **Mob’ia Android** | Mobile product surface where the LLM helps follow profiles, jobs, artifacts, generation status and review states. |
+| **Mob’ia Unity Extension** | Unity-side extension connected to LLM-assisted jobs, artifacts and scene-level review. |
+| **Mob’ia / ccomf-unity** | Product layer around ComfyUI-style workflows, with profiles, jobs, artifacts and client-facing states. |
+| **Splat to Assets** | LLM-guided pipeline direction for turning splats, multiview material or 3D candidates into reusable assets. |
+| **LocalAssetFactory** | Uses readable manifests, checks and review notes to turn generated candidates into inspectable assets. |
+| **uwdevst_hub** | Synth / preset hub where the LLM helps generate, classify, compare, audition and evaluate sound candidates. |
+| **Codex Image Génial** | Image editing workflow where Codex helps describe, modify, script, compare and review image changes from the discussion. |
+| **MCP / Apps SDK surfaces** | Experiments around controlled tool actions, confirmations, status views and result surfaces. |
 
-<br clear="left">
+---
 
-### What A Reader Can Find
+## Why some projects appear in several showcases
 
-- A clear main project: Codex Model Orchestrator.
-- Project pages for CodexToUnity, Mob'ia / ccomf-unity, and LocalAssetFactory.
-- User flows for readable AI runs, Unity handoff, ComfyUI product jobs, and local asset review.
-- Evidence and QA pages that explain how a run becomes trustworthy enough to act on.
-- Diagrams, banners, one-pager, proof dashboard, QA matrix, and brand assets.
+A project can appear in more than one public repository.
 
-### Open Needs
+For example:
 
-Useful help is concrete: MCP/App SDK review, run-summary UX, proof-card design, Unity/ComfyUI workflow feedback, local automation review, QA criteria, documentation, funding, mission work, and roles around developer tools, AI workflow products, creative pipelines, and human-in-the-loop systems.
+- **Agent Unity** can appear in a Unity showcase because it works inside Unity.
+- **Splat to Assets** can appear in a 3D showcase because it concerns asset generation.
+- **uwdevst_hub** can appear in a music showcase because it works with synth presets.
+- **Codex Image Génial** can appear in an image or creative-tools showcase.
 
-Public contact route: [GitHub - Unicorn Who Dev](https://github.com/charli-dev420).
+In this repository, they appear because the **LLM has a main role** in the workflow.
 
-## Francais
+This keeps the agentic showcase focused without hiding the links between projects.
 
-### Ce Que Presente Ce Repo
+---
 
-Je travaille sur l'outillage IA a partir de la partie qu'on ignore souvent apres la premiere reponse: ce qui a ete demande, ce qui etait autorise, ce que l'outil a touche, ce qui est sorti, ce qui a ete verifie, et ce qu'une personne doit encore decider.
+## Main reading path
 
-**Codex Model Orchestrator** est le projet principal. C'est une couche de pilotage pour le travail assiste par IA: cadrer la tache, router le travail, appeler les outils, garder un run lisible, appliquer des controles et laisser une surface de decision au lieu d'un vague "done".
+| Page | Purpose |
+| --- | --- |
+| [`docs/project-overview.md`](docs/project-overview.md) | Overview of the LLM-centered project family. |
+| [`docs/agentic-projects.md`](docs/agentic-projects.md) | Public index of the agentic project lines. |
+| [`docs/llm-roles.md`](docs/llm-roles.md) | Explanation of the LLM roles used across the projects. |
+| [`docs/codex-model-orchestrator.md`](docs/codex-model-orchestrator.md) | Orchestration, routing, tool calls and readable runs. |
+| [`docs/agent-unity.md`](docs/agent-unity.md) | Unity scene assistant from the LLM angle. |
+| [`docs/codextounity.md`](docs/codextounity.md) | Codex-to-Unity task and review workflow. |
+| [`docs/mobia-android.md`](docs/mobia-android.md) | Android product surface for LLM-assisted jobs and artifacts. |
+| [`docs/mobia-unity-extension.md`](docs/mobia-unity-extension.md) | Unity extension connected to Mob’ia workflows. |
+| [`docs/mobia-ccomf-unity.md`](docs/mobia-ccomf-unity.md) | ComfyUI-style product workflow with LLM-readable states. |
+| [`docs/splat-to-assets.md`](docs/splat-to-assets.md) | Splat / multiview / 3D candidate processing from the LLM angle. |
+| [`docs/local-asset-factory.md`](docs/local-asset-factory.md) | Generated asset review, manifests and validation notes. |
+| [`docs/uwdevst_hub.md`](docs/uwdevst_hub.md) | LLM-assisted synth preset generation and evaluation hub. |
+| [`docs/codex-image-genial.md`](docs/codex-image-genial.md) | Codex-assisted image editing workflow. |
+| [`docs/proof-summary.md`](docs/proof-summary.md) | Public proof boundaries and review signals. |
+| [`docs/quick-review.md`](docs/quick-review.md) | Short reading path for a first review. |
+| [`docs/visual-index.md`](docs/visual-index.md) | Banners, diagrams, screenshots and visual material. |
+| [`docs/public-roadmap.md`](docs/public-roadmap.md) | Public roadmap for documentation and proof material. |
+| [`docs/open-needs.md`](docs/open-needs.md) | Useful feedback, review and collaboration needs. |
+| [`NOTICE.md`](NOTICE.md) | Public repository boundaries. |
+| [`CONTACT.md`](CONTACT.md) | Contact channels. |
 
-Les autres projets rendent cette idee concrete. **CodexToUnity** relie Codex, Unity et ComfyUI autour du handoff asset. **Mob'ia / ccomf-unity** est la couche produit pour profils, jobs, artefacts et clients. **LocalAssetFactory** est la boucle locale qui transforme des candidats generes en assets Unity avec manifest, import et revue.
+---
 
-### Commencer Ici
+## Public boundaries
 
-Lire [overview](docs/overview.md) pour la carte generale. Lire [Codex Model Orchestrator](docs/projects/codex-model-orchestrator.md) pour le projet principal. Lire ensuite [CodexToUnity](docs/projects/codextounity.md), [Mob'ia / ccomf-unity](docs/projects/mobia-ccomf-unity.md) et [LocalAssetFactory](docs/projects/local-asset-factory.md) pour les surfaces de workflow concretes.
+This repository is a public presentation space.
 
-Pour l'usage pratique, commencer par [user flows](docs/user-flows.md) et [tutorials](docs/tutorials.md). Pour la validation, utiliser [evidence](docs/evidence.md), [evidence ledger](docs/evidence-ledger.md), [proof pack](docs/proof-pack.md), [QA matrix](docs/qa-matrix.md) et [QA validation](docs/qa-validation.md). Pour collaboration, financement, missions ou postes, lire [project evaluation](docs/project-evaluation.md), [open needs](docs/partnership.md) et [decision pack](docs/decision-pack.md).
+It does not expose private source code, credentials, sensitive automation details, unreleased binaries, private prompts, raw internal proof archives or full implementation material.
 
-### Lignes Projet
+Some projects are already concrete workflows. Others are product directions still being clarified.
 
-<p>
-  <img align="left" src="assets/project-banners/codex-model-orchestrator.jpg" width="280" alt="Banniere Codex Model Orchestrator">
-  <strong>Codex Model Orchestrator est la priorite.</strong><br>
-  Il sert a produire des runs qui s'expliquent: objectif, contraintes, chemin outil, controles, preuves, points faibles et decision humaine. La valeur produit n'est pas "l'IA a fait quelque chose"; c'est qu'une autre personne peut comprendre le travail apres le run.
-</p>
+The goal is to make the LLM-centered project map understandable without exposing private material.
 
-<br clear="left">
+---
 
-<p>
-  <img align="left" src="assets/project-banners/agentic-workflows.jpg" width="280" alt="Banniere workflow IA">
-  <strong>CodexToUnity donne a l'orchestration un vrai handoff.</strong><br>
-  Le pont relie Codex, Unity et ComfyUI autour de jobs, manifests, dry runs, candidats generes, controles d'import et notes de revue.
-</p>
+<h2 id="francais">🇫🇷 Français</h2>
 
-<br clear="left">
+Ce dépôt présente les projets dans lesquels un modèle de langage occupe un rôle central.
 
-<p>
-  <img align="left" src="assets/project-banners/mobia-mobile.jpg" width="280" alt="Banniere Mob'ia mobile">
-  <strong>Mob'ia / ccomf-unity transforme la generation en surface produit.</strong><br>
-  Profils, jobs, etats artefact, clients et decisions de revue rendent le travail type ComfyUI plus lisible pour utilisateurs, collaborateurs et reviewers produit.
-</p>
+Certains projets appartiennent aussi à d’autres vitrines, par exemple Unity, 3D, musique ou outils image.  
+Ici, ils sont présentés sous un seul angle : comment le LLM aide à lire, planifier, router, générer, inspecter, éditer, évaluer ou préparer une décision.
 
-<br clear="left">
+Le but n’est pas de détailler toute la technique de chaque projet.  
+Le but est de rendre claire la couche pilotée par LLM.
 
-### Ce Qu'Un Lecteur Trouve
+---
 
-- Un projet principal clair: Codex Model Orchestrator.
-- Des pages projet pour CodexToUnity, Mob'ia / ccomf-unity et LocalAssetFactory.
-- Des flux utilisateur pour runs IA lisibles, handoff Unity, jobs produit ComfyUI et revue asset locale.
-- Des pages evidence et QA qui expliquent comment un run devient assez fiable pour agir.
-- Diagrammes, bannieres, one-pager, dashboard preuve, matrice QA et assets de marque.
+## Ce qui a sa place ici
 
-### Besoins Ouverts
+Un projet a sa place dans cette vitrine lorsque le LLM fait partie du vrai workflow, pas seulement d’une zone de chat à côté du produit.
 
-L'aide utile est concrete: revue MCP/App SDK, UX de resume de run, design proof-card, feedback workflow Unity/ComfyUI, revue automatisation locale, criteres QA, documentation, financement, missions et postes autour des outils developpeur, produits workflow IA, pipelines creatifs et systemes human-in-the-loop.
+Le LLM peut servir à :
 
-Contact public: [GitHub - Unicorn Who Dev](https://github.com/charli-dev420).
+```text
+comprendre → planifier → appeler des outils → générer → inspecter → éditer → évaluer → résumer → aider à décider
+```
+
+L’humain garde le contrôle.  
+Le workflow n’est utile que si le résultat reste lisible, vérifiable et reviewable.
+
+---
+
+## Carte des projets
+
+| Projet | Rôle du LLM |
+| --- | --- |
+| **Codex Model Orchestrator** | Route les tâches, appelle les outils, structure les runs, garde des traces lisibles et prépare les décisions humaines. |
+| **Agent Unity** | Lit les scènes Unity, explique les problèmes, soutient la revue visuelle et prépare des actions éditeur. |
+| **CodexToUnity** | Transforme une demande assistée par IA en chemin de tâche orienté Unity : cible, manifest, contrôles et notes de revue. |
+| **Mob’ia Android** | Surface produit mobile où le LLM aide à suivre profils, jobs, artefacts, statut de génération et états de revue. |
+| **Mob’ia Unity Extension** | Extension côté Unity connectée aux jobs assistés par LLM, aux artefacts et à la revue en contexte scène. |
+| **Mob’ia / ccomf-unity** | Couche produit autour des workflows type ComfyUI, avec profils, jobs, artefacts et états lisibles côté client. |
+| **Splat to Assets** | Direction pipeline guidée par LLM pour transformer splats, vues multiples ou candidats 3D en assets réutilisables. |
+| **LocalAssetFactory** | Utilise manifests, contrôles et notes de revue lisibles pour transformer des candidats générés en assets inspectables. |
+| **uwdevst_hub** | Hub synthé / presets où le LLM aide à générer, classer, comparer, écouter et évaluer des candidats sonores. |
+| **Codex Image Génial** | Workflow d’édition d’image où Codex aide à décrire, modifier, scripter, comparer et revoir les changements depuis la discussion. |
+| **Surfaces MCP / Apps SDK** | Expériences autour d’actions outil contrôlées, confirmations, vues de statut et surfaces de résultat. |
+
+---
+
+## Pourquoi certains projets apparaissent dans plusieurs vitrines
+
+Un projet peut apparaître dans plusieurs dépôts publics.
+
+Par exemple :
+
+- **Agent Unity** peut apparaître dans une vitrine Unity parce qu’il fonctionne dans Unity.
+- **Splat to Assets** peut apparaître dans une vitrine 3D parce qu’il concerne la génération d’assets.
+- **uwdevst_hub** peut apparaître dans une vitrine musique parce qu’il travaille sur des presets de synthés.
+- **Codex Image Génial** peut apparaître dans une vitrine image ou outils créatifs.
+
+Dans ce dépôt, ils apparaissent parce que le **LLM occupe un rôle principal** dans le workflow.
+
+Cela garde la vitrine agentic claire, sans masquer les liens entre projets.
+
+---
+
+## Parcours principal
+
+| Page | Rôle |
+| --- | --- |
+| [`docs/project-overview.md`](docs/project-overview.md) | Vue globale de la famille de projets centrés LLM. |
+| [`docs/agentic-projects.md`](docs/agentic-projects.md) | Index public des lignes projet agentic. |
+| [`docs/llm-roles.md`](docs/llm-roles.md) | Explication des rôles LLM utilisés dans les projets. |
+| [`docs/codex-model-orchestrator.md`](docs/codex-model-orchestrator.md) | Orchestration, routage, appels d’outils et runs lisibles. |
+| [`docs/agent-unity.md`](docs/agent-unity.md) | Assistant de scène Unity vu sous l’angle LLM. |
+| [`docs/codextounity.md`](docs/codextounity.md) | Workflow Codex vers Unity, tâche et revue. |
+| [`docs/mobia-android.md`](docs/mobia-android.md) | Surface Android pour jobs et artefacts assistés par LLM. |
+| [`docs/mobia-unity-extension.md`](docs/mobia-unity-extension.md) | Extension Unity connectée aux workflows Mob’ia. |
+| [`docs/mobia-ccomf-unity.md`](docs/mobia-ccomf-unity.md) | Workflow produit type ComfyUI avec états lisibles par LLM. |
+| [`docs/splat-to-assets.md`](docs/splat-to-assets.md) | Traitement splat / multiview / candidat 3D vu sous l’angle LLM. |
+| [`docs/local-asset-factory.md`](docs/local-asset-factory.md) | Revue d’assets générés, manifests et notes de validation. |
+| [`docs/uwdevst_hub.md`](docs/uwdevst_hub.md) | Hub de génération et d’évaluation de presets synthé assisté par LLM. |
+| [`docs/codex-image-genial.md`](docs/codex-image-genial.md) | Workflow d’édition d’image assistée par Codex. |
+| [`docs/proof-summary.md`](docs/proof-summary.md) | Limites de preuve publique et signaux de revue. |
+| [`docs/quick-review.md`](docs/quick-review.md) | Parcours court pour une première revue. |
+| [`docs/visual-index.md`](docs/visual-index.md) | Bannières, schémas, captures et matière visuelle. |
+| [`docs/public-roadmap.md`](docs/public-roadmap.md) | Roadmap publique documentation et preuves. |
+| [`docs/open-needs.md`](docs/open-needs.md) | Retours utiles et besoins de collaboration. |
+| [`NOTICE.md`](NOTICE.md) | Limites du dépôt public. |
+| [`CONTACT.md`](CONTACT.md) | Canaux de contact. |
+
+---
+
+## Limites publiques
+
+Ce dépôt est un espace de présentation public.
+
+Il n’expose pas les sources privées, credentials, détails d’automatisation sensibles, binaires non publiés, prompts privés, archives de preuve internes brutes ou matière complète d’implémentation.
+
+Certains projets sont déjà des workflows concrets. D’autres sont encore en clarification produit.
+
+Le but est de rendre la carte des projets centrés LLM compréhensible sans exposer la matière privée.
