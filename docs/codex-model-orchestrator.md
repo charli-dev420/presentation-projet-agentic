@@ -21,29 +21,41 @@ Its role is to make AI-assisted work easier to scope, route, check and hand back
 The LLM helps:
 
 - understand the request;
-- define scope and constraints;
-- choose tools or workers;
-- keep the run readable;
+- define scope, constraints and expected output;
+- choose tools, workers or sub-steps;
+- keep the run readable while work happens;
 - summarize what changed;
 - prepare a human decision.
 
 ---
 
-## Useful output
-
-A useful run should leave a compact record:
+## Useful workflow
 
 ```text
 request → scope → tool path → artifact → checks → uncertainty → decision
 ```
 
-This makes the result easier to revise, reuse, reject or continue.
+A run is useful when another person can read it later and understand what happened without needing the full private context.
 
 ---
 
-## Public boundary
+## Public review checklist
 
-This page presents the product direction and public workflow model. It does not expose private orchestration prompts, credentials, private tool configs or internal automation details.
+| Question | Expected signal |
+| --- | --- |
+| Is the task scope clear? | Goal, constraints and expected output are written. |
+| Are tool actions understandable? | The path is visible enough to review. |
+| Is the output named? | The result is an artifact, note, state or decision card. |
+| Are weak points visible? | Uncertainty and remaining review are not hidden. |
+| Can a human decide next? | Accept, revise, reject, continue or escalate is clear. |
+
+---
+
+## Boundary
+
+This public page presents the product direction and workflow model.
+
+It does not expose private orchestration prompts, credentials, private tool configs, internal agent routing rules or sensitive automation details.
 
 <p align="right"><a href="../README.md">← Back to README</a> · <a href="#francais">Français</a></p>
 
@@ -62,28 +74,40 @@ Son rôle est de rendre le travail assisté par IA plus facile à cadrer, router
 Le LLM aide à :
 
 - comprendre la demande ;
-- définir le périmètre et les contraintes ;
-- choisir les outils ou workers ;
-- garder le run lisible ;
+- définir le périmètre, les contraintes et la sortie attendue ;
+- choisir les outils, workers ou sous-étapes ;
+- garder le run lisible pendant le travail ;
 - résumer ce qui a changé ;
 - préparer une décision humaine.
 
 ---
 
-## Sortie utile
-
-Un run utile doit laisser une trace compacte :
+## Workflow utile
 
 ```text
 requête → périmètre → chemin outil → artefact → contrôles → incertitude → décision
 ```
 
-Cela rend le résultat plus simple à corriger, réutiliser, refuser ou poursuivre.
+Un run est utile lorsqu’une autre personne peut le relire plus tard et comprendre ce qui s’est passé sans avoir besoin de tout le contexte privé.
 
 ---
 
-## Limite publique
+## Checklist de revue publique
 
-Cette page présente la direction produit et le modèle de workflow public. Elle n’expose pas les prompts privés d’orchestration, credentials, configurations outil privées ou détails d’automatisation internes.
+| Question | Signal attendu |
+| --- | --- |
+| Le périmètre est-il clair ? | Objectif, contraintes et sortie attendue sont écrits. |
+| Les actions outil sont-elles compréhensibles ? | Le chemin est assez visible pour être revu. |
+| La sortie est-elle nommée ? | Le résultat existe comme artefact, note, état ou carte de décision. |
+| Les points faibles sont-ils visibles ? | L’incertitude et la revue restante ne sont pas cachées. |
+| Un humain peut-il décider la suite ? | Accepter, corriger, refuser, continuer ou escalader est clair. |
+
+---
+
+## Limite
+
+Cette page publique présente la direction produit et le modèle de workflow.
+
+Elle n’expose pas les prompts privés d’orchestration, credentials, configurations outil privées, règles internes de routage agent ou détails d’automatisation sensibles.
 
 <p align="right"><a href="../README.md">← Retour au README</a> · <a href="#english">English</a></p>
