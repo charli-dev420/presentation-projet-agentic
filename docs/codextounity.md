@@ -12,7 +12,7 @@
 
 CodexToUnity is the bridge between an AI-assisted request and a Unity-oriented workflow.
 
-The project can also be discussed in a Unity or 3D context. In this repository, the focus is the LLM layer: how a request becomes a structured task path, with target, constraints, manifest, checks and review notes.
+The project can also be presented in a Unity or 3D context. In this repository, the focus is the LLM layer: how a request becomes a structured task path with target, constraints, manifest, checks and review notes.
 
 ---
 
@@ -37,6 +37,23 @@ request → Unity target → task path → manifest → candidate → import che
 
 The goal is to make generated or assisted work easier to inspect before it enters a real Unity project.
 
+---
+
+## Review signals
+
+| Signal | Meaning |
+| --- | --- |
+| Target named | The asset, scene, prefab or workflow target is clear. |
+| Manifest expected | The handoff is not just a raw file. |
+| Import checks listed | Scale, pivot, bounds, materials, naming or sockets can be reviewed. |
+| Decision visible | The candidate can be accepted, revised, rejected or kept for review. |
+
+---
+
+## Public boundary
+
+This page does not expose private Unity project files, local automation details, internal prompts or generation workflows.
+
 <p align="right"><a href="../README.md">← Back to README</a> · <a href="#francais">Français</a></p>
 
 ---
@@ -45,7 +62,7 @@ The goal is to make generated or assisted work easier to inspect before it enter
 
 CodexToUnity est le pont entre une demande assistée par IA et un workflow orienté Unity.
 
-Le projet peut aussi être présenté dans un contexte Unity ou 3D. Dans ce dépôt, le focus est la couche LLM : comment une demande devient un chemin de tâche structuré, avec cible, contraintes, manifest, contrôles et notes de revue.
+Le projet peut aussi être présenté dans un contexte Unity ou 3D. Dans ce dépôt, le focus est la couche LLM : comment une demande devient un chemin de tâche structuré avec cible, contraintes, manifest, contrôles et notes de revue.
 
 ---
 
@@ -69,5 +86,22 @@ requête → cible Unity → chemin de tâche → manifest → candidat → cont
 ```
 
 Le but est de rendre le travail généré ou assisté plus simple à inspecter avant son entrée dans un vrai projet Unity.
+
+---
+
+## Signaux de revue
+
+| Signal | Sens |
+| --- | --- |
+| Cible nommée | L’asset, la scène, le prefab ou la cible workflow est claire. |
+| Manifest attendu | Le handoff n’est pas seulement un fichier brut. |
+| Contrôles d’import listés | Échelle, pivot, bounds, matériaux, nommage ou sockets peuvent être revus. |
+| Décision visible | Le candidat peut être accepté, corrigé, refusé ou gardé pour revue. |
+
+---
+
+## Limite publique
+
+Cette page n’expose pas les fichiers privés de projets Unity, détails d’automatisation locale, prompts internes ou workflows de génération.
 
 <p align="right"><a href="../README.md">← Retour au README</a> · <a href="#english">English</a></p>
