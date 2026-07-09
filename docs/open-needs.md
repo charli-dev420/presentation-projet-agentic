@@ -34,16 +34,30 @@ Good review topics:
 
 ## Useful collaboration areas
 
-Relevant areas include:
+| Area | Useful contribution |
+| --- | --- |
+| **LLM product UX** | Review how result cards, confirmations and next actions are written. |
+| **MCP / Apps SDK surfaces** | Review tool boundaries, read/write separation and result surfaces. |
+| **Unity editor tooling** | Review Agent Unity and CodexToUnity from an editor workflow angle. |
+| **ComfyUI product workflows** | Review Mob’ia jobs, profiles, artifacts and client-facing states. |
+| **Generated asset validation** | Review LocalAssetFactory and Splat to Assets criteria. |
+| **Image editing tools** | Review Codex Image Génial editing and comparison loops. |
+| **Music preset evaluation** | Review uwdevst_hub listening and selection wording. |
+| **Documentation / visuals** | Help make the project map easier to understand quickly. |
 
-- LLM product UX;
-- MCP / Apps SDK surfaces;
-- Unity editor tooling;
-- ComfyUI product workflows;
-- generated asset validation;
-- image editing tools;
-- music preset evaluation;
-- documentation and visual explanation.
+---
+
+## First useful message
+
+A good first message can be short:
+
+```text
+Project:
+What you reviewed:
+What is unclear:
+What you can help with:
+Useful link or context:
+```
 
 <p align="right"><a href="../README.md">← Back to README</a> · <a href="#francais">Français</a></p>
 
@@ -75,15 +89,29 @@ Bons angles de revue :
 
 ## Zones de collaboration utiles
 
-Les zones pertinentes incluent :
+| Zone | Contribution utile |
+| --- | --- |
+| **UX produit LLM** | Revoir le wording des cartes résultat, confirmations et prochaines actions. |
+| **Surfaces MCP / Apps SDK** | Revoir limites outil, séparation read/write et surfaces de résultat. |
+| **Tooling éditeur Unity** | Revoir Agent Unity et CodexToUnity sous l’angle workflow éditeur. |
+| **Workflows produit ComfyUI** | Revoir jobs, profils, artefacts et états côté client Mob’ia. |
+| **Validation d’assets générés** | Revoir les critères LocalAssetFactory et Splat to Assets. |
+| **Outils d’édition image** | Revoir les boucles d’édition et comparaison Codex Image Génial. |
+| **Évaluation de presets musicaux** | Revoir le wording d’écoute et sélection uwdevst_hub. |
+| **Documentation / visuels** | Aider à rendre la carte projet plus rapide à comprendre. |
 
-- UX produit LLM ;
-- surfaces MCP / Apps SDK ;
-- tooling éditeur Unity ;
-- workflows produit ComfyUI ;
-- validation d’assets générés ;
-- outils d’édition image ;
-- évaluation de presets musicaux ;
-- documentation et explication visuelle.
+---
+
+## Premier message utile
+
+Un bon premier message peut rester court :
+
+```text
+Projet :
+Ce qui a été revu :
+Ce qui n’est pas clair :
+Ce que vous pouvez apporter :
+Lien ou contexte utile :
+```
 
 <p align="right"><a href="../README.md">← Retour au README</a> · <a href="#english">English</a></p>
