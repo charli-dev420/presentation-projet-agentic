@@ -12,64 +12,57 @@
 
 This page gives the public overview of the agentic project family.
 
-The repository is not limited to one app or one technical stack. It presents projects where a language model has a central role in the workflow: reading context, preparing work, calling tools, generating material, inspecting output, summarizing state or helping a person decide what comes next.
+The repository is not the showcase for one single product. It is the map of projects where a language model has a central role in the workflow: reading context, planning, routing tools, generating candidates, editing artifacts, inspecting results, evaluating output or preparing a human decision.
 
-Some projects can also appear in other showcases. A Unity project can appear here when the LLM is central. A music project can appear here when the LLM helps evaluate presets. An image tool can appear here when Codex or another LLM drives the editing loop.
+Some projects can also appear in Unity, 3D, music or creative-tool showcases. That is normal. Here, they are included only when the LLM layer is important enough to explain separately.
 
 ---
 
 ## Core idea
 
-The common idea is not full autonomy.
+A useful LLM workflow should not end with a vague answer.
 
-The useful pattern is:
+It should leave a trace that can be reviewed:
 
 ```text
-LLM support → controlled tools → visible output → human review
+request → LLM role → tool or surface → artifact → checks → review → next decision
 ```
 
-The LLM should make the workflow easier to understand, not harder to audit.
-
-A project is stronger when a reader can quickly answer:
-
-- what the user asked for;
-- what the LLM did;
-- what tool or surface was involved;
-- what artifact, state or note came out;
-- what still needs review;
-- what decision comes next.
+That pattern applies to orchestration, Unity scenes, generated assets, Android job surfaces, synth presets and image editing.
 
 ---
 
 ## Project families
 
-| Family | Projects | Agentic angle |
+| Family | Projects | Why it belongs here |
 | --- | --- | --- |
-| **Orchestration** | Codex Model Orchestrator, MCP / Apps SDK surfaces | Task routing, tool calls, readable runs, confirmations and decision surfaces. |
-| **Unity and editor assistance** | Agent Unity, CodexToUnity, Mob’ia Unity Extension | Scene reading, editor preparation, handoff notes and review in project context. |
-| **Assets and 3D candidates** | LocalAssetFactory, Splat to Assets | Manifest logic, conversion planning, import checks and candidate review. |
-| **Product surfaces** | Mob’ia Android, Mob’ia / ccomf-unity | Job states, artifact states, client-readable summaries and next actions. |
-| **Creative assistants** | uwdevst_hub, Codex Image Génial | Preset evaluation, image-edit planning, comparison and iterative review. |
+| **Orchestration** | Codex Model Orchestrator, MCP / Apps SDK surfaces | The LLM structures work, calls tools and prepares readable decisions. |
+| **Unity and editor assistance** | Agent Unity, CodexToUnity, Mob’ia Unity Extension | The LLM helps read scene context, prepare tasks and support review. |
+| **Asset and 3D workflows** | LocalAssetFactory, Splat to Assets | The LLM helps organize generated candidates into inspectable assets. |
+| **Product surfaces** | Mob’ia Android, Mob’ia / ccomf-unity | The LLM helps make jobs, artifacts and review states understandable. |
+| **Creative assistants** | uwdevst_hub, Codex Image Génial | The LLM supports preset evaluation and image editing loops. |
 
 ---
 
-## What this repository should not become
+## How to read this repository
 
-This repository should not become a dump of every Unity, 3D, music or image detail.
+Start with the README, then read:
 
-Those topics can have their own showcases. Here, the question stays focused:
+1. [`agentic-projects.md`](agentic-projects.md) for the project map.
+2. [`llm-roles.md`](llm-roles.md) for the role vocabulary.
+3. One project page only, depending on the area being reviewed.
+4. [`proof-summary.md`](proof-summary.md) if the question is about public proof boundaries.
+5. [`open-needs.md`](open-needs.md) if the goal is feedback, collaboration or review.
 
-```text
-What role does the LLM play in the workflow?
-```
+The repository should stay simple enough for an external reader. The details of Unity, 3D, music or image implementation can live in their dedicated showcases.
 
 ---
 
 ## Public boundary
 
-The public repository can show positioning, pages, diagrams, screenshots, examples, review logic and clear limits.
+This public repository can show the map, positioning, workflow language, screenshots, diagrams and high-level review criteria.
 
-It should not expose private source code, credentials, private prompts, sensitive automation details, unreleased binaries or internal proof archives.
+It should not expose private source code, credentials, private prompts, private tool configuration, sensitive automation details, internal logs, unreleased binaries or raw proof archives.
 
 <p align="right"><a href="../README.md">← Back to README</a> · <a href="#francais">Français</a></p>
 
@@ -79,63 +72,56 @@ It should not expose private source code, credentials, private prompts, sensitiv
 
 Cette page donne la vue publique de la famille de projets agentic.
 
-Le dépôt ne se limite pas à une app ou à une stack technique. Il présente les projets où un modèle de langage occupe un rôle central dans le workflow : lire le contexte, préparer le travail, appeler des outils, générer de la matière, inspecter une sortie, résumer un état ou aider une personne à décider la suite.
+Le dépôt n’est pas la vitrine d’un seul produit. C’est la carte des projets où un modèle de langage occupe un rôle central dans le workflow : lire le contexte, planifier, router les outils, générer des candidats, éditer des artefacts, inspecter les résultats, évaluer une sortie ou préparer une décision humaine.
 
-Certains projets peuvent aussi apparaître dans d’autres vitrines. Un projet Unity peut apparaître ici lorsque le LLM est central. Un projet musique peut apparaître ici lorsque le LLM aide à évaluer des presets. Un outil image peut apparaître ici lorsque Codex ou un autre LLM pilote la boucle d’édition.
+Certains projets peuvent aussi apparaître dans des vitrines Unity, 3D, musique ou outils créatifs. C’est normal. Ici, ils sont inclus seulement lorsque la couche LLM mérite d’être expliquée séparément.
 
 ---
 
 ## Idée centrale
 
-L’idée commune n’est pas l’autonomie totale.
+Un workflow LLM utile ne doit pas se terminer par une réponse vague.
 
-Le modèle utile est :
+Il doit laisser une trace reviewable :
 
 ```text
-support LLM → outils contrôlés → sortie visible → revue humaine
+requête → rôle LLM → outil ou surface → artefact → contrôles → revue → prochaine décision
 ```
 
-Le LLM doit rendre le workflow plus simple à comprendre, pas plus difficile à auditer.
-
-Un projet est plus solide lorsqu’un lecteur peut répondre rapidement :
-
-- ce que l’utilisateur a demandé ;
-- ce que le LLM a fait ;
-- quel outil ou quelle surface a été impliqué ;
-- quel artefact, état ou note est sorti ;
-- ce qui doit encore être revu ;
-- quelle décision vient ensuite.
+Ce modèle s’applique à l’orchestration, aux scènes Unity, aux assets générés, aux surfaces Android de jobs, aux presets synthé et à l’édition d’image.
 
 ---
 
 ## Familles de projets
 
-| Famille | Projets | Angle agentic |
+| Famille | Projets | Pourquoi c’est ici |
 | --- | --- | --- |
-| **Orchestration** | Codex Model Orchestrator, surfaces MCP / Apps SDK | Routage de tâches, appels d’outils, runs lisibles, confirmations et surfaces de décision. |
-| **Unity et assistance éditeur** | Agent Unity, CodexToUnity, Mob’ia Unity Extension | Lecture de scène, préparation éditeur, notes de handoff et revue en contexte projet. |
-| **Assets et candidats 3D** | LocalAssetFactory, Splat to Assets | Logique manifest, plan de conversion, contrôles d’import et revue des candidats. |
-| **Surfaces produit** | Mob’ia Android, Mob’ia / ccomf-unity | États de jobs, états d’artefacts, résumés lisibles côté client et prochaines actions. |
-| **Assistants créatifs** | uwdevst_hub, Codex Image Génial | Évaluation de presets, planification d’édition image, comparaison et revue itérative. |
+| **Orchestration** | Codex Model Orchestrator, surfaces MCP / Apps SDK | Le LLM structure le travail, appelle des outils et prépare des décisions lisibles. |
+| **Unity et assistance éditeur** | Agent Unity, CodexToUnity, Mob’ia Unity Extension | Le LLM aide à lire le contexte scène, préparer les tâches et soutenir la revue. |
+| **Assets et workflows 3D** | LocalAssetFactory, Splat to Assets | Le LLM aide à organiser des candidats générés en assets inspectables. |
+| **Surfaces produit** | Mob’ia Android, Mob’ia / ccomf-unity | Le LLM aide à rendre jobs, artefacts et états de revue compréhensibles. |
+| **Assistants créatifs** | uwdevst_hub, Codex Image Génial | Le LLM soutient l’évaluation de presets et les boucles d’édition d’image. |
 
 ---
 
-## Ce que ce dépôt ne doit pas devenir
+## Comment lire ce dépôt
 
-Ce dépôt ne doit pas devenir un dump de tous les détails Unity, 3D, musique ou image.
+Commencer par le README, puis lire :
 
-Ces sujets peuvent avoir leurs propres vitrines. Ici, la question reste centrée :
+1. [`agentic-projects.md`](agentic-projects.md) pour la carte projet.
+2. [`llm-roles.md`](llm-roles.md) pour le vocabulaire des rôles.
+3. Une seule page projet, selon la zone à revoir.
+4. [`proof-summary.md`](proof-summary.md) si la question concerne les limites de preuve publique.
+5. [`open-needs.md`](open-needs.md) si l’objectif est un retour, une collaboration ou une revue.
 
-```text
-Quel rôle le LLM joue-t-il dans le workflow ?
-```
+Le dépôt doit rester assez simple pour un lecteur externe. Les détails d’implémentation Unity, 3D, musique ou image peuvent vivre dans leurs vitrines dédiées.
 
 ---
 
 ## Limite publique
 
-Le dépôt public peut montrer le positionnement, les pages, schémas, captures, exemples, logique de revue et limites claires.
+Ce dépôt public peut montrer la carte, le positionnement, le vocabulaire workflow, des captures, schémas et critères de revue haut niveau.
 
-Il ne doit pas exposer les sources privées, credentials, prompts privés, détails d’automatisation sensibles, binaires non publiés ou archives de preuve internes.
+Il ne doit pas exposer les sources privées, credentials, prompts privés, configuration outil privée, détails d’automatisation sensibles, logs internes, binaires non publiés ou archives de preuve brutes.
 
 <p align="right"><a href="../README.md">← Retour au README</a> · <a href="#english">English</a></p>
