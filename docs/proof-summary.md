@@ -12,28 +12,40 @@
 
 This page defines the public proof boundary for the agentic showcase.
 
-The repository can explain the project map, the role of the LLM, the expected workflows and the kind of review signals that matter. It should not expose private implementation material.
+The repository can explain the project map, the role of the LLM, the expected workflows and the review signals that matter. It should not expose private implementation material.
 
 ---
 
-## Public signals
+## Public proof signals
 
-Useful public signals include:
-
-- clear project role;
-- readable workflow path;
-- expected artifact or state;
-- review criteria;
-- known boundary;
-- next action.
+| Signal | What it proves publicly |
+| --- | --- |
+| Clear project role | The project is understandable without private context. |
+| LLM role | The model is part of the workflow, not only a chat helper. |
+| Workflow path | The sequence from request to review is readable. |
+| Artifact or state | The project produces something that can be inspected. |
+| Review criteria | The result is not treated as finished too early. |
+| Boundary | The public page does not leak private material. |
 
 ---
 
-## Private material
+## What stays private
 
-Private material can include source code, prompts, credentials, private tool configuration, internal logs, unreleased binaries, raw automation traces and detailed proof archives.
+Private material can include source code, prompts, credentials, private tool configuration, internal logs, unreleased binaries, raw automation traces, datasets and detailed proof archives.
 
 This material is not part of the public repository.
+
+---
+
+## Public-safe proof examples
+
+Useful public proof can be simple:
+
+- one readable run card;
+- one Unity review note;
+- one generated asset review note;
+- one preset evaluation note;
+- one image edit before / after explanation.
 
 <p align="right"><a href="../README.md">← Back to README</a> · <a href="#francais">Français</a></p>
 
@@ -47,23 +59,35 @@ Le dépôt peut expliquer la carte projet, le rôle du LLM, les workflows attend
 
 ---
 
-## Signaux publics
+## Signaux de preuve publique
 
-Les signaux publics utiles incluent :
-
-- rôle clair du projet ;
-- chemin de workflow lisible ;
-- artefact ou état attendu ;
-- critères de revue ;
-- limite connue ;
-- prochaine action.
+| Signal | Ce que cela prouve publiquement |
+| --- | --- |
+| Rôle projet clair | Le projet est compréhensible sans contexte privé. |
+| Rôle du LLM | Le modèle fait partie du workflow, pas seulement d’une aide chat. |
+| Chemin de workflow | La séquence de la demande à la revue est lisible. |
+| Artefact ou état | Le projet produit quelque chose qui peut être inspecté. |
+| Critères de revue | Le résultat n’est pas traité comme terminé trop tôt. |
+| Limite | La page publique ne fuite pas la matière privée. |
 
 ---
 
-## Matière privée
+## Ce qui reste privé
 
-La matière privée peut inclure sources, prompts, credentials, configuration outil privée, logs internes, binaires non publiés, traces d’automatisation brutes et archives de preuve détaillées.
+La matière privée peut inclure sources, prompts, credentials, configuration outil privée, logs internes, binaires non publiés, traces d’automatisation brutes, datasets et archives de preuve détaillées.
 
 Cette matière ne fait pas partie du dépôt public.
+
+---
+
+## Exemples de preuve publique safe
+
+Les preuves publiques utiles peuvent rester simples :
+
+- une carte de run lisible ;
+- une note de revue Unity ;
+- une note de revue d’asset généré ;
+- une note d’évaluation preset ;
+- une explication avant / après d’édition image.
 
 <p align="right"><a href="../README.md">← Retour au README</a> · <a href="#english">English</a></p>
