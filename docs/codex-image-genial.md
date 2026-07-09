@@ -37,6 +37,23 @@ image request → edit plan → code-assisted operation → result → compariso
 
 The goal is to make image editing more controllable from the conversation without hiding the review step.
 
+---
+
+## Review signals
+
+| Signal | Meaning |
+| --- | --- |
+| Edit intent is clear | The requested change is described before execution. |
+| Operation is structured | The work can be repeated, revised or explained. |
+| Result is compared | The output is checked against the original intent. |
+| Revision path exists | The next correction can be named precisely. |
+
+---
+
+## Public boundary
+
+This page does not expose private image datasets, private prompts, unreleased editor code, internal automation or non-public user images.
+
 <p align="right"><a href="../README.md">← Back to README</a> · <a href="#francais">Français</a></p>
 
 ---
@@ -69,5 +86,22 @@ demande image → plan d’édition → opération assistée par code → résul
 ```
 
 Le but est de rendre l’édition d’image plus contrôlable depuis la conversation sans masquer l’étape de revue.
+
+---
+
+## Signaux de revue
+
+| Signal | Sens |
+| --- | --- |
+| L’intention d’édition est claire | Le changement demandé est décrit avant exécution. |
+| L’opération est structurée | Le travail peut être répété, corrigé ou expliqué. |
+| Le résultat est comparé | La sortie est vérifiée selon l’intention initiale. |
+| Le chemin de correction existe | La prochaine correction peut être nommée précisément. |
+
+---
+
+## Limite publique
+
+Cette page n’expose pas les datasets image privés, prompts privés, code éditeur non publié, automatisations internes ou images utilisateur non publiques.
 
 <p align="right"><a href="../README.md">← Retour au README</a> · <a href="#english">English</a></p>
