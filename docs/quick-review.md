@@ -24,6 +24,18 @@ Use this page for a short first review of the repository.
 
 ---
 
+## What to check first
+
+| Check | Good sign |
+| --- | --- |
+| Positioning | The repo is about LLM-centered workflows, not a general Unity/3D/music dump. |
+| Project map | Each project has a distinct role. |
+| LLM role | The model reads, plans, edits, evaluates or helps decide. |
+| Human control | The workflow keeps review and final decision visible. |
+| Boundary | Private material is not exposed. |
+
+---
+
 ## Review questions
 
 A useful first review answers:
@@ -51,6 +63,18 @@ Utiliser cette page pour une première revue courte du dépôt.
 3. Lire [`llm-roles.md`](llm-roles.md) pour comprendre ce que fait réellement le LLM.
 4. Choisir une page projet, pas toutes.
 5. Vérifier si le rôle, le workflow et la limite publique sont clairs.
+
+---
+
+## Ce qu’il faut vérifier d’abord
+
+| Vérification | Bon signal |
+| --- | --- |
+| Positionnement | Le repo parle de workflows centrés LLM, pas d’un dump Unity/3D/musique général. |
+| Carte projet | Chaque projet a un rôle distinct. |
+| Rôle LLM | Le modèle lit, planifie, édite, évalue ou aide à décider. |
+| Contrôle humain | Le workflow garde la revue et la décision finale visibles. |
+| Limite | La matière privée n’est pas exposée. |
 
 ---
 
